@@ -18,14 +18,15 @@ __PACKAGE__->mk_accessors(
 sub new {
     my $class = shift;
 
-    my $self = $class->SUPER::new(ref $_[0] eq 'HASH' ? $_[0] : { @_ });
-    $self->initialize;
+    my $self = $class->SUPER::new({ @_ });
+    $self->initialize(@_);
 
     $self;
 }
 
 sub initialize {
     my $self = shift;
+    my %args = @_;
 
     unless ($self->ua) {
         require LWP::UserAgent;
@@ -33,9 +34,15 @@ sub initialize {
         $self->ua($ua);
     }
 
-    $self->uris([ $self->uri ]);
+    unless ($self->tree) {
+        $self->tree(
+            $self->_parse_content(
+                $args{content} || $self->_get_content($self->uri)
+            )
+        );
+    }
 
-    $self->tree($self->_parse_uri($self->uri));
+    $self->uris([ $self->uri ]);
 }
 
 sub load_next {
@@ -74,9 +81,15 @@ sub next_uri {
 
 sub _SITE_INFO {
     my $self = shift;
-    $SiteInfo ||= JSON::Any->new->from_json(
-        $self->_get_content('http://wedata.net/databases/AutoPagerize/items.json')
-    );
+
+    $SiteInfo ||= do {
+        my $json = JSON::Any->new->from_json(
+            $self->_get_content(
+                'http://wedata.net/databases/AutoPagerize/items.json'
+            )
+        );
+        [ map $_->{data}, @$json ];
+    };
 }
 
 sub site_info {
