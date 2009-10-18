@@ -1,0 +1,2448 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=euc-jp">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<title>ミラクル☆モテメンの脱オタ日記</title>
+<link rel="start" href="./" title="ミラクル☆モテメンの脱オタ日記">
+<link rel="help" href="/help" title="ヘルプ">
+<link rel="prev" href="/motemen/?of=5" title="前の5日分">
+
+<link rel="stylesheet" href="/css/base.css?20090911" type="text/css" media="all">
+<link rel="stylesheet" href="/css/headerstyle_wh.css" type="text/css" media="all">
+<link rel="stylesheet" href="/theme/ugomemo-sky/ugomemo-sky.css" type="text/css" media="all">
+
+
+
+<link rel="alternate" type="application/rss+xml" title="RSS" href="http://d.hatena.ne.jp/motemen/rss">
+<link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="http://d.hatena.ne.jp/motemen/rss2">
+
+<link rel="meta" type="application/rdf+xml" title="FOAF" href="http://d.hatena.ne.jp/motemen/foaf" />
+<link rel="search" type="application/opensearchdescription+xml" href="http://d.hatena.ne.jp/motemen/opensearch/diary.xml" title="ミラクル☆モテメンの脱オタ日記内日記検索" />
+<link rel="search" type="application/opensearchdescription+xml" href="http://d.hatena.ne.jp/motemen/opensearch/archive.xml" title="ミラクル☆モテメンの脱オタ日記内一覧検索" />
+
+
+<link rel="shortcut icon" href="http://d.hatena.ne.jp/images/diary/m/motemen/favicon.ico">
+
+
+
+<style type="text/css">
+<!-- 
+/*
+div.hatena-module {
+    float: left;
+    margin: 1em;
+}
+
+div.day p {
+	clear: both;
+}
+
+div.ad {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+div.day .asamashi p, div.ad p {
+	clear: none;
+}
+
+.asamashi {
+  margin : 2em 1em 2em 1em;
+  clear: both;
+}
+
+.asamashi .image {
+  margin: 0 2em 1em 0;
+  padding: 0;
+  float: left;
+  clear: left;
+}
+
+.asamashi h4 {
+  border: none;
+  padding-top: 1em;
+}
+
+.amazlet-box {
+  margin : 2em 1em 2em 1em;
+}
+
+.amazlet-image {
+  clear : both;
+  float : left;
+  width : 200px;
+  margin-right: 2%;
+}
+
+.amazlet-info {
+  float : left;
+  width : 50%;
+}
+
+body {
+	font-family: Verdana, sans-serif;
+}
+
+div.hatena-body {
+	width: 90%;
+}
+div.main {
+	width: 75%;
+}
+div.sidebar {
+	width: 20%;
+}
+
+span.highlight {
+	color: black;
+	background-color: yellow;
+}
+
+img.photo {
+	float: right;
+	margin: 10px;
+	border: 0;
+}
+
+a.keyword {
+	text-decoration: none;
+	border-bottom: 1px solid #d0d0d0;
+}
+
+h3, h3 *, h4, h4 * {
+	font-family: Verdana;
+}
+
+h3 {
+    font-size: 120%;
+}
+
+div.section pre {
+	overflow: auto;
+	font-size: 100%;
+}
+
+pre span.special-key {
+	color: #888;
+}
+
+em {
+	font-style: normal;
+	font-weight: bold;
+}
+
+.hatena-asin-detail-info {
+    float: left
+}
+*/  
+
+div.section pre.syntax-highlight {
+    background-color: #333;
+    color: white;
+}
+
+.synSpecial    { color: navajowhite; }
+.synType       { color: darkkhaki;   font-weight: bold; }
+.synComment    { color: skyblue;     }
+.synPreProc    { color: indianred;   }
+.synIdentifier { color: palegreen;   }
+.synConstant   { color: #FFA0A0;     }
+.synStatement  { color: khaki;       font-weight: bold; }
+
+.hatena-star-star-image {
+  background-image: url('http://img.f.hatena.ne.jp/images/fotolife/m/motemen/20090331/20090331142637_120.jpg');
+}
+.hatena-star-green-star-image {
+  background-image: url('http://img.f.hatena.ne.jp/images/fotolife/m/motemen/20090331/20090331142638_120.jpg');
+}
+.hatena-star-red-star-image {
+  background-image: url('http://img.f.hatena.ne.jp/images/fotolife/m/motemen/20090331/20090331142639_120.jpg');
+}
+.hatena-star-blue-star-image {
+  background-image: url('http://img.f.hatena.ne.jp/images/fotolife/m/motemen/20090331/20090331142640_120.jpg');
+}
+-->
+</style>
+
+
+
+<!--
+<rdf:RDF
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:foaf="http://xmlns.com/foaf/0.1/">
+<rdf:Description rdf:about="http://d.hatena.ne.jp/motemen/">
+   <foaf:maker rdf:parseType="Resource">
+     <foaf:holdsAccount>
+       <foaf:OnlineAccount foaf:accountName="motemen">
+         <foaf:accountServiceHomepage rdf:resource="http://www.hatena.ne.jp/" />
+       </foaf:OnlineAccount>
+     </foaf:holdsAccount>
+   </foaf:maker>
+</rdf:Description>
+</rdf:RDF>
+-->
+
+<link rel="alternate" media="handheld" type="text/html" href="http://d.hatena.ne.jp/motemen/mobile" />
+<!--
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xmlns:trackback="http://madskills.com/public/xml/rss/module/trackback/">
+<rdf:Description
+  rdf:about="http://d.hatena.ne.jp/motemen/20090401/1238593149"
+  trackback:ping="http://d.hatena.ne.jp/motemen/20090401/1238593149"
+  dc:title="はてなに入社しました"
+  dc:identifier="http://d.hatena.ne.jp/motemen/20090401/1238593149" />
+</rdf:RDF>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xmlns:trackback="http://madskills.com/public/xml/rss/module/trackback/">
+<rdf:Description
+  rdf:about="http://d.hatena.ne.jp/motemen/20090331/1238502422"
+  trackback:ping="http://d.hatena.ne.jp/motemen/20090331/1238502422"
+  dc:title="カラースターが出ましたね"
+  dc:identifier="http://d.hatena.ne.jp/motemen/20090331/1238502422" />
+</rdf:RDF>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xmlns:trackback="http://madskills.com/public/xml/rss/module/trackback/">
+<rdf:Description
+  rdf:about="http://d.hatena.ne.jp/motemen/20090224/1235486053"
+  trackback:ping="http://d.hatena.ne.jp/motemen/20090224/1235486053"
+  dc:title="アルゴリズムイントロダクション輪講も2巻に入ります"
+  dc:identifier="http://d.hatena.ne.jp/motemen/20090224/1235486053" />
+</rdf:RDF>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xmlns:trackback="http://madskills.com/public/xml/rss/module/trackback/">
+<rdf:Description
+  rdf:about="http://d.hatena.ne.jp/motemen/20081119/1227105385"
+  trackback:ping="http://d.hatena.ne.jp/motemen/20081119/1227105385"
+  dc:title="CLANNAD が人生だったので DVD を買った"
+  dc:identifier="http://d.hatena.ne.jp/motemen/20081119/1227105385" />
+</rdf:RDF>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xmlns:trackback="http://madskills.com/public/xml/rss/module/trackback/">
+<rdf:Description
+  rdf:about="http://d.hatena.ne.jp/motemen/20081119/1227101002"
+  trackback:ping="http://d.hatena.ne.jp/motemen/20081119/1227101002"
+  dc:title="iPhone フリック入力のテスト"
+  dc:identifier="http://d.hatena.ne.jp/motemen/20081119/1227101002" />
+</rdf:RDF>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xmlns:trackback="http://madskills.com/public/xml/rss/module/trackback/">
+<rdf:Description
+  rdf:about="http://d.hatena.ne.jp/motemen/20080926/1222434809"
+  trackback:ping="http://d.hatena.ne.jp/motemen/20080926/1222434809"
+  dc:title="[Book]最近読んだ本"
+  dc:identifier="http://d.hatena.ne.jp/motemen/20080926/1222434809" />
+</rdf:RDF>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xmlns:trackback="http://madskills.com/public/xml/rss/module/trackback/">
+<rdf:Description
+  rdf:about="http://d.hatena.ne.jp/motemen/20080926/1222433504"
+  trackback:ping="http://d.hatena.ne.jp/motemen/20080926/1222433504"
+  dc:title="常識ある社会人になる"
+  dc:identifier="http://d.hatena.ne.jp/motemen/20080926/1222433504" />
+</rdf:RDF>
+-->
+
+<script type="text/javascript" src="/js/MochiKit/1125/Base.js"></script>
+<script type="text/javascript" src="/js/MochiKit/1125/Iter.js"></script>
+<script type="text/javascript" src="/js/MochiKit/1125/DOM.js"></script>
+<script type="text/javascript" src="/js/MochiKit/1125/Style.js"></script>
+<script type="text/javascript" src="/js/MochiKit/1125/Signal.js"></script>
+<script type="text/javascript" src="/js/MochiKit/1125/Async.js"></script>
+<script type="text/javascript" src="/js/MochiKit/1125/Logging.js"></script>
+<script type="text/javascript" src="/js/BookmarkCommentViewer.js" charset="utf-8"></script>
+
+
+<link rel="microsummary" href="/microsummary/entry_title.xml">
+
+
+<script type="text/javascript" src="http://s.hatena.ne.jp/js/HatenaStar.js"></script>
+<script type="text/javascript">
+Hatena.Star.SiteConfig = {
+  entryNodes: {
+    'div.section': {
+      uri: 'h3 a',
+      title: 'h3',
+      container: 'h3'
+    }
+  }
+};
+Hatena.Author  = new Hatena.User('motemen');
+
+</script>
+
+
+
+
+<script type="text/javascript" src="/js/quick_pager.js?v=1.04"></script>
+<script type="text/javascript" src="/js/diary_utils.js"></script>
+<script type="text/javascript" src="/js/max_width_fotolife.js"></script>
+<!--
+<
+-->
+
+
+</head>
+<body>
+
+<div id="simple-header">
+
+  <a href="http://www.hatena.ne.jp/"><img src="/theme/ugomemo-sky/logo-hatena.gif" alt="Hatena::" title="Hatena::" id="logo-hatena"></a><a href="/"><img src="/theme/ugomemo-sky/logo-diary.gif" title="Diary" id="logo-diary"></a>
+
+  <form method="get" action="/search" class="search-form">
+    <input type="text" class="search-word" name="word" value=""><input name="name" value="motemen" type="hidden"><input type="submit" name="diary" value="日記" class="search-button"><input type="submit" name="submit" value="検索" class="search-button">
+  </form>
+  <ul class="menu">
+    <li><a href="/motemen/">ブログトップ</a></li>
+    <li><a href="/motemen/archive">記事一覧</a></li>
+
+
+    <li><a href="https://www.hatena.ne.jp/login?backurl=http%3A%2F%2Fd.hatena.ne.jp%2Fmotemen%2F">ログイン</a></li>
+    <li><a href="https://www.hatena.ne.jp/register?location=http://d.hatena.ne.jp/">無料ブログ開設</a></li>
+
+  </ul>
+</div>
+
+
+
+<h1><a href="http://d.hatena.ne.jp/motemen/">ミラクル☆モテメンの脱オタ日記</a> <a href="http://d.hatena.ne.jp/motemen/rss"><img src="http://d.hatena.ne.jp/images/rss_wh.gif" alt="RSSフィード" title="RSSフィード" border="0" width="24" height="12" class="icon"></a></h1>
+<div class="sponsor">
+  <a href="http://ugomemo.hatena.ne.jp/"><img src="/theme/ugomemo-sky/sponsor.gif" alt="うごメモはてな" title="うごメモはてな" /></a>
+</div>
+
+<div class="hatena-body">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="calendar" id="pager-top">
+	<a rel="prev" href="/motemen/?of=5" class="prev">&lt;前の5日分</a>&nbsp;<span id="edit-in-place-add"></span>
+</div>
+<div id="days">
+
+<div class="day">
+<h2><a href="http://d.hatena.ne.jp/motemen/20090401"><span class="date">2009-04-01</span></a></h2>
+
+<div class="body">
+
+<!-- google_ad_section_start -->
+
+		<div class="section">
+			<h3 class="title"><a href="/motemen/20090401/1238593149" name="1238593149">はてなに入社しました</a></h3>			<p class="sectionheader"> <span class="timestamp">22:39</span> |  <a href="http://b.hatena.ne.jp/entry/http://d.hatena.ne.jp/motemen/20090401/1238593149" class="bookmark-icon"><img src="http://d.hatena.ne.jp/images/b_entry_wh.gif" border="0" title="はてなに入社しました - ミラクル☆モテメンの脱オタ日記 を含むブックマーク" alt="はてなに入社しました - ミラクル☆モテメンの脱オタ日記 を含むブックマーク" width="16" height="12" class="icon"></a> <a href="http://b.hatena.ne.jp/entry/http://d.hatena.ne.jp/motemen/20090401/1238593149" class="bookmark-count"><img src="http://b.hatena.ne.jp/entry/image/http://d.hatena.ne.jp/motemen/20090401/1238593149" title="はてなブックマーク - はてなに入社しました - ミラクル☆モテメンの脱オタ日記 " alt="はてなブックマーク - はてなに入社しました - ミラクル☆モテメンの脱オタ日記 "></a> <img class="hatena-bcomment-view-icon" src="http://r.hatena.ne.jp/images/popup.gif" onclick="javascript:BookmarkCommentViewer.iconImageClickHandler(this, 'http://d.hatena.ne.jp/motemen/20090401/1238593149', event);" title="はてなに入社しました - ミラクル☆モテメンの脱オタ日記 のブックマークコメント" alt="はてなに入社しました - ミラクル☆モテメンの脱オタ日記 のブックマークコメント" width="13" height="13"></p>
+
+		</div>
+
+<!-- google_ad_section_end -->
+<div class="ad">
+
+<script type="text/javascript"><!--
+google_ad_client = "pub-4031405268309770";
+
+google_ad_height = '90';
+google_ad_width = '728';
+google_ad_slot = '1793229745';
+//--></script>
+<script type="text/javascript"
+  src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>
+
+</div>
+
+<div class="ad">
+<div class="hatena-asin-recommend">
+<div class="hatena-asin-recommend-item-1">
+<div class="hatena-asin-recommend-image"><a href="http://d.hatena.ne.jp/asin/B002JM5NH2/tokyoenvious-22"><img src="http://ecx.images-amazon.com/images/I/61YyMmRV2yL._SL60_.jpg" ALT="B002JM5NH2"></a></div>
+<div class="hatena-asin-recommend-info">
+<div class="hatena-asin-recommend-title"><a href="http://d.hatena.ne.jp/asin/B002JM5NH2/tokyoenvious-22"><img src="/images/hamazou_icons/icon-music.gif" border="0" align="left" alt="Music"> OOPARTS【初回生産限定盤】</a></div>
+<div class="hatena-asin-recommend-description"><a href="http://d.hatena.ne.jp/keyword/avex%20trax">avex trax</a> <a href="http://d.hatena.ne.jp/keyword/the%20pillows">the pillows</a> <a href="http://d.hatena.ne.jp/keyword/SAWAO%20YAMANAKA">SAWAO YAMANAKA</a> </div>
+</div></div>
+<div class="hatena-asin-recommend-item-2">
+<div class="hatena-asin-recommend-image"><a href="http://d.hatena.ne.jp/asin/4048543830/tokyoenvious-22"><img src="http://ecx.images-amazon.com/images/I/51czmpB9sfL._SL60_.jpg" ALT="4048543830"></a></div>
+<div class="hatena-asin-recommend-info">
+<div class="hatena-asin-recommend-title"><a href="http://d.hatena.ne.jp/asin/4048543830/tokyoenvious-22"><img src="/images/hamazou_icons/icon-book.gif" border="0" align="left" alt="Book"> らき ☆ すた (7) (角川コミックス)</a></div>
+<div class="hatena-asin-recommend-description"><a href="http://d.hatena.ne.jp/keyword/%b3%d1%c0%ee%bd%f1%c5%b9%28%b3%d1%c0%ee%a5%b0%a5%eb%a1%bc%a5%d7%a5%d1%a5%d6%a5%ea%a5%c3%a5%b7%a5%f3%a5%b0%29">角川書店(角川グループパブリッシング)</a> <a href="http://d.hatena.ne.jp/keyword/%c8%fe%bf%e5%a4%ab%a4%ac%a4%df">美水かがみ</a> </div>
+</div></div>
+<div class="hatena-asin-recommend-foot"></div></div></div>
+
+</div>
+
+
+
+  <div class="comment">
+    <div class="caption">
+      <a name="c" href="/motemen/comment?date=20090401#c">コメントを書く</a>
+      
+    </div>
+
+    
+  <div class="commentshort">
+    
+      <p>
+                <a name="c108119043"></a><span class="commentator">
+          <img src="http://www.hatena.ne.jp/images/guest_icon.gif" class="hatena-id-icon" alt="ぱにゅあぁああｗｗｗｗｗ" title="ぱにゅあぁああｗｗｗｗｗ" height="16" width="16">ぱにゅあぁああｗｗｗｗｗ
+          <a href="http://qHeG8wd.meshiuma.tsukimisou.net/" rel="nofollow"><img src="/images/icon-userurl.gif" style="vertical-align:middle;border:none;" class="userurl"></a>
+        </span>
+        <span class="timestamp"><a name="c1247105117" href="/motemen/20090401#c1247105117">2009/07/09 11:05</a></span>
+        <span class="commentbody"><br>前のは俺と相性合わなかったから最近コッチに替えたらバッチリ最強ｗｗ<br>クリ舐めパイ揉み同時進行上等すぎだしｗｗｗｗｗ<br>てか一発で１０万貰えたんだけど、ここのお姉さんみんな金使いひでぇなｗｗｗ<br>まぁ俺の懐は潤うからいいけどなｗ　金ってある所にはあるんだな（＾＾；<br><br>http://qHeG8wd.meshiuma.tsukimisou.net/</span>
+
+      </p>
+    
+      <p>
+                <a name="c108493330"></a><span class="commentator">
+          <a href="/motemen/" class="hatena-id-icon"><img src="http://www.hatena.ne.jp/users/mo/motemen/profile_s.gif" class="hatena-id-icon" alt="motemen" title="motemen" height="16" width="16">motemen</a>
+          
+        </span>
+        <span class="timestamp"><a name="c1248426052" href="/motemen/20090401#c1248426052">2009/07/24 18:00</a></span>
+        <span class="commentbody">マジかｗｗｗｗｗｗｗｗｗ</span>
+
+      </p>
+    
+      <p>
+                <a name="c108561528"></a><span class="commentator">
+          <img src="http://www.hatena.ne.jp/images/guest_icon.gif" class="hatena-id-icon" alt="ネトゲ廃人ぽにゃたの場合" title="ネトゲ廃人ぽにゃたの場合" height="16" width="16">ネトゲ廃人ぽにゃたの場合
+          <a href="http://netoge%2ebolar%2enet/caAaQM2/" rel="nofollow"><img src="/images/icon-userurl.gif" style="vertical-align:middle;border:none;" class="userurl"></a>
+        </span>
+        <span class="timestamp"><a name="c1248588932" href="/motemen/20090401#c1248588932">2009/07/26 15:15</a></span>
+        <span class="commentbody"><br>働かざるものヤルべし！！！ほんと働いたら負けだわ(´Д｀；）<br>オレ真面目に会社員やってたけど、今はその頃より月の稼ぎ３倍だよ？<br>初めてヤった時は４万だけだったけど、今じゃ平均一回７万だかんなｗｗｗ<br>もうアフォらしくて会社員ヤメたしｗｗｗｗｗ　毎日ネトゲ最高ｗｗｗｗ<br><br>http://netoge.bolar.net/caAaQM2/</span>
+
+      </p>
+    
+      <p>
+                <a name="c108886576"></a><span class="commentator">
+          <img src="http://www.hatena.ne.jp/images/guest_icon.gif" class="hatena-id-icon" alt="俺の銃が火を噴くぜｗｗｗｗ" title="俺の銃が火を噴くぜｗｗｗｗ" height="16" width="16">俺の銃が火を噴くぜｗｗｗｗ
+          <a href="http://ene%2ecreampie2%2enet/aoT6DEc/" rel="nofollow"><img src="/images/icon-userurl.gif" style="vertical-align:middle;border:none;" class="userurl"></a>
+        </span>
+        <span class="timestamp"><a name="c1249471872" href="/motemen/20090401#c1249471872">2009/08/05 20:31</a></span>
+        <span class="commentbody"><br>始めた途端に誘いの嵐だったからちょっとパニクったわｗｗｗ<br>とりま玩具プ レ イ好きのビ ッ チを選んで楽勝で即 ハ メ〜(^-^)v<br>ハ メ て ５ 万 貰 え るとかカルチャーショックだったけど、<br>これやらないやつはただのバカだろｗｗｗｗｗｗｗｗｗ<br><br>http://ene.creampie2.net/aoT6DEc/</span>
+
+      </p>
+    
+      <p>
+                <a name="c109023827"></a><span class="commentator">
+          <img src="http://www.hatena.ne.jp/images/guest_icon.gif" class="hatena-id-icon" alt="ぎょはぁ！！！！！" title="ぎょはぁ！！！！！" height="16" width="16">ぎょはぁ！！！！！
+          <a href="http://kachi%2estrowcrue%2enet/SnB8h26/" rel="nofollow"><img src="/images/icon-userurl.gif" style="vertical-align:middle;border:none;" class="userurl"></a>
+        </span>
+        <span class="timestamp"><a name="c1249819975" href="/motemen/20090401#c1249819975">2009/08/09 21:12</a></span>
+        <span class="commentbody"><br>ヘイヘイ！！あひひひほはぁｗｗｗｗｗｗｗ　ちょｗｗいきなりごめｗｗｗｗｗｗ<br>寝てるだけで５ 万もらっちゃって真面目な自分がヴァカらしくなってさｗｗｗｗｗ<br>はぁーいま女シャワー浴びてんだけど、もう１ラウンドでまた５ 万くれるってＹＯ！ｗｗｗｗｗｗ<br>またマグロでさっさと中 出 しするわｗｗｗｗｗｗｗｗｗ<br><br>http://kachi.strowcrue.net/SnB8h26/</span>
+
+      </p>
+    
+      <p>
+                <a name="c109236352"></a><span class="commentator">
+          <img src="http://www.hatena.ne.jp/images/guest_icon.gif" class="hatena-id-icon" alt="これはいいカオスｗ" title="これはいいカオスｗ" height="16" width="16">これはいいカオスｗ
+          <a href="http://yuzo%2eplusnote%2enet/ZCsEtUG/" rel="nofollow"><img src="/images/icon-userurl.gif" style="vertical-align:middle;border:none;" class="userurl"></a>
+        </span>
+        <span class="timestamp"><a name="c1250414019" href="/motemen/20090401#c1250414019">2009/08/16 18:13</a></span>
+        <span class="commentbody"><br>自分の事「キャメロン」て呼んでる痛い女と会ったんだがお嬢すぎワロタｗｗｗ<br>キャメロンにとっては１ 万とか紙きれらしくて、<br>普通にセ ク ロ ヌするだけで２ ０ 万くれたしｗｗｗｗｗｗｗｗｗ<br>マジキチｗｗｗｗｗｗｗｗ<br><br>まーそのおかげで俺が潤ってるんだからもっと狂って下さいｗｗｗｗｗｗｗｗｗ<br><br>http://yuzo.plusnote.net/ZCsEtUG/</span>
+
+      </p>
+    
+      <p>
+                <a name="c109370482"></a><span class="commentator">
+          <img src="http://www.hatena.ne.jp/images/guest_icon.gif" class="hatena-id-icon" alt="よーちよちよちよち！！！！" title="よーちよちよちよち！！！！" height="16" width="16">よーちよちよちよち！！！！
+          <a href="http://okane%2ed-viking%2ecom/N9bQv7h/" rel="nofollow"><img src="/images/icon-userurl.gif" style="vertical-align:middle;border:none;" class="userurl"></a>
+        </span>
+        <span class="timestamp"><a name="c1250979374" href="/motemen/20090401#c1250979374">2009/08/23 07:16</a></span>
+        <span class="commentbody"><br>最近ここの女におしゃぶり咥えさせてガラガラ持たせて<br>パッコンパッコンしてやったんだが、反応がハンパネェっすｗｗｗｗｗｗｗｗ<br><br>「気持ちいいですぅーん！！はあっぁぁああ！！！」<br><br>こんな萌えボイスで叫ばれたら余計に興 奮するっての！！！！！！<br><br>仕方ないからずぶずぶ奥まで挿れてあげたら<br>ずっと潮ピュルーって飛ばして痙攣しまくりー（・∀・）ぐっふふ<br><br>http://okane.d-viking.com/N9bQv7h/</span>
+
+      </p>
+    
+      <p>
+                <a name="c109463575"></a><span class="commentator">
+          <img src="http://www.hatena.ne.jp/images/guest_icon.gif" class="hatena-id-icon" alt="もっとほしいです！！" title="もっとほしいです！！" height="16" width="16">もっとほしいです！！
+          <a href="http://koro%2echuebrarin%2ecom/DgDrVjC/" rel="nofollow"><img src="/images/icon-userurl.gif" style="vertical-align:middle;border:none;" class="userurl"></a>
+        </span>
+        <span class="timestamp"><a name="c1251335194" href="/motemen/20090401#c1251335194">2009/08/27 10:06</a></span>
+        <span class="commentbody"><br>とりま一回３ 万って事で約束してたんだけど、<br>色々オモチャ使ったりビデオ撮ってあげたりしたら<br><br>１ ０ 万 貰 え た 件 ｗｗｗｗｗｗｗｗｗｗ<br><br>やりたい放題するほど報 酬増えるとかマジキチｗｗｗｗｗｗ<br><br>http://koro.chuebrarin.com/DgDrVjC/</span>
+
+      </p>
+    
+      <p>
+                <a name="c109469712"></a><span class="commentator">
+          <a href="/secondlife/" class="hatena-id-icon"><img src="http://www.hatena.ne.jp/users/se/secondlife/profile_s.gif" class="hatena-id-icon" alt="secondlife" title="secondlife" height="16" width="16">secondlife</a>
+          
+        </span>
+        <span class="timestamp"><a name="c1251364625" href="/motemen/20090401/1238593149#c1251364625">2009/08/27 18:17</a></span>
+        <span class="commentbody">マジｗｗｗ</span>
+
+      </p>
+    
+      <p>
+                <a name="c109494751"></a><span class="commentator">
+          <img src="http://www.hatena.ne.jp/images/guest_icon.gif" class="hatena-id-icon" alt="ほしいおおおおおお" title="ほしいおおおおおお" height="16" width="16">ほしいおおおおおお
+          
+        </span>
+        <span class="timestamp"><a name="c1251442299" href="/motemen/20090401#c1251442299">2009/08/28 15:51</a></span>
+        <span class="commentbody">働かざるものヤルべし！！！ほんと働いたら負けだわ(´Д｀；）<br>オレ真面目に会社員やってたけど、今はその頃より月の稼ぎ３倍だよ？<br>初めてヤった時は４万だけだったけど、今じゃ平均一回７万だかんなｗｗｗ<br>もうアフォらしくて会社員ヤメたしｗｗｗｗｗ　毎日ネトゲ最高ｗｗｗｗ<br><br>http://netoge.bolar.net/caAaQM2/</span>
+
+      </p>
+    
+      <p>
+                <a name="c109494822"></a><span class="commentator">
+          <a href="/motemen/" class="hatena-id-icon"><img src="http://www.hatena.ne.jp/users/mo/motemen/profile_s.gif" class="hatena-id-icon" alt="motemen" title="motemen" height="16" width="16">motemen</a>
+          
+        </span>
+        <span class="timestamp"><a name="c1251442504" href="/motemen/20090401#c1251442504">2009/08/28 15:55</a></span>
+        <span class="commentbody">コメント欄で遊ぶなｗｗｗｗｗｗ</span>
+
+      </p>
+    
+      <p>
+                <a name="c109539561"></a><span class="commentator">
+          <a href="/naoya/" class="hatena-id-icon"><img src="http://www.hatena.ne.jp/users/na/naoya/profile_s.gif" class="hatena-id-icon" alt="naoya" title="naoya" height="16" width="16">naoya</a>
+          
+        </span>
+        <span class="timestamp"><a name="c1251685680" href="/motemen/20090401#c1251685680">2009/08/31 11:28</a></span>
+        <span class="commentbody">m9（＾Д＾）プギャー</span>
+
+      </p>
+    
+      <p>
+                <a name="c109832002"></a><span class="commentator">
+          <img src="http://www.hatena.ne.jp/images/guest_icon.gif" class="hatena-id-icon" alt="セックス" title="セックス" height="16" width="16">セックス
+          <a href="http://www.drugwarflipside.com/" rel="nofollow"><img src="/images/icon-userurl.gif" style="vertical-align:middle;border:none;" class="userurl"></a>
+        </span>
+        <span class="timestamp"><a name="c1254032135" href="/motemen/20090401#c1254032135">2009/09/27 15:15</a></span>
+        <span class="commentbody">大人の集いに興味がありますか</span>
+
+      </p>
+    
+      <p>
+                <a name="c109884833"></a><span class="commentator">
+          <img src="http://www.hatena.ne.jp/images/guest_icon.gif" class="hatena-id-icon" alt="レイジ" title="レイジ" height="16" width="16">レイジ
+          <a href="http://ka-sex.aet7osdfyik.com/" rel="nofollow"><img src="/images/icon-userurl.gif" style="vertical-align:middle;border:none;" class="userurl"></a>
+        </span>
+        <span class="timestamp"><a name="c1254560859" href="/motemen/20090401#c1254560859">2009/10/03 18:07</a></span>
+        <span class="commentbody">キタ━━━(゜∀゜)━━━!!!</span>
+
+      </p>
+    
+      <p>
+                <a name="c109892753"></a><span class="commentator">
+          <a href="/oquno/" class="hatena-id-icon"><img src="http://www.hatena.ne.jp/users/oq/oquno/profile_s.gif" class="hatena-id-icon" alt="oquno" title="oquno" height="16" width="16">oquno</a>
+          
+        </span>
+        <span class="timestamp"><a name="c1254649050" href="/motemen/20090401#c1254649050">2009/10/04 18:37</a></span>
+        <span class="commentbody">１ ０ 万 ください！！</span>
+
+      </p>
+    
+      <p>
+                <a name="c109925358"></a><span class="commentator">
+          <img src="http://www.hatena.ne.jp/images/guest_icon.gif" class="hatena-id-icon" alt="えみ" title="えみ" height="16" width="16">えみ
+          <a href="http://k-tuma.purecafe.info/" rel="nofollow"><img src="/images/icon-userurl.gif" style="vertical-align:middle;border:none;" class="userurl"></a>
+        </span>
+        <span class="timestamp"><a name="c1254973174" href="/motemen/20090401#c1254973174">2009/10/08 12:39</a></span>
+        <span class="commentbody">ガッツです★</span>
+
+      </p>
+    
+  </div>
+
+
+
+    
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+<div class="day">
+<h2><a href="http://d.hatena.ne.jp/motemen/20090331"><span class="date">2009-03-31</span></a></h2>
+
+<div class="body">
+
+<!-- google_ad_section_start -->
+
+		<div class="section">
+			<h3 class="title"><a href="/motemen/20090331/1238502422" name="1238502422">カラースターが出ましたね</a></h3>			<p class="sectionheader"> <span class="timestamp">21:27</span> |  <a href="http://b.hatena.ne.jp/entry/http://d.hatena.ne.jp/motemen/20090331/1238502422" class="bookmark-icon"><img src="http://d.hatena.ne.jp/images/b_entry_wh.gif" border="0" title="カラースターが出ましたね - ミラクル☆モテメンの脱オタ日記 を含むブックマーク" alt="カラースターが出ましたね - ミラクル☆モテメンの脱オタ日記 を含むブックマーク" width="16" height="12" class="icon"></a> <a href="http://b.hatena.ne.jp/entry/http://d.hatena.ne.jp/motemen/20090331/1238502422" class="bookmark-count"><img src="http://b.hatena.ne.jp/entry/image/http://d.hatena.ne.jp/motemen/20090331/1238502422" title="はてなブックマーク - カラースターが出ましたね - ミラクル☆モテメンの脱オタ日記 " alt="はてなブックマーク - カラースターが出ましたね - ミラクル☆モテメンの脱オタ日記 "></a> <img class="hatena-bcomment-view-icon" src="http://r.hatena.ne.jp/images/popup.gif" onclick="javascript:BookmarkCommentViewer.iconImageClickHandler(this, 'http://d.hatena.ne.jp/motemen/20090331/1238502422', event);" title="カラースターが出ましたね - ミラクル☆モテメンの脱オタ日記 のブックマークコメント" alt="カラースターが出ましたね - ミラクル☆モテメンの脱オタ日記 のブックマークコメント" width="13" height="13"></p>
+			<p><a href="https://www.hatena.ne.jp/shop/star">カラースターを手に入れよう - はてな</a></p>
+			<p>せっかく色違いの☆が付けられるようになったので、スター画像を変えてみました。</p>
+		</div>
+
+<!-- google_ad_section_end -->
+</div>
+
+
+
+  <div class="comment">
+    <div class="caption">
+      <a name="c" href="/motemen/comment?date=20090331#c">コメントを書く</a>
+      
+    </div>
+
+    
+
+
+    
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+<div class="day">
+<h2><a href="http://d.hatena.ne.jp/motemen/20090224"><span class="date">2009-02-24</span></a></h2>
+
+<div class="body">
+
+<!-- google_ad_section_start -->
+
+		<div class="section">
+			<h3 class="title"><a href="/motemen/20090224/1235486053" name="1235486053">アルゴリズムイントロダクション輪講も2巻に入ります</a></h3>			<p class="sectionheader"> <span class="timestamp">23:34</span> |  <a href="http://b.hatena.ne.jp/entry/http://d.hatena.ne.jp/motemen/20090224/1235486053" class="bookmark-icon"><img src="http://d.hatena.ne.jp/images/b_entry_wh.gif" border="0" title="アルゴリズムイントロダクション輪講も2巻に入ります - ミラクル☆モテメンの脱オタ日記 を含むブックマーク" alt="アルゴリズムイントロダクション輪講も2巻に入ります - ミラクル☆モテメンの脱オタ日記 を含むブックマーク" width="16" height="12" class="icon"></a> <a href="http://b.hatena.ne.jp/entry/http://d.hatena.ne.jp/motemen/20090224/1235486053" class="bookmark-count"><img src="http://b.hatena.ne.jp/entry/image/http://d.hatena.ne.jp/motemen/20090224/1235486053" title="はてなブックマーク - アルゴリズムイントロダクション輪講も2巻に入ります - ミラクル☆モテメンの脱オタ日記 " alt="はてなブックマーク - アルゴリズムイントロダクション輪講も2巻に入ります - ミラクル☆モテメンの脱オタ日記 "></a> <img class="hatena-bcomment-view-icon" src="http://r.hatena.ne.jp/images/popup.gif" onclick="javascript:BookmarkCommentViewer.iconImageClickHandler(this, 'http://d.hatena.ne.jp/motemen/20090224/1235486053', event);" title="アルゴリズムイントロダクション輪講も2巻に入ります - ミラクル☆モテメンの脱オタ日記 のブックマークコメント" alt="アルゴリズムイントロダクション輪講も2巻に入ります - ミラクル☆モテメンの脱オタ日記 のブックマークコメント" width="13" height="13"></p>
+			<p>夏ごろから<a class="keyword" href="http://d.hatena.ne.jp/keyword/%a4%cf%a4%c6%a4%ca">はてな</a><a class="keyword" href="http://d.hatena.ne.jp/keyword/%b5%fe%c5%d4">京都</a>オフィスで始めた<a class="keyword" href="http://d.hatena.ne.jp/keyword/%a5%a2%a5%eb%a5%b4%a5%ea%a5%ba%a5%e0%a5%a4%a5%f3%a5%c8%a5%ed%a5%c0%a5%af%a5%b7%a5%e7%a5%f3">アルゴリズムイントロダクション</a><a class="keyword" href="http://d.hatena.ne.jp/keyword/%ce%d8%b9%d6">輪講</a>ですが、やってました。ついに1巻を終え、次回からは2巻「<a class="keyword" href="http://d.hatena.ne.jp/keyword/%a5%a2%a5%eb%a5%b4%a5%ea%a5%ba%a5%e0">アルゴリズム</a>の設計と解析手法」に入ります。</p>
+			<p>1巻はわりと<a class="keyword" href="http://d.hatena.ne.jp/keyword/%bf%f4%b3%d8">数学</a>的・基礎的なところを勉強していく感じで、参加している社員も<a class="keyword" href="http://d.hatena.ne.jp/keyword/%a5%b0%a5%ed%a5%c3%a5%ad%a1%bc">グロッキー</a>になっていたようですが、2巻は各章でひとつひとつのトピックに焦点を当てておりどの章も面白そうです。最初のトピックは「<a class="keyword" href="http://d.hatena.ne.jp/keyword/%c6%b0%c5%aa%b7%d7%b2%e8%cb%a1">動的計画法</a>」です。かっけー名前ですね。</p>
+			<div class="hatena-asin-detail">
+                                <a href="http://d.hatena.ne.jp/asin/4764903350/tokyoenvious-22"><img src="http://ecx.images-amazon.com/images/I/41ApbsUpEYL._SL160_.jpg" class="hatena-asin-detail-image" alt="アルゴリズムの設計と解析手法 (アルゴリズムイントロダクション)" title="アルゴリズムの設計と解析手法 (アルゴリズムイントロダクション)"></a>
+                                <div class="hatena-asin-detail-info">
+                                        <p class="hatena-asin-detail-title"><a href="http://d.hatena.ne.jp/asin/4764903350/tokyoenvious-22">アルゴリズムの設計と解析手法 (アルゴリズムイントロダクション)</a></p>
+                                        <ul>
+                                                <li><span class="hatena-asin-detail-label">作者:</span> <a href="http://d.hatena.ne.jp/keyword/T%2e%a5%b3%a5%eb%a5%e1%a5%f3" class="keyword">T.コルメン</a>, <a href="http://d.hatena.ne.jp/keyword/R%2e%a5%ea%a5%d9%a5%b9%a5%c8" class="keyword">R.リベスト</a>, <a href="http://d.hatena.ne.jp/keyword/C%2e%a5%b7%a5%e5%a5%bf%a5%a4%a5%f3" class="keyword">C.シュタイン</a>, <a href="http://d.hatena.ne.jp/keyword/C%2e%a5%e9%a5%a4%a5%b6%a1%bc%a5%bd%a5%f3" class="keyword">C.ライザーソン</a>, <a href="http://d.hatena.ne.jp/keyword/Thomas%20H%2e%20Cormen" class="keyword">Thomas H. Cormen</a>, <a href="http://d.hatena.ne.jp/keyword/Clifford%20Stein" class="keyword">Clifford Stein</a>, <a href="http://d.hatena.ne.jp/keyword/Ronald%20L%2e%20Rivest" class="keyword">Ronald L. Rivest</a>, <a href="http://d.hatena.ne.jp/keyword/Charles%20E%2e%20Leiserson" class="keyword">Charles E. Leiserson</a>, <a href="http://d.hatena.ne.jp/keyword/%c0%f5%cc%ee%c5%af%c9%d7" class="keyword">浅野哲夫</a>, <a href="http://d.hatena.ne.jp/keyword/%b4%e4%cc%ee%cf%c2%c0%b8" class="keyword">岩野和生</a>, <a href="http://d.hatena.ne.jp/keyword/%c7%df%c8%f8%c7%ee%bb%ca" class="keyword">梅尾博司</a>, <a href="http://d.hatena.ne.jp/keyword/%bb%b3%b2%bc%b2%ed%bb%cb" class="keyword">山下雅史</a>, <a href="http://d.hatena.ne.jp/keyword/%cf%c2%c5%c4%b9%ac%b0%ec" class="keyword">和田幸一</a></li>
+                                                <li><span class="hatena-asin-detail-label">出版社/メーカー:</span> <a href="http://d.hatena.ne.jp/keyword/%b6%e1%c2%e5%b2%ca%b3%d8%bc%d2" class="keyword">近代科学社</a></li>
+                                                <li><span class="hatena-asin-detail-label">発売日:</span> 2007/03</li>
+                                                <li><span class="hatena-asin-detail-label">メディア:</span> 単行本</li>
+                                                       <li><a href="http://www.amazon.co.jp/exec/obidos/ASIN/4764903350/tokyoenvious-22/" target="_blank">Amazon.co.jpで詳細を見る</a></li>
+                                        </ul>
+
+
+                                </div>
+                                <div class="hatena-asin-detail-foot"></div>
+                        </div>
+
+			<p>なお、2巻から参加したいという方も募集していますので、下記のグループから参加して頂ければと思います。</p>
+			<p><a class="keyword" href="http://d.hatena.ne.jp/keyword/%ce%d8%b9%d6">輪講</a>は基本的に、隔週月曜日に開催しています。次回は 3/2 (月) の 19:30 から<a href="http://www.hatena.ne.jp/company/location">はてな京都オフィス</a>にて行います。</p>
+			<p><a href="http://groups.google.co.jp/group/ria-kyoto/">http://groups.google.co.jp/group/ria-kyoto/</a></p>
+		</div>
+
+<!-- google_ad_section_end -->
+</div>
+
+
+
+  <div class="comment">
+    <div class="caption">
+      <a name="c" href="/motemen/comment?date=20090224#c">コメントを書く</a>
+      
+    </div>
+
+    
+  <div class="commentshort">
+    
+      <p>
+                <a name="c103967884"></a><span class="commentator">
+          <img src="http://www.hatena.ne.jp/images/guest_icon.gif" class="hatena-id-icon" alt="けんと" title="けんと" height="16" width="16">けんと
+          
+        </span>
+        <span class="timestamp"><a name="c1237805655" href="/motemen/20090224#c1237805655">2009/03/23 19:54</a></span>
+        <span class="commentbody">はじめまして。<br><br>（質問、、と言う事ではないので、お答えいただけなくても仕方ないのですが、、。）<br><br>NHKの教育番組で『ピタゴラスイッチ』って、ご存じですか？<br><br>あれで、『アルゴリズム体操』と言うのをやってたのですが、見る人が見れば、「ああ、アルゴリズムだねぇ」と、思われるのかとフト思いまして。<br><br>お忙しいところ（こんな質問で）誠に恐縮ですが、ご返答頂ければ幸いです。</span>
+
+      </p>
+    
+  </div>
+
+
+
+    
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+<div class="day">
+<h2><a href="http://d.hatena.ne.jp/motemen/20081119"><span class="date">2008-11-19</span></a></h2>
+
+<div class="body">
+
+<!-- google_ad_section_start -->
+
+		<div class="section">
+			<h3 class="title"><a href="/motemen/20081119/1227105385" name="1227105385">CLANNAD が人生だったので DVD を買った</a></h3>			<p class="sectionheader"> <span class="timestamp">23:36</span> |  <a href="http://b.hatena.ne.jp/entry/http://d.hatena.ne.jp/motemen/20081119/1227105385" class="bookmark-icon"><img src="http://d.hatena.ne.jp/images/b_entry_wh.gif" border="0" title="CLANNAD が人生だったので DVD を買った - ミラクル☆モテメンの脱オタ日記 を含むブックマーク" alt="CLANNAD が人生だったので DVD を買った - ミラクル☆モテメンの脱オタ日記 を含むブックマーク" width="16" height="12" class="icon"></a> <a href="http://b.hatena.ne.jp/entry/http://d.hatena.ne.jp/motemen/20081119/1227105385" class="bookmark-count"><img src="http://b.hatena.ne.jp/entry/image/http://d.hatena.ne.jp/motemen/20081119/1227105385" title="はてなブックマーク - CLANNAD が人生だったので DVD を買った - ミラクル☆モテメンの脱オタ日記 " alt="はてなブックマーク - CLANNAD が人生だったので DVD を買った - ミラクル☆モテメンの脱オタ日記 "></a> <img class="hatena-bcomment-view-icon" src="http://r.hatena.ne.jp/images/popup.gif" onclick="javascript:BookmarkCommentViewer.iconImageClickHandler(this, 'http://d.hatena.ne.jp/motemen/20081119/1227105385', event);" title="CLANNAD が人生だったので DVD を買った - ミラクル☆モテメンの脱オタ日記 のブックマークコメント" alt="CLANNAD が人生だったので DVD を買った - ミラクル☆モテメンの脱オタ日記 のブックマークコメント" width="13" height="13"></p>
+			<h4> 2ヶ月前</h4>
+<div class="ascii-art">
+　 　　　　 　　　＿＿＿_<br>
+　　　　　　　 ／_ノ 　ヽ､_＼<br>
+　ﾐ　ﾐ　ﾐ　　oﾟ(（●）) (（●）)ﾟo　　　　　　ﾐ　ﾐ　ﾐ　　「CLANNADは人生」だっておｗｗｗ<br>
+/⌒)⌒)⌒. ::::::⌒（__人__）⌒:::＼　　　/⌒)⌒)⌒)　　　　エロゲオタ乙ｗｗｗｗｗ<br>
+|　/　/　/　　　　　|r┬-|　　　　|　(⌒)/　/ / /／<br>
+|　:::::::::::(⌒)　　　　|　|　 |　　 ／ 　ゝ　　:::::::::::/<br>
+|　　　　　ノ　　 　　|　|　 |　 　＼　　/　　）　　/<br>
+ヽ　　　　/　　　　　`ー&#39;´ 　 　 　ヽ /　　　　／<br>
+　|　　　　|　　 l||l　从人 l||l 　　　　 l||l 从人 l||l<br>
+　ヽ　　　 -一&#39;&#39;&#39;&#39;&#39;&#39;&quot;~~｀`&#39;ー--､　　　-一&#39;&#39;&#39;&#39;&#39;&#39;&#39;ー-､<br>
+　　ヽ ＿＿＿＿(⌒)(⌒)⌒)　)　　(⌒＿(⌒)⌒)⌒)) <br>
+</div>
+
+			<br>
+
+			<br>
+
+			<h4> 1ヶ月前</h4>
+			<div class="hatena-asin-detail">
+                                <a href="http://d.hatena.ne.jp/asin/B000W7UVZU/tokyoenvious-22"><img src="http://ecx.images-amazon.com/images/I/514vY3hWDoL._SL160_.jpg" class="hatena-asin-detail-image" alt="CLANNAD(クラナド)" title="CLANNAD(クラナド)"></a>
+                                <div class="hatena-asin-detail-info">
+                                        <p class="hatena-asin-detail-title"><a href="http://d.hatena.ne.jp/asin/B000W7UVZU/tokyoenvious-22">CLANNAD(クラナド)</a></p>
+                                        <ul>
+                                                <li><span class="hatena-asin-detail-label">出版社/メーカー:</span> <a href="http://d.hatena.ne.jp/keyword/%a5%d7%a5%ed%a5%c8%a5%bf%a5%a4%a5%d7" class="keyword">プロトタイプ</a></li>
+                                                <li><span class="hatena-asin-detail-label">発売日:</span> 2008/08/28</li>
+                                                <li><span class="hatena-asin-detail-label">メディア:</span> Video Game</li>
+                                                       <li><a href="http://www.amazon.co.jp/exec/obidos/ASIN/B000W7UVZU/tokyoenvious-22/" target="_blank">Amazon.co.jpで詳細を見る</a></li>
+                                        </ul>
+
+
+                                </div>
+                                <div class="hatena-asin-detail-foot"></div>
+                        </div>
+
+			<br>
+
+			<br>
+
+			<h4> 現在</h4>
+<div class="ascii-art">
+<br>
+　　 　　　／￣￣￣＼<br>
+　　　　／　─　 　 ─ ＼　　　　クラナドは人生<br>
+　　 ／　 （●） 　（●）　 ＼　　ゼロの使い魔のほうがよっぽどエロゲ<br>
+　　 |　　　　（__人__）　　　　|　　<br>
+　　 ＼　　　 ｀ ⌒´　　　　／<br>
+　　 ／ 　 　 　　　　 　 　 ＼<br>
+</div>
+
+			<br>
+
+			<hr>
+			<br>
+
+			<p>Amazon にまだ初回限定版売ってた上に 1巻が60%オフだったので買いました。8巻だけなかったので売ってるとこあったら誰か教えて下さい。</p>
+			<div class="hatena-asin-detail">
+                                <a href="http://d.hatena.ne.jp/asin/B000WQ6IXK/tokyoenvious-22"><img src="http://ecx.images-amazon.com/images/I/51cxhtMkB1L._SL160_.jpg" class="hatena-asin-detail-image" alt="CLANNAD 1 (初回限定版) [DVD]" title="CLANNAD 1 (初回限定版) [DVD]"></a>
+                                <div class="hatena-asin-detail-info">
+                                        <p class="hatena-asin-detail-title"><a href="http://d.hatena.ne.jp/asin/B000WQ6IXK/tokyoenvious-22">CLANNAD 1 (初回限定版) [DVD]</a></p>
+                                        <ul>
+                                                <li><span class="hatena-asin-detail-label">出版社/メーカー:</span> <a href="http://d.hatena.ne.jp/keyword/%a5%dd%a5%cb%a1%bc%a5%ad%a5%e3%a5%cb%a5%aa%a5%f3" class="keyword">ポニーキャニオン</a></li>
+                                                <li><span class="hatena-asin-detail-label">発売日:</span> 2007/12/19</li>
+                                                <li><span class="hatena-asin-detail-label">メディア:</span> DVD</li>
+                                                       <li><a href="http://www.amazon.co.jp/exec/obidos/ASIN/B000WQ6IXK/tokyoenvious-22/" target="_blank">Amazon.co.jpで詳細を見る</a></li>
+                                        </ul>
+
+
+                                </div>
+                                <div class="hatena-asin-detail-foot"></div>
+                        </div>
+
+			<div class="hatena-asin-detail">
+                                <a href="http://d.hatena.ne.jp/asin/B000WQ6IXU/tokyoenvious-22"><img src="http://ecx.images-amazon.com/images/I/51j7O86jNWL._SL160_.jpg" class="hatena-asin-detail-image" alt="CLANNAD 2 (初回限定版) [DVD]" title="CLANNAD 2 (初回限定版) [DVD]"></a>
+                                <div class="hatena-asin-detail-info">
+                                        <p class="hatena-asin-detail-title"><a href="http://d.hatena.ne.jp/asin/B000WQ6IXU/tokyoenvious-22">CLANNAD 2 (初回限定版) [DVD]</a></p>
+                                        <ul>
+                                                <li><span class="hatena-asin-detail-label">出版社/メーカー:</span> <a href="http://d.hatena.ne.jp/keyword/%a5%dd%a5%cb%a1%bc%a5%ad%a5%e3%a5%cb%a5%aa%a5%f3" class="keyword">ポニーキャニオン</a></li>
+                                                <li><span class="hatena-asin-detail-label">発売日:</span> 2008/01/16</li>
+                                                <li><span class="hatena-asin-detail-label">メディア:</span> DVD</li>
+                                                       <li><a href="http://www.amazon.co.jp/exec/obidos/ASIN/B000WQ6IXU/tokyoenvious-22/" target="_blank">Amazon.co.jpで詳細を見る</a></li>
+                                        </ul>
+
+
+                                </div>
+                                <div class="hatena-asin-detail-foot"></div>
+                        </div>
+
+			<div class="hatena-asin-detail">
+                                <a href="http://d.hatena.ne.jp/asin/B000WQ6IY4/tokyoenvious-22"><img src="http://ecx.images-amazon.com/images/I/51JM4AsAxCL._SL160_.jpg" class="hatena-asin-detail-image" alt="CLANNAD 3 (初回限定版) [DVD]" title="CLANNAD 3 (初回限定版) [DVD]"></a>
+                                <div class="hatena-asin-detail-info">
+                                        <p class="hatena-asin-detail-title"><a href="http://d.hatena.ne.jp/asin/B000WQ6IY4/tokyoenvious-22">CLANNAD 3 (初回限定版) [DVD]</a></p>
+                                        <ul>
+                                                <li><span class="hatena-asin-detail-label">出版社/メーカー:</span> <a href="http://d.hatena.ne.jp/keyword/%a5%dd%a5%cb%a1%bc%a5%ad%a5%e3%a5%cb%a5%aa%a5%f3" class="keyword">ポニーキャニオン</a></li>
+                                                <li><span class="hatena-asin-detail-label">発売日:</span> 2008/02/20</li>
+                                                <li><span class="hatena-asin-detail-label">メディア:</span> DVD</li>
+                                                       <li><a href="http://www.amazon.co.jp/exec/obidos/ASIN/B000WQ6IY4/tokyoenvious-22/" target="_blank">Amazon.co.jpで詳細を見る</a></li>
+                                        </ul>
+
+
+                                </div>
+                                <div class="hatena-asin-detail-foot"></div>
+                        </div>
+
+			<div class="hatena-asin-detail">
+                                <a href="http://d.hatena.ne.jp/asin/B000WQ6IYE/tokyoenvious-22"><img src="http://ecx.images-amazon.com/images/I/51ZD-xArD8L._SL160_.jpg" class="hatena-asin-detail-image" alt="CLANNAD 4 (初回限定版) [DVD]" title="CLANNAD 4 (初回限定版) [DVD]"></a>
+                                <div class="hatena-asin-detail-info">
+                                        <p class="hatena-asin-detail-title"><a href="http://d.hatena.ne.jp/asin/B000WQ6IYE/tokyoenvious-22">CLANNAD 4 (初回限定版) [DVD]</a></p>
+                                        <ul>
+                                                <li><span class="hatena-asin-detail-label">出版社/メーカー:</span> <a href="http://d.hatena.ne.jp/keyword/%a5%dd%a5%cb%a1%bc%a5%ad%a5%e3%a5%cb%a5%aa%a5%f3" class="keyword">ポニーキャニオン</a></li>
+                                                <li><span class="hatena-asin-detail-label">発売日:</span> 2008/03/19</li>
+                                                <li><span class="hatena-asin-detail-label">メディア:</span> DVD</li>
+                                                       <li><a href="http://www.amazon.co.jp/exec/obidos/ASIN/B000WQ6IYE/tokyoenvious-22/" target="_blank">Amazon.co.jpで詳細を見る</a></li>
+                                        </ul>
+
+
+                                </div>
+                                <div class="hatena-asin-detail-foot"></div>
+                        </div>
+
+			<div class="hatena-asin-detail">
+                                <a href="http://d.hatena.ne.jp/asin/B000WQ6IYO/tokyoenvious-22"><img src="http://ecx.images-amazon.com/images/I/51SPex6GaKL._SL160_.jpg" class="hatena-asin-detail-image" alt="CLANNAD 5 (初回限定版) [DVD]" title="CLANNAD 5 (初回限定版) [DVD]"></a>
+                                <div class="hatena-asin-detail-info">
+                                        <p class="hatena-asin-detail-title"><a href="http://d.hatena.ne.jp/asin/B000WQ6IYO/tokyoenvious-22">CLANNAD 5 (初回限定版) [DVD]</a></p>
+                                        <ul>
+                                                <li><span class="hatena-asin-detail-label">出版社/メーカー:</span> <a href="http://d.hatena.ne.jp/keyword/%a5%dd%a5%cb%a1%bc%a5%ad%a5%e3%a5%cb%a5%aa%a5%f3" class="keyword">ポニーキャニオン</a></li>
+                                                <li><span class="hatena-asin-detail-label">発売日:</span> 2008/04/16</li>
+                                                <li><span class="hatena-asin-detail-label">メディア:</span> DVD</li>
+                                                       <li><a href="http://www.amazon.co.jp/exec/obidos/ASIN/B000WQ6IYO/tokyoenvious-22/" target="_blank">Amazon.co.jpで詳細を見る</a></li>
+                                        </ul>
+
+
+                                </div>
+                                <div class="hatena-asin-detail-foot"></div>
+                        </div>
+
+			<div class="hatena-asin-detail">
+                                <a href="http://d.hatena.ne.jp/asin/B000WQ6IYY/tokyoenvious-22"><img src="http://ecx.images-amazon.com/images/I/518X7Iv4RAL._SL160_.jpg" class="hatena-asin-detail-image" alt="CLANNAD 6 (初回限定版) [DVD]" title="CLANNAD 6 (初回限定版) [DVD]"></a>
+                                <div class="hatena-asin-detail-info">
+                                        <p class="hatena-asin-detail-title"><a href="http://d.hatena.ne.jp/asin/B000WQ6IYY/tokyoenvious-22">CLANNAD 6 (初回限定版) [DVD]</a></p>
+                                        <ul>
+                                                <li><span class="hatena-asin-detail-label">出版社/メーカー:</span> <a href="http://d.hatena.ne.jp/keyword/%a5%dd%a5%cb%a1%bc%a5%ad%a5%e3%a5%cb%a5%aa%a5%f3" class="keyword">ポニーキャニオン</a></li>
+                                                <li><span class="hatena-asin-detail-label">発売日:</span> 2008/05/21</li>
+                                                <li><span class="hatena-asin-detail-label">メディア:</span> DVD</li>
+                                                       <li><a href="http://www.amazon.co.jp/exec/obidos/ASIN/B000WQ6IYY/tokyoenvious-22/" target="_blank">Amazon.co.jpで詳細を見る</a></li>
+                                        </ul>
+
+
+                                </div>
+                                <div class="hatena-asin-detail-foot"></div>
+                        </div>
+
+			<div class="hatena-asin-detail">
+                                <a href="http://d.hatena.ne.jp/asin/B000WQ6IZ8/tokyoenvious-22"><img src="http://ecx.images-amazon.com/images/I/51jpPQuwOgL._SL160_.jpg" class="hatena-asin-detail-image" alt="CLANNAD 7 (初回限定版) [DVD]" title="CLANNAD 7 (初回限定版) [DVD]"></a>
+                                <div class="hatena-asin-detail-info">
+                                        <p class="hatena-asin-detail-title"><a href="http://d.hatena.ne.jp/asin/B000WQ6IZ8/tokyoenvious-22">CLANNAD 7 (初回限定版) [DVD]</a></p>
+                                        <ul>
+                                                <li><span class="hatena-asin-detail-label">出版社/メーカー:</span> <a href="http://d.hatena.ne.jp/keyword/%a5%dd%a5%cb%a1%bc%a5%ad%a5%e3%a5%cb%a5%aa%a5%f3" class="keyword">ポニーキャニオン</a></li>
+                                                <li><span class="hatena-asin-detail-label">発売日:</span> 2008/06/18</li>
+                                                <li><span class="hatena-asin-detail-label">メディア:</span> DVD</li>
+                                                       <li><a href="http://www.amazon.co.jp/exec/obidos/ASIN/B000WQ6IZ8/tokyoenvious-22/" target="_blank">Amazon.co.jpで詳細を見る</a></li>
+                                        </ul>
+
+
+                                </div>
+                                <div class="hatena-asin-detail-foot"></div>
+                        </div>
+		</div>
+
+		<div class="section">
+			<h3 class="title"><a href="/motemen/20081119/1227101002" name="1227101002">
+iPhone フリック入力のテスト</a></h3>			<p class="sectionheader"> <span class="timestamp">22:23</span> |  <a href="http://b.hatena.ne.jp/entry/http://d.hatena.ne.jp/motemen/20081119/1227101002" class="bookmark-icon"><img src="http://d.hatena.ne.jp/images/b_entry_wh.gif" border="0" title="iPhone フリック入力のテスト - ミラクル☆モテメンの脱オタ日記 を含むブックマーク" alt="iPhone フリック入力のテスト - ミラクル☆モテメンの脱オタ日記 を含むブックマーク" width="16" height="12" class="icon"></a> <a href="http://b.hatena.ne.jp/entry/http://d.hatena.ne.jp/motemen/20081119/1227101002" class="bookmark-count"><img src="http://b.hatena.ne.jp/entry/image/http://d.hatena.ne.jp/motemen/20081119/1227101002" title="はてなブックマーク - iPhone フリック入力のテスト - ミラクル☆モテメンの脱オタ日記 " alt="はてなブックマーク - iPhone フリック入力のテスト - ミラクル☆モテメンの脱オタ日記 "></a> <img class="hatena-bcomment-view-icon" src="http://r.hatena.ne.jp/images/popup.gif" onclick="javascript:BookmarkCommentViewer.iconImageClickHandler(this, 'http://d.hatena.ne.jp/motemen/20081119/1227101002', event);" title="iPhone フリック入力のテスト - ミラクル☆モテメンの脱オタ日記 のブックマークコメント" alt="iPhone フリック入力のテスト - ミラクル☆モテメンの脱オタ日記 のブックマークコメント" width="13" height="13"></p>
+			<p>おもしろ</p>
+			<p>うんこ</p>
+			<p>うんここ</p>
+			<p>あわんちほつふ</p>
+			<p>うよく</p>
+			<p>おんこ</p>
+			<p>うわく</p>
+			<p>うんこ</p>
+			<p>うんこ</p>
+			<p>cf×=〒0…/o</p>
+			<p><a class="keyword" href="http://d.hatena.ne.jp/keyword/%a4%cf%a4%c6%a4%ca">はてな</a></p>
+			<p>うんこ</p>
+			<p>うんこ</p>
+			<p>うんこ</p>
+			<p>うんこ</p>
+			<p>うんこ</p>
+			<p>うんこ</p>
+			<p>おおおおおおおこぬこひむのりにめのんほゆほむけにえしえしわんにむらそくのちふそお</p>
+			<p>オフで即ハメマジキモい</p>
+			<p>うんこうんこうんこ</p>
+			<p>アンチポップ</p>
+			<p>あんちほっぽ</p>
+			<p>あんちぽと</p>
+			<p>あんほ</p>
+			<p>あんて乳</p>
+			<p>超たつわ</p>
+			<p>あんちぽっぼ</p>
+			<p>あんちぼ</p>
+			<p>たわ</p>
+			<p>あんちほっぷ</p>
+			<p>あんちほぷ</p>
+			<p>あんち</p>
+			<p>あんちほた</p>
+			<p>あんあわ</p>
+			<p>あんちふ</p>
+			<p>あわちほた</p>
+			<p>あんちぼ</p>
+			<p>あんちほ</p>
+			<p>あわたぼ</p>
+			<p>あわちほ</p>
+			<p>あんたほ</p>
+			<p>あんちほ</p>
+			<p>あんたほ</p>
+			<p>あ？ちほ</p>
+			<p>あんたあわち</p>
+			<p>あんちぼ</p>
+			<p>あーほ</p>
+			<p>あんちぼ</p>
+			<p>あんちぼ</p>
+			<p>アンチホップ</p>
+			<p>あわあんちぼて</p>
+			<p>あ。</p>
+			<p>あんちぼ</p>
+			<p>あんちぽぶ</p>
+			<p>あわあんちぶ</p>
+			<p>あんちぶ</p>
+			<p>アンチポップ</p>
+			<p>あんちふ</p>
+			<p>あんたポップ</p>
+			<p>あんちぷ</p>
+			<p>あんちふ</p>
+			<p>あんちぽっぼ</p>
+			<p>あんちぶ</p>
+			<p>あんちは</p>
+			<p>あんちほ</p>
+			<p>あんちほ</p>
+			<p>アンチポップ</p>
+		</div>
+
+<!-- google_ad_section_end -->
+</div>
+
+
+
+  <div class="comment">
+    <div class="caption">
+      <a name="c" href="/motemen/comment?date=20081119#c">コメントを書く</a>
+      
+    </div>
+
+    
+
+
+    
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+<div class="day">
+<h2><a href="http://d.hatena.ne.jp/motemen/20080926"><span class="date">2008-09-26</span></a></h2>
+
+<div class="body">
+
+<!-- google_ad_section_start -->
+
+		<div class="section">
+			<h3 class="title"><a href="/motemen/20080926/1222434809" name="1222434809">最近読んだ本</a></h3>			<p class="sectionheader"><span class="sectioncategory"><a href="/motemen/searchdiary?word=%2a%5bBook%5d" class="sectioncategory">Book</a></span> |  <span class="timestamp">22:13</span> |  <a href="http://b.hatena.ne.jp/entry/http://d.hatena.ne.jp/motemen/20080926/1222434809" class="bookmark-icon"><img src="http://d.hatena.ne.jp/images/b_entry_wh.gif" border="0" title="最近読んだ本 - ミラクル☆モテメンの脱オタ日記 を含むブックマーク" alt="最近読んだ本 - ミラクル☆モテメンの脱オタ日記 を含むブックマーク" width="16" height="12" class="icon"></a> <a href="http://b.hatena.ne.jp/entry/http://d.hatena.ne.jp/motemen/20080926/1222434809" class="bookmark-count"><img src="http://b.hatena.ne.jp/entry/image/http://d.hatena.ne.jp/motemen/20080926/1222434809" title="はてなブックマーク - 最近読んだ本 - ミラクル☆モテメンの脱オタ日記 " alt="はてなブックマーク - 最近読んだ本 - ミラクル☆モテメンの脱オタ日記 "></a> <img class="hatena-bcomment-view-icon" src="http://r.hatena.ne.jp/images/popup.gif" onclick="javascript:BookmarkCommentViewer.iconImageClickHandler(this, 'http://d.hatena.ne.jp/motemen/20080926/1222434809', event);" title="最近読んだ本 - ミラクル☆モテメンの脱オタ日記 のブックマークコメント" alt="最近読んだ本 - ミラクル☆モテメンの脱オタ日記 のブックマークコメント" width="13" height="13"></p>
+			<p>さいきん<a class="keyword" href="http://d.hatena.ne.jp/keyword/%ce%d8%b9%d6">輪講</a>の話ばっかだったので流します。最近読んだ本を公開しておくと <a href="http://d.hatena.ne.jp/onishi/">id:onishi</a> とのコミュニケーションが円滑になるので。</p>
+			<h4> リフトウォー・サーガ</h4>
+			<div class="hatena-asin-detail">
+                                <a href="http://d.hatena.ne.jp/asin/4150204489/tokyoenvious-22"><img src="http://ecx.images-amazon.com/images/I/515L3EAsiGL._SL160_.jpg" class="hatena-asin-detail-image" alt="魔術師の帝国 (ハヤカワ文庫 FT フ 2-12 リフトウォー・サーガ 第 1部1)" title="魔術師の帝国 (ハヤカワ文庫 FT フ 2-12 リフトウォー・サーガ 第 1部1)"></a>
+                                <div class="hatena-asin-detail-info">
+                                        <p class="hatena-asin-detail-title"><a href="http://d.hatena.ne.jp/asin/4150204489/tokyoenvious-22">魔術師の帝国 (ハヤカワ文庫 FT フ 2-12 リフトウォー・サーガ 第 1部1)</a></p>
+                                        <ul>
+                                                <li><span class="hatena-asin-detail-label">作者:</span> <a href="http://d.hatena.ne.jp/keyword/%a5%ec%a5%a4%a5%e2%a5%f3%a5%c9%20E%2e%a5%d5%a5%a3%a1%bc%a5%b9%a5%c8" class="keyword">レイモンド E.フィースト</a>, <a href="http://d.hatena.ne.jp/keyword/%b4%e4%b8%b6%cc%c0%bb%d2" class="keyword">岩原明子</a></li>
+                                                <li><span class="hatena-asin-detail-label">出版社/メーカー:</span> <a href="http://d.hatena.ne.jp/keyword/%c1%e1%c0%ee%bd%f1%cb%bc" class="keyword">早川書房</a></li>
+                                                <li><span class="hatena-asin-detail-label">発売日:</span> 2007/09/07</li>
+                                                <li><span class="hatena-asin-detail-label">メディア:</span> 文庫</li>
+                                                       <li><a href="http://www.amazon.co.jp/exec/obidos/ASIN/4150204489/tokyoenvious-22/" target="_blank">Amazon.co.jpで詳細を見る</a></li>
+                                        </ul>
+
+
+                                </div>
+                                <div class="hatena-asin-detail-foot"></div>
+                        </div>
+
+			<div class="hatena-asin-detail">
+                                <a href="http://d.hatena.ne.jp/asin/4150204519/tokyoenvious-22"><img src="http://ecx.images-amazon.com/images/I/61oZF%2Bq9zqL._SL160_.jpg" class="hatena-asin-detail-image" alt="異世界の虜囚 (ハヤカワ文庫 FT フ 2-13 リフトウォー・サーガ 第 1部2)" title="異世界の虜囚 (ハヤカワ文庫 FT フ 2-13 リフトウォー・サーガ 第 1部2)"></a>
+                                <div class="hatena-asin-detail-info">
+                                        <p class="hatena-asin-detail-title"><a href="http://d.hatena.ne.jp/asin/4150204519/tokyoenvious-22">異世界の虜囚 (ハヤカワ文庫 FT フ 2-13 リフトウォー・サーガ 第 1部2)</a></p>
+                                        <ul>
+                                                <li><span class="hatena-asin-detail-label">作者:</span> <a href="http://d.hatena.ne.jp/keyword/%a5%ec%a5%a4%a5%e2%a5%f3%a5%c9%20E%2e%a5%d5%a5%a3%a1%bc%a5%b9%a5%c8" class="keyword">レイモンド E.フィースト</a>, <a href="http://d.hatena.ne.jp/keyword/%b4%e4%b8%b6%cc%c0%bb%d2" class="keyword">岩原明子</a></li>
+                                                <li><span class="hatena-asin-detail-label">出版社/メーカー:</span> <a href="http://d.hatena.ne.jp/keyword/%c1%e1%c0%ee%bd%f1%cb%bc" class="keyword">早川書房</a></li>
+                                                <li><span class="hatena-asin-detail-label">発売日:</span> 2007/10</li>
+                                                <li><span class="hatena-asin-detail-label">メディア:</span> 文庫</li>
+                                                       <li><a href="http://www.amazon.co.jp/exec/obidos/ASIN/4150204519/tokyoenvious-22/" target="_blank">Amazon.co.jpで詳細を見る</a></li>
+                                        </ul>
+
+
+                                </div>
+                                <div class="hatena-asin-detail-foot"></div>
+                        </div>
+
+			<div class="hatena-asin-detail">
+                                <a href="http://d.hatena.ne.jp/asin/4150204543/tokyoenvious-22"><img src="http://ecx.images-amazon.com/images/I/51bY09SeouL._SL160_.jpg" class="hatena-asin-detail-image" alt="偉大なる者―リフトウォー・サーガ第1部〈3〉 (ハヤカワ文庫FT)" title="偉大なる者―リフトウォー・サーガ第1部〈3〉 (ハヤカワ文庫FT)"></a>
+                                <div class="hatena-asin-detail-info">
+                                        <p class="hatena-asin-detail-title"><a href="http://d.hatena.ne.jp/asin/4150204543/tokyoenvious-22">偉大なる者―リフトウォー・サーガ第1部〈3〉 (ハヤカワ文庫FT)</a></p>
+                                        <ul>
+                                                <li><span class="hatena-asin-detail-label">作者:</span> <a href="http://d.hatena.ne.jp/keyword/%a5%ec%a5%a4%a5%e2%a5%f3%a5%c9%a1%a6E%2e%a5%d5%a5%a3%a1%bc%a5%b9%a5%c8" class="keyword">レイモンド・E.フィースト</a>, <a href="http://d.hatena.ne.jp/keyword/Raymond%20E%2e%20Feist" class="keyword">Raymond E. Feist</a>, <a href="http://d.hatena.ne.jp/keyword/%b4%e4%b8%b6%cc%c0%bb%d2" class="keyword">岩原明子</a></li>
+                                                <li><span class="hatena-asin-detail-label">出版社/メーカー:</span> <a href="http://d.hatena.ne.jp/keyword/%c1%e1%c0%ee%bd%f1%cb%bc" class="keyword">早川書房</a></li>
+                                                <li><span class="hatena-asin-detail-label">発売日:</span> 2007/11</li>
+                                                <li><span class="hatena-asin-detail-label">メディア:</span> 文庫</li>
+                                                       <li><a href="http://www.amazon.co.jp/exec/obidos/ASIN/4150204543/tokyoenvious-22/" target="_blank">Amazon.co.jpで詳細を見る</a></li>
+                                        </ul>
+
+
+                                </div>
+                                <div class="hatena-asin-detail-foot"></div>
+                        </div>
+
+			<div class="hatena-asin-detail">
+                                <a href="http://d.hatena.ne.jp/asin/4150204551/tokyoenvious-22"><img src="http://ecx.images-amazon.com/images/I/61ReagDj6oL._SL160_.jpg" class="hatena-asin-detail-image" alt="シルバーソーン―リフトウォー・サーガ第1部〈4〉 (ハヤカワ文庫FT)" title="シルバーソーン―リフトウォー・サーガ第1部〈4〉 (ハヤカワ文庫FT)"></a>
+                                <div class="hatena-asin-detail-info">
+                                        <p class="hatena-asin-detail-title"><a href="http://d.hatena.ne.jp/asin/4150204551/tokyoenvious-22">シルバーソーン―リフトウォー・サーガ第1部〈4〉 (ハヤカワ文庫FT)</a></p>
+                                        <ul>
+                                                <li><span class="hatena-asin-detail-label">作者:</span> <a href="http://d.hatena.ne.jp/keyword/%a5%ec%a5%a4%a5%e2%a5%f3%a5%c9%a1%a6E%2e%a5%d5%a5%a3%a1%bc%a5%b9%a5%c8" class="keyword">レイモンド・E.フィースト</a>, <a href="http://d.hatena.ne.jp/keyword/Raymond%20E%2e%20Feist" class="keyword">Raymond E. Feist</a>, <a href="http://d.hatena.ne.jp/keyword/%b4%e4%b8%b6%cc%c0%bb%d2" class="keyword">岩原明子</a></li>
+                                                <li><span class="hatena-asin-detail-label">出版社/メーカー:</span> <a href="http://d.hatena.ne.jp/keyword/%c1%e1%c0%ee%bd%f1%cb%bc" class="keyword">早川書房</a></li>
+                                                <li><span class="hatena-asin-detail-label">発売日:</span> 2007/12</li>
+                                                <li><span class="hatena-asin-detail-label">メディア:</span> 文庫</li>
+                                                       <li><a href="http://www.amazon.co.jp/exec/obidos/ASIN/4150204551/tokyoenvious-22/" target="_blank">Amazon.co.jpで詳細を見る</a></li>
+                                        </ul>
+
+
+                                </div>
+                                <div class="hatena-asin-detail-foot"></div>
+                        </div>
+
+			<div class="hatena-asin-detail">
+                                <a href="http://d.hatena.ne.jp/asin/4150204586/tokyoenvious-22"><img src="http://ecx.images-amazon.com/images/I/514n8rJr7mL._SL160_.jpg" class="hatena-asin-detail-image" alt="復活の予言―リフトウォー・サーガ第1部〈5〉 (ハヤカワ文庫FT)" title="復活の予言―リフトウォー・サーガ第1部〈5〉 (ハヤカワ文庫FT)"></a>
+                                <div class="hatena-asin-detail-info">
+                                        <p class="hatena-asin-detail-title"><a href="http://d.hatena.ne.jp/asin/4150204586/tokyoenvious-22">復活の予言―リフトウォー・サーガ第1部〈5〉 (ハヤカワ文庫FT)</a></p>
+                                        <ul>
+                                                <li><span class="hatena-asin-detail-label">作者:</span> <a href="http://d.hatena.ne.jp/keyword/%a5%ec%a5%a4%a5%e2%a5%f3%a5%c9%a1%a6E%2e%a5%d5%a5%a3%a1%bc%a5%b9%a5%c8" class="keyword">レイモンド・E.フィースト</a>, <a href="http://d.hatena.ne.jp/keyword/Raymond%20E%2e%20Feist" class="keyword">Raymond E. Feist</a>, <a href="http://d.hatena.ne.jp/keyword/%b4%e4%b8%b6%cc%c0%bb%d2" class="keyword">岩原明子</a></li>
+                                                <li><span class="hatena-asin-detail-label">出版社/メーカー:</span> <a href="http://d.hatena.ne.jp/keyword/%c1%e1%c0%ee%bd%f1%cb%bc" class="keyword">早川書房</a></li>
+                                                <li><span class="hatena-asin-detail-label">発売日:</span> 2008/01</li>
+                                                <li><span class="hatena-asin-detail-label">メディア:</span> 文庫</li>
+                                                       <li><a href="http://www.amazon.co.jp/exec/obidos/ASIN/4150204586/tokyoenvious-22/" target="_blank">Amazon.co.jpで詳細を見る</a></li>
+                                        </ul>
+
+
+                                </div>
+                                <div class="hatena-asin-detail-foot"></div>
+                        </div>
+
+			<div class="hatena-asin-detail">
+                                <a href="http://d.hatena.ne.jp/asin/4150204624/tokyoenvious-22"><img src="http://ecx.images-amazon.com/images/I/51U%2BYF0b-oL._SL160_.jpg" class="hatena-asin-detail-image" alt="永遠の都―リフトウォー・サーガ第1部〈7〉 (ハヤカワ文庫FT)" title="永遠の都―リフトウォー・サーガ第1部〈7〉 (ハヤカワ文庫FT)"></a>
+                                <div class="hatena-asin-detail-info">
+                                        <p class="hatena-asin-detail-title"><a href="http://d.hatena.ne.jp/asin/4150204624/tokyoenvious-22">永遠の都―リフトウォー・サーガ第1部〈7〉 (ハヤカワ文庫FT)</a></p>
+                                        <ul>
+                                                <li><span class="hatena-asin-detail-label">作者:</span> <a href="http://d.hatena.ne.jp/keyword/%a5%ec%a5%a4%a5%e2%a5%f3%a5%c9%a1%a6E%2e%a5%d5%a5%a3%a1%bc%a5%b9%a5%c8" class="keyword">レイモンド・E.フィースト</a>, <a href="http://d.hatena.ne.jp/keyword/Raymond%20E%2e%20Feist" class="keyword">Raymond E. Feist</a>, <a href="http://d.hatena.ne.jp/keyword/%b4%e4%b8%b6%cc%c0%bb%d2" class="keyword">岩原明子</a></li>
+                                                <li><span class="hatena-asin-detail-label">出版社/メーカー:</span> <a href="http://d.hatena.ne.jp/keyword/%c1%e1%c0%ee%bd%f1%cb%bc" class="keyword">早川書房</a></li>
+                                                <li><span class="hatena-asin-detail-label">発売日:</span> 2008/03</li>
+                                                <li><span class="hatena-asin-detail-label">メディア:</span> 文庫</li>
+                                                       <li><a href="http://www.amazon.co.jp/exec/obidos/ASIN/4150204624/tokyoenvious-22/" target="_blank">Amazon.co.jpで詳細を見る</a></li>
+                                        </ul>
+
+
+                                </div>
+                                <div class="hatena-asin-detail-foot"></div>
+                        </div>
+
+			<h4> 湯葉</h4>
+			<div class="hatena-asin-detail">
+                                <a href="http://d.hatena.ne.jp/asin/406198232X/tokyoenvious-22"><img src="http://ecx.images-amazon.com/images/I/41QCP92MDKL._SL160_.jpg" class="hatena-asin-detail-image" alt="湯葉・青磁砧 (講談社文芸文庫)" title="湯葉・青磁砧 (講談社文芸文庫)"></a>
+                                <div class="hatena-asin-detail-info">
+                                        <p class="hatena-asin-detail-title"><a href="http://d.hatena.ne.jp/asin/406198232X/tokyoenvious-22">湯葉・青磁砧 (講談社文芸文庫)</a></p>
+                                        <ul>
+                                                <li><span class="hatena-asin-detail-label">作者:</span> <a href="http://d.hatena.ne.jp/keyword/%bc%c7%cc%da%b9%a5%bb%d2" class="keyword">芝木好子</a></li>
+                                                <li><span class="hatena-asin-detail-label">出版社/メーカー:</span> <a href="http://d.hatena.ne.jp/keyword/%b9%d6%c3%cc%bc%d2" class="keyword">講談社</a></li>
+                                                <li><span class="hatena-asin-detail-label">発売日:</span> 2000/10</li>
+                                                <li><span class="hatena-asin-detail-label">メディア:</span> 文庫</li>
+                                                       <li><a href="http://www.amazon.co.jp/exec/obidos/ASIN/406198232X/tokyoenvious-22/" target="_blank">Amazon.co.jpで詳細を見る</a></li>
+                                        </ul>
+
+
+                                </div>
+                                <div class="hatena-asin-detail-foot"></div>
+                        </div>
+
+			<p>いつかのセンター試験か模試に出たやつ。</p>
+			<h4> 武士道シックスティーン</h4>
+			<div class="hatena-asin-detail">
+                                <a href="http://d.hatena.ne.jp/asin/4163261605/tokyoenvious-22"><img src="http://ecx.images-amazon.com/images/I/41hKHW3s7VL._SL160_.jpg" class="hatena-asin-detail-image" alt="武士道シックスティーン" title="武士道シックスティーン"></a>
+                                <div class="hatena-asin-detail-info">
+                                        <p class="hatena-asin-detail-title"><a href="http://d.hatena.ne.jp/asin/4163261605/tokyoenvious-22">武士道シックスティーン</a></p>
+                                        <ul>
+                                                <li><span class="hatena-asin-detail-label">作者:</span> <a href="http://d.hatena.ne.jp/keyword/%cd%c0%c5%c4%c5%af%cc%e9" class="keyword">誉田哲也</a></li>
+                                                <li><span class="hatena-asin-detail-label">出版社/メーカー:</span> <a href="http://d.hatena.ne.jp/keyword/%ca%b8%e9%ba%bd%d5%bd%a9" class="keyword">文藝春秋</a></li>
+                                                <li><span class="hatena-asin-detail-label">発売日:</span> 2007/07</li>
+                                                <li><span class="hatena-asin-detail-label">メディア:</span> 単行本</li>
+                                                       <li><a href="http://www.amazon.co.jp/exec/obidos/ASIN/4163261605/tokyoenvious-22/" target="_blank">Amazon.co.jpで詳細を見る</a></li>
+                                        </ul>
+
+
+                                </div>
+                                <div class="hatena-asin-detail-foot"></div>
+                        </div>
+
+			<h4> 鴨川ホルモー</h4>
+			<div class="hatena-asin-detail">
+                                <a href="http://d.hatena.ne.jp/asin/4916199820/tokyoenvious-22"><img src="http://ecx.images-amazon.com/images/I/511GKWHW98L._SL160_.jpg" class="hatena-asin-detail-image" alt="鴨川ホルモー" title="鴨川ホルモー"></a>
+                                <div class="hatena-asin-detail-info">
+                                        <p class="hatena-asin-detail-title"><a href="http://d.hatena.ne.jp/asin/4916199820/tokyoenvious-22">鴨川ホルモー</a></p>
+                                        <ul>
+                                                <li><span class="hatena-asin-detail-label">作者:</span> <a href="http://d.hatena.ne.jp/keyword/%cb%fc%be%eb%cc%dc%b3%d8" class="keyword">万城目学</a></li>
+                                                <li><span class="hatena-asin-detail-label">出版社/メーカー:</span> <a href="http://d.hatena.ne.jp/keyword/%bb%ba%b6%c8%ca%d4%bd%b8%a5%bb%a5%f3%a5%bf%a1%bc" class="keyword">産業編集センター</a></li>
+                                                <li><span class="hatena-asin-detail-label">発売日:</span> 2006/04</li>
+                                                <li><span class="hatena-asin-detail-label">メディア:</span> 単行本</li>
+                                                       <li><a href="http://www.amazon.co.jp/exec/obidos/ASIN/4916199820/tokyoenvious-22/" target="_blank">Amazon.co.jpで詳細を見る</a></li>
+                                        </ul>
+
+
+                                </div>
+                                <div class="hatena-asin-detail-foot"></div>
+                        </div>
+
+			<p>導入部が一番おもしろかった。</p>
+			<h4> 鳥姫伝</h4>
+			<div class="hatena-asin-detail">
+                                <a href="http://d.hatena.ne.jp/asin/4150203083/tokyoenvious-22"><img src="http://ecx.images-amazon.com/images/I/51HNX6PJJ9L._SL160_.jpg" class="hatena-asin-detail-image" alt="鳥姫伝 (ハヤカワ文庫FT)" title="鳥姫伝 (ハヤカワ文庫FT)"></a>
+                                <div class="hatena-asin-detail-info">
+                                        <p class="hatena-asin-detail-title"><a href="http://d.hatena.ne.jp/asin/4150203083/tokyoenvious-22">鳥姫伝 (ハヤカワ文庫FT)</a></p>
+                                        <ul>
+                                                <li><span class="hatena-asin-detail-label">作者:</span> <a href="http://d.hatena.ne.jp/keyword/%a5%d0%a5%ea%a1%bc%a5%d2%a5%e5%a1%bc%a5%ac%a1%bc%a5%c8" class="keyword">バリーヒューガート</a>, <a href="http://d.hatena.ne.jp/keyword/Barry%20Hughart" class="keyword">Barry Hughart</a>, <a href="http://d.hatena.ne.jp/keyword/%cf%c2%bc%a4%c5%ed%bb%d2" class="keyword">和爾桃子</a></li>
+                                                <li><span class="hatena-asin-detail-label">出版社/メーカー:</span> <a href="http://d.hatena.ne.jp/keyword/%c1%e1%c0%ee%bd%f1%cb%bc" class="keyword">早川書房</a></li>
+                                                <li><span class="hatena-asin-detail-label">発売日:</span> 2002/03</li>
+                                                <li><span class="hatena-asin-detail-label">メディア:</span> 文庫</li>
+                                                       <li><a href="http://www.amazon.co.jp/exec/obidos/ASIN/4150203083/tokyoenvious-22/" target="_blank">Amazon.co.jpで詳細を見る</a></li>
+                                        </ul>
+
+
+                                </div>
+                                <div class="hatena-asin-detail-foot"></div>
+                        </div>
+
+			<p>めちゃくちゃだけど面白い</p>
+			<h4> サイコスタッフ</h4>
+			<div class="hatena-asin-detail">
+                                <a href="http://d.hatena.ne.jp/asin/4832276638/tokyoenvious-22"><img src="http://ecx.images-amazon.com/images/I/51DBQOCaNuL._SL160_.jpg" class="hatena-asin-detail-image" alt="サイコスタッフ (まんがタイムKRコミックス)" title="サイコスタッフ (まんがタイムKRコミックス)"></a>
+                                <div class="hatena-asin-detail-info">
+                                        <p class="hatena-asin-detail-title"><a href="http://d.hatena.ne.jp/asin/4832276638/tokyoenvious-22">サイコスタッフ (まんがタイムKRコミックス)</a></p>
+                                        <ul>
+                                                <li><span class="hatena-asin-detail-label">作者:</span> <a href="http://d.hatena.ne.jp/keyword/%bf%e5%be%e5%b8%e7%bb%d6" class="keyword">水上悟志</a></li>
+                                                <li><span class="hatena-asin-detail-label">出版社/メーカー:</span> <a href="http://d.hatena.ne.jp/keyword/%cb%a7%ca%b8%bc%d2" class="keyword">芳文社</a></li>
+                                                <li><span class="hatena-asin-detail-label">発売日:</span> 2007/10/27</li>
+                                                <li><span class="hatena-asin-detail-label">メディア:</span> コミック</li>
+                                                       <li><a href="http://www.amazon.co.jp/exec/obidos/ASIN/4832276638/tokyoenvious-22/" target="_blank">Amazon.co.jpで詳細を見る</a></li>
+                                        </ul>
+
+
+                                </div>
+                                <div class="hatena-asin-detail-foot"></div>
+                        </div>
+
+			<p>女の子がかわいい</p>
+			<h4> ロシア異界幻想</h4>
+			<div class="hatena-asin-detail">
+                                <a href="http://d.hatena.ne.jp/asin/4004307724/tokyoenvious-22"><img src="http://ecx.images-amazon.com/images/I/41VHVJFH85L._SL160_.jpg" class="hatena-asin-detail-image" alt="ロシア異界幻想 (岩波新書)" title="ロシア異界幻想 (岩波新書)"></a>
+                                <div class="hatena-asin-detail-info">
+                                        <p class="hatena-asin-detail-title"><a href="http://d.hatena.ne.jp/asin/4004307724/tokyoenvious-22">ロシア異界幻想 (岩波新書)</a></p>
+                                        <ul>
+                                                <li><span class="hatena-asin-detail-label">作者:</span> <a href="http://d.hatena.ne.jp/keyword/%b7%aa%b8%b6%c0%ae%cf%ba" class="keyword">栗原成郎</a></li>
+                                                <li><span class="hatena-asin-detail-label">出版社/メーカー:</span> <a href="http://d.hatena.ne.jp/keyword/%b4%e4%c7%c8%bd%f1%c5%b9" class="keyword">岩波書店</a></li>
+                                                <li><span class="hatena-asin-detail-label">発売日:</span> 2002/02</li>
+                                                <li><span class="hatena-asin-detail-label">メディア:</span> 新書</li>
+                                                       <li><a href="http://www.amazon.co.jp/exec/obidos/ASIN/4004307724/tokyoenvious-22/" target="_blank">Amazon.co.jpで詳細を見る</a></li>
+                                        </ul>
+
+
+                                </div>
+                                <div class="hatena-asin-detail-foot"></div>
+                        </div>
+
+			<h4> 闇の公子</h4>
+			<div class="hatena-asin-detail">
+                                <a href="http://d.hatena.ne.jp/asin/4150204764/tokyoenvious-22"><img src="http://ecx.images-amazon.com/images/I/51Htrl-YiTL._SL160_.jpg" class="hatena-asin-detail-image" alt="闇の公子 (ハヤカワ文庫FT)" title="闇の公子 (ハヤカワ文庫FT)"></a>
+                                <div class="hatena-asin-detail-info">
+                                        <p class="hatena-asin-detail-title"><a href="http://d.hatena.ne.jp/asin/4150204764/tokyoenvious-22">闇の公子 (ハヤカワ文庫FT)</a></p>
+                                        <ul>
+                                                <li><span class="hatena-asin-detail-label">作者:</span> <a href="http://d.hatena.ne.jp/keyword/%a5%bf%a5%cb%a5%b9%a1%a6%a5%ea%a1%bc" class="keyword">タニス・リー</a>, <a href="http://d.hatena.ne.jp/keyword/%c0%f5%b1%a9%e8%b2%bb%d2" class="keyword">浅羽莢子</a></li>
+                                                <li><span class="hatena-asin-detail-label">出版社/メーカー:</span> <a href="http://d.hatena.ne.jp/keyword/%c1%e1%c0%ee%bd%f1%cb%bc" class="keyword">早川書房</a></li>
+                                                <li><span class="hatena-asin-detail-label">発売日:</span> 2008/09/05</li>
+                                                <li><span class="hatena-asin-detail-label">メディア:</span> 文庫</li>
+                                                       <li><a href="http://www.amazon.co.jp/exec/obidos/ASIN/4150204764/tokyoenvious-22/" target="_blank">Amazon.co.jpで詳細を見る</a></li>
+                                        </ul>
+
+
+                                </div>
+                                <div class="hatena-asin-detail-foot"></div>
+                        </div>
+
+			<p>おもしろかったけど文庫雨で濡れちゃった</p>
+			<h4> あなたの人生の物語</h4>
+			<div class="hatena-asin-detail">
+                                <a href="http://d.hatena.ne.jp/asin/4150114587/tokyoenvious-22"><img src="http://ecx.images-amazon.com/images/I/51191C0153L._SL160_.jpg" class="hatena-asin-detail-image" alt="あなたの人生の物語 (ハヤカワ文庫SF)" title="あなたの人生の物語 (ハヤカワ文庫SF)"></a>
+                                <div class="hatena-asin-detail-info">
+                                        <p class="hatena-asin-detail-title"><a href="http://d.hatena.ne.jp/asin/4150114587/tokyoenvious-22">あなたの人生の物語 (ハヤカワ文庫SF)</a></p>
+                                        <ul>
+                                                <li><span class="hatena-asin-detail-label">作者:</span> <a href="http://d.hatena.ne.jp/keyword/%a5%c6%a5%c3%a5%c9%a5%c1%a5%e3%a5%f3" class="keyword">テッドチャン</a>, <a href="http://d.hatena.ne.jp/keyword/Ted%20Chiang" class="keyword">Ted Chiang</a>, <a href="http://d.hatena.ne.jp/keyword/%c0%f5%c1%d2%b5%d7%bb%d6" class="keyword">浅倉久志</a></li>
+                                                <li><span class="hatena-asin-detail-label">出版社/メーカー:</span> <a href="http://d.hatena.ne.jp/keyword/%c1%e1%c0%ee%bd%f1%cb%bc" class="keyword">早川書房</a></li>
+                                                <li><span class="hatena-asin-detail-label">発売日:</span> 2003/09</li>
+                                                <li><span class="hatena-asin-detail-label">メディア:</span> 文庫</li>
+                                                       <li><a href="http://www.amazon.co.jp/exec/obidos/ASIN/4150114587/tokyoenvious-22/" target="_blank">Amazon.co.jpで詳細を見る</a></li>
+                                        </ul>
+
+
+                                </div>
+                                <div class="hatena-asin-detail-foot"></div>
+                        </div>
+
+			<p>これで邦訳された全著作を読んだことになる。</p>
+			<h4> 君に届け</h4>
+			<div class="hatena-asin-detail">
+                                <a href="http://d.hatena.ne.jp/asin/4088463137/tokyoenvious-22"><img src="http://ecx.images-amazon.com/images/I/51jlSF-3q%2BL._SL160_.jpg" class="hatena-asin-detail-image" alt="君に届け 7 (マーガレットコミックス)" title="君に届け 7 (マーガレットコミックス)"></a>
+                                <div class="hatena-asin-detail-info">
+                                        <p class="hatena-asin-detail-title"><a href="http://d.hatena.ne.jp/asin/4088463137/tokyoenvious-22">君に届け 7 (マーガレットコミックス)</a></p>
+                                        <ul>
+                                                <li><span class="hatena-asin-detail-label">作者:</span> <a href="http://d.hatena.ne.jp/keyword/%c4%c7%cc%be%b7%da%ca%e6" class="keyword">椎名軽穂</a></li>
+                                                <li><span class="hatena-asin-detail-label">出版社/メーカー:</span> <a href="http://d.hatena.ne.jp/keyword/%bd%b8%b1%d1%bc%d2" class="keyword">集英社</a></li>
+                                                <li><span class="hatena-asin-detail-label">発売日:</span> 2008/07/25</li>
+                                                <li><span class="hatena-asin-detail-label">メディア:</span> コミック</li>
+                                                       <li><a href="http://www.amazon.co.jp/exec/obidos/ASIN/4088463137/tokyoenvious-22/" target="_blank">Amazon.co.jpで詳細を見る</a></li>
+                                        </ul>
+
+
+                                </div>
+                                <div class="hatena-asin-detail-foot"></div>
+                        </div>
+
+			<h4> 容疑者Xの献身</h4>
+			<div class="hatena-asin-detail">
+                                <a href="http://d.hatena.ne.jp/asin/4167110121/tokyoenvious-22"><img src="http://ecx.images-amazon.com/images/I/41ItBd2rOWL._SL160_.jpg" class="hatena-asin-detail-image" alt="容疑者Xの献身 (文春文庫)" title="容疑者Xの献身 (文春文庫)"></a>
+                                <div class="hatena-asin-detail-info">
+                                        <p class="hatena-asin-detail-title"><a href="http://d.hatena.ne.jp/asin/4167110121/tokyoenvious-22">容疑者Xの献身 (文春文庫)</a></p>
+                                        <ul>
+                                                <li><span class="hatena-asin-detail-label">作者:</span> <a href="http://d.hatena.ne.jp/keyword/%c5%ec%cc%ee%b7%bd%b8%e3" class="keyword">東野圭吾</a></li>
+                                                <li><span class="hatena-asin-detail-label">出版社/メーカー:</span> <a href="http://d.hatena.ne.jp/keyword/%ca%b8%e9%ba%bd%d5%bd%a9" class="keyword">文藝春秋</a></li>
+                                                <li><span class="hatena-asin-detail-label">発売日:</span> 2008/08/05</li>
+                                                <li><span class="hatena-asin-detail-label">メディア:</span> 文庫</li>
+                                                       <li><a href="http://www.amazon.co.jp/exec/obidos/ASIN/4167110121/tokyoenvious-22/" target="_blank">Amazon.co.jpで詳細を見る</a></li>
+                                        </ul>
+
+
+                                </div>
+                                <div class="hatena-asin-detail-foot"></div>
+                        </div>
+
+			<h4> 煙か土か食い物</h4>
+			<div class="hatena-asin-detail">
+                                <a href="http://d.hatena.ne.jp/asin/406274936X/tokyoenvious-22"><img src="http://ecx.images-amazon.com/images/I/31NVD9BK8ZL._SL160_.jpg" class="hatena-asin-detail-image" alt="煙か土か食い物 (講談社文庫)" title="煙か土か食い物 (講談社文庫)"></a>
+                                <div class="hatena-asin-detail-info">
+                                        <p class="hatena-asin-detail-title"><a href="http://d.hatena.ne.jp/asin/406274936X/tokyoenvious-22">煙か土か食い物 (講談社文庫)</a></p>
+                                        <ul>
+                                                <li><span class="hatena-asin-detail-label">作者:</span> <a href="http://d.hatena.ne.jp/keyword/%c9%f1%be%eb%b2%a6%c2%c0%cf%ba" class="keyword">舞城王太郎</a></li>
+                                                <li><span class="hatena-asin-detail-label">出版社/メーカー:</span> <a href="http://d.hatena.ne.jp/keyword/%b9%d6%c3%cc%bc%d2" class="keyword">講談社</a></li>
+                                                <li><span class="hatena-asin-detail-label">発売日:</span> 2004/12</li>
+                                                <li><span class="hatena-asin-detail-label">メディア:</span> 文庫</li>
+                                                       <li><a href="http://www.amazon.co.jp/exec/obidos/ASIN/406274936X/tokyoenvious-22/" target="_blank">Amazon.co.jpで詳細を見る</a></li>
+                                        </ul>
+
+
+                                </div>
+                                <div class="hatena-asin-detail-foot"></div>
+                        </div>
+
+			<h4> すべてがFになる</h4>
+			<div class="hatena-asin-detail">
+                                <a href="http://d.hatena.ne.jp/asin/4062639246/tokyoenvious-22"><img src="http://ecx.images-amazon.com/images/I/51DXQ9KX3BL._SL160_.jpg" class="hatena-asin-detail-image" alt="すべてがFになる―THE PERFECT INSIDER (講談社文庫)" title="すべてがFになる―THE PERFECT INSIDER (講談社文庫)"></a>
+                                <div class="hatena-asin-detail-info">
+                                        <p class="hatena-asin-detail-title"><a href="http://d.hatena.ne.jp/asin/4062639246/tokyoenvious-22">すべてがFになる―THE PERFECT INSIDER (講談社文庫)</a></p>
+                                        <ul>
+                                                <li><span class="hatena-asin-detail-label">作者:</span> <a href="http://d.hatena.ne.jp/keyword/%bf%b9%c7%ee%bb%cc" class="keyword">森博嗣</a></li>
+                                                <li><span class="hatena-asin-detail-label">出版社/メーカー:</span> <a href="http://d.hatena.ne.jp/keyword/%b9%d6%c3%cc%bc%d2" class="keyword">講談社</a></li>
+                                                <li><span class="hatena-asin-detail-label">発売日:</span> 1998/12</li>
+                                                <li><span class="hatena-asin-detail-label">メディア:</span> 文庫</li>
+                                                       <li><a href="http://www.amazon.co.jp/exec/obidos/ASIN/4062639246/tokyoenvious-22/" target="_blank">Amazon.co.jpで詳細を見る</a></li>
+                                        </ul>
+
+
+                                </div>
+                                <div class="hatena-asin-detail-foot"></div>
+                        </div>
+
+			<p>すべてはFにならなかったなー。</p>
+			<h4> チーム・バチスタの栄光</h4>
+			<div class="hatena-asin-detail">
+                                <a href="http://d.hatena.ne.jp/asin/4796661611/tokyoenvious-22"><img src="http://ecx.images-amazon.com/images/I/51sLh-1UuAL._SL160_.jpg" class="hatena-asin-detail-image" alt="チーム・バチスタの栄光(上) 「このミス」大賞シリーズ (宝島社文庫 599)" title="チーム・バチスタの栄光(上) 「このミス」大賞シリーズ (宝島社文庫 599)"></a>
+                                <div class="hatena-asin-detail-info">
+                                        <p class="hatena-asin-detail-title"><a href="http://d.hatena.ne.jp/asin/4796661611/tokyoenvious-22">チーム・バチスタの栄光(上) 「このミス」大賞シリーズ (宝島社文庫 599)</a></p>
+                                        <ul>
+                                                <li><span class="hatena-asin-detail-label">作者:</span> <a href="http://d.hatena.ne.jp/keyword/%b3%a4%c6%b2%c2%ba" class="keyword">海堂尊</a></li>
+                                                <li><span class="hatena-asin-detail-label">出版社/メーカー:</span> <a href="http://d.hatena.ne.jp/keyword/%ca%f5%c5%e7%bc%d2" class="keyword">宝島社</a></li>
+                                                <li><span class="hatena-asin-detail-label">発売日:</span> 2007/11/10</li>
+                                                <li><span class="hatena-asin-detail-label">メディア:</span> 文庫</li>
+                                                       <li><a href="http://www.amazon.co.jp/exec/obidos/ASIN/4796661611/tokyoenvious-22/" target="_blank">Amazon.co.jpで詳細を見る</a></li>
+                                        </ul>
+
+
+                                </div>
+                                <div class="hatena-asin-detail-foot"></div>
+                        </div>
+
+			<div class="hatena-asin-detail">
+                                <a href="http://d.hatena.ne.jp/asin/4796661638/tokyoenvious-22"><img src="http://ecx.images-amazon.com/images/I/51KUBSii4FL._SL160_.jpg" class="hatena-asin-detail-image" alt="チーム・バチスタの栄光(下) 「このミス」大賞シリーズ (宝島社文庫 600)" title="チーム・バチスタの栄光(下) 「このミス」大賞シリーズ (宝島社文庫 600)"></a>
+                                <div class="hatena-asin-detail-info">
+                                        <p class="hatena-asin-detail-title"><a href="http://d.hatena.ne.jp/asin/4796661638/tokyoenvious-22">チーム・バチスタの栄光(下) 「このミス」大賞シリーズ (宝島社文庫 600)</a></p>
+                                        <ul>
+                                                <li><span class="hatena-asin-detail-label">作者:</span> <a href="http://d.hatena.ne.jp/keyword/%b3%a4%c6%b2%c2%ba" class="keyword">海堂尊</a></li>
+                                                <li><span class="hatena-asin-detail-label">出版社/メーカー:</span> <a href="http://d.hatena.ne.jp/keyword/%ca%f5%c5%e7%bc%d2" class="keyword">宝島社</a></li>
+                                                <li><span class="hatena-asin-detail-label">発売日:</span> 2007/11/10</li>
+                                                <li><span class="hatena-asin-detail-label">メディア:</span> 文庫</li>
+                                                       <li><a href="http://www.amazon.co.jp/exec/obidos/ASIN/4796661638/tokyoenvious-22/" target="_blank">Amazon.co.jpで詳細を見る</a></li>
+                                        </ul>
+
+
+                                </div>
+                                <div class="hatena-asin-detail-foot"></div>
+                        </div>
+
+			<p>そんなに面白くなかったかなー。</p>
+			<h4> 脳男</h4>
+			<div class="hatena-asin-detail">
+                                <a href="http://d.hatena.ne.jp/asin/4062738376/tokyoenvious-22"><img src="http://ecx.images-amazon.com/images/I/51YE9PQNAFL._SL160_.jpg" class="hatena-asin-detail-image" alt="脳男 (講談社文庫)" title="脳男 (講談社文庫)"></a>
+                                <div class="hatena-asin-detail-info">
+                                        <p class="hatena-asin-detail-title"><a href="http://d.hatena.ne.jp/asin/4062738376/tokyoenvious-22">脳男 (講談社文庫)</a></p>
+                                        <ul>
+                                                <li><span class="hatena-asin-detail-label">作者:</span> <a href="http://d.hatena.ne.jp/keyword/%bc%f3%c6%a3%b1%bb%b1%f7" class="keyword">首藤瓜於</a></li>
+                                                <li><span class="hatena-asin-detail-label">出版社/メーカー:</span> <a href="http://d.hatena.ne.jp/keyword/%b9%d6%c3%cc%bc%d2" class="keyword">講談社</a></li>
+                                                <li><span class="hatena-asin-detail-label">発売日:</span> 2003/09</li>
+                                                <li><span class="hatena-asin-detail-label">メディア:</span> 文庫</li>
+                                                       <li><a href="http://www.amazon.co.jp/exec/obidos/ASIN/4062738376/tokyoenvious-22/" target="_blank">Amazon.co.jpで詳細を見る</a></li>
+                                        </ul>
+
+
+                                </div>
+                                <div class="hatena-asin-detail-foot"></div>
+                        </div>
+
+			<p>タイトルからの予想と違ってヒーローもの</p>
+			<h4> イニシエーション・ラブ</h4>
+			<div class="hatena-asin-detail">
+                                <a href="http://d.hatena.ne.jp/asin/4167732017/tokyoenvious-22"><img src="http://ecx.images-amazon.com/images/I/41RD8TFmbJL._SL160_.jpg" class="hatena-asin-detail-image" alt="イニシエーション・ラブ (文春文庫)" title="イニシエーション・ラブ (文春文庫)"></a>
+                                <div class="hatena-asin-detail-info">
+                                        <p class="hatena-asin-detail-title"><a href="http://d.hatena.ne.jp/asin/4167732017/tokyoenvious-22">イニシエーション・ラブ (文春文庫)</a></p>
+                                        <ul>
+                                                <li><span class="hatena-asin-detail-label">作者:</span> <a href="http://d.hatena.ne.jp/keyword/%b4%a5%a4%af%a4%eb%a4%df" class="keyword">乾くるみ</a></li>
+                                                <li><span class="hatena-asin-detail-label">出版社/メーカー:</span> <a href="http://d.hatena.ne.jp/keyword/%ca%b8%e9%ba%bd%d5%bd%a9" class="keyword">文藝春秋</a></li>
+                                                <li><span class="hatena-asin-detail-label">発売日:</span> 2007/04</li>
+                                                <li><span class="hatena-asin-detail-label">メディア:</span> 文庫</li>
+                                                       <li><a href="http://www.amazon.co.jp/exec/obidos/ASIN/4167732017/tokyoenvious-22/" target="_blank">Amazon.co.jpで詳細を見る</a></li>
+                                        </ul>
+
+
+                                </div>
+                                <div class="hatena-asin-detail-foot"></div>
+                        </div>
+
+			<h4> 半熟マルカ魔剣修行！</h4>
+			<div class="hatena-asin-detail">
+                                <a href="http://d.hatena.ne.jp/asin/4150202737/tokyoenvious-22"><img src="http://ecx.images-amazon.com/images/I/51S290DSN9L._SL160_.jpg" class="hatena-asin-detail-image" alt="半熟マルカ魔剣修行! (ハヤカワ文庫FT)" title="半熟マルカ魔剣修行! (ハヤカワ文庫FT)"></a>
+                                <div class="hatena-asin-detail-info">
+                                        <p class="hatena-asin-detail-title"><a href="http://d.hatena.ne.jp/asin/4150202737/tokyoenvious-22">半熟マルカ魔剣修行! (ハヤカワ文庫FT)</a></p>
+                                        <ul>
+                                                <li><span class="hatena-asin-detail-label">作者:</span> <a href="http://d.hatena.ne.jp/keyword/%a5%c7%a5%a3%a5%ea%a5%a2%a1%a6%a5%de%a1%bc%a5%b7%a5%e3%a5%eb%a5%bf%a1%bc%a5%ca%a1%bc" class="keyword">ディリア・マーシャルターナー</a>, <a href="http://d.hatena.ne.jp/keyword/Delia%20Marshall%20Turner" class="keyword">Delia Marshall Turner</a>, <a href="http://d.hatena.ne.jp/keyword/%b0%e6%c4%d4%bc%eb%c8%fe" class="keyword">井辻朱美</a></li>
+                                                <li><span class="hatena-asin-detail-label">出版社/メーカー:</span> <a href="http://d.hatena.ne.jp/keyword/%c1%e1%c0%ee%bd%f1%cb%bc" class="keyword">早川書房</a></li>
+                                                <li><span class="hatena-asin-detail-label">発売日:</span> 2000/04</li>
+                                                <li><span class="hatena-asin-detail-label">メディア:</span> 文庫</li>
+                                                       <li><a href="http://www.amazon.co.jp/exec/obidos/ASIN/4150202737/tokyoenvious-22/" target="_blank">Amazon.co.jpで詳細を見る</a></li>
+                                        </ul>
+
+
+                                </div>
+                                <div class="hatena-asin-detail-foot"></div>
+                        </div>
+
+			<h4> タランと角の王</h4>
+			<div class="hatena-asin-detail">
+                                <a href="http://d.hatena.ne.jp/asin/4566010155/tokyoenvious-22"><img src="http://d.hatena.ne.jp/images/hatena_aws.gif" class="hatena-asin-detail-image" alt="タランと角の王 (児童図書館・文学の部屋 プリデイン物語 1)" title="タランと角の王 (児童図書館・文学の部屋 プリデイン物語 1)"></a>
+                                <div class="hatena-asin-detail-info">
+                                        <p class="hatena-asin-detail-title"><a href="http://d.hatena.ne.jp/asin/4566010155/tokyoenvious-22">タランと角の王 (児童図書館・文学の部屋 プリデイン物語 1)</a></p>
+                                        <ul>
+                                                <li><span class="hatena-asin-detail-label">作者:</span> <a href="http://d.hatena.ne.jp/keyword/%a5%ed%a5%a4%a5%c9%a1%a6%a5%a2%a5%ea%a5%b0%a5%b6%a5%f3%a5%c0%a1%bc" class="keyword">ロイド・アリグザンダー</a>, <a href="http://d.hatena.ne.jp/keyword/%bf%c0%b5%dc%b5%b1%c9%d7" class="keyword">神宮輝夫</a></li>
+                                                <li><span class="hatena-asin-detail-label">出版社/メーカー:</span> <a href="http://d.hatena.ne.jp/keyword/%c9%be%cf%c0%bc%d2" class="keyword">評論社</a></li>
+                                                <li><span class="hatena-asin-detail-label">発売日:</span> 1972/01</li>
+                                                <li><span class="hatena-asin-detail-label">メディア:</span> 単行本</li>
+                                                       <li><a href="http://www.amazon.co.jp/exec/obidos/ASIN/4566010155/tokyoenvious-22/" target="_blank">Amazon.co.jpで詳細を見る</a></li>
+                                        </ul>
+
+
+                                </div>
+                                <div class="hatena-asin-detail-foot"></div>
+                        </div>
+
+			<h4> 動物化するポストモダン</h4>
+			<div class="hatena-asin-detail">
+                                <a href="http://d.hatena.ne.jp/asin/4061495755/tokyoenvious-22"><img src="http://ecx.images-amazon.com/images/I/41JBA104S8L._SL160_.jpg" class="hatena-asin-detail-image" alt="動物化するポストモダン―オタクから見た日本社会 (講談社現代新書)" title="動物化するポストモダン―オタクから見た日本社会 (講談社現代新書)"></a>
+                                <div class="hatena-asin-detail-info">
+                                        <p class="hatena-asin-detail-title"><a href="http://d.hatena.ne.jp/asin/4061495755/tokyoenvious-22">動物化するポストモダン―オタクから見た日本社会 (講談社現代新書)</a></p>
+                                        <ul>
+                                                <li><span class="hatena-asin-detail-label">作者:</span> <a href="http://d.hatena.ne.jp/keyword/%c5%ec%b9%c0%b5%aa" class="keyword">東浩紀</a></li>
+                                                <li><span class="hatena-asin-detail-label">出版社/メーカー:</span> <a href="http://d.hatena.ne.jp/keyword/%b9%d6%c3%cc%bc%d2" class="keyword">講談社</a></li>
+                                                <li><span class="hatena-asin-detail-label">発売日:</span> 2001/11</li>
+                                                <li><span class="hatena-asin-detail-label">メディア:</span> 新書</li>
+                                                       <li><a href="http://www.amazon.co.jp/exec/obidos/ASIN/4061495755/tokyoenvious-22/" target="_blank">Amazon.co.jpで詳細を見る</a></li>
+                                        </ul>
+
+
+                                </div>
+                                <div class="hatena-asin-detail-foot"></div>
+                        </div>
+
+			<h4> 水の都の王女</h4>
+			<div class="hatena-asin-detail">
+                                <a href="http://d.hatena.ne.jp/asin/4150202370/tokyoenvious-22"><img src="http://ecx.images-amazon.com/images/I/51CKXCP2SFL._SL160_.jpg" class="hatena-asin-detail-image" alt="水の都の王女〈上〉 (ハヤカワ文庫FT)" title="水の都の王女〈上〉 (ハヤカワ文庫FT)"></a>
+                                <div class="hatena-asin-detail-info">
+                                        <p class="hatena-asin-detail-title"><a href="http://d.hatena.ne.jp/asin/4150202370/tokyoenvious-22">水の都の王女〈上〉 (ハヤカワ文庫FT)</a></p>
+                                        <ul>
+                                                <li><span class="hatena-asin-detail-label">作者:</span> <a href="http://d.hatena.ne.jp/keyword/J%2e%a5%b0%a5%ec%a5%b4%a5%ea%a5%a4%a5%ad%a5%a4%a5%ba" class="keyword">J.グレゴリイキイズ</a>, <a href="http://d.hatena.ne.jp/keyword/J%2eGregory%20Keyes" class="keyword">J.Gregory Keyes</a>, <a href="http://d.hatena.ne.jp/keyword/%b4%e4%b8%b6%cc%c0%bb%d2" class="keyword">岩原明子</a></li>
+                                                <li><span class="hatena-asin-detail-label">出版社/メーカー:</span> <a href="http://d.hatena.ne.jp/keyword/%c1%e1%c0%ee%bd%f1%cb%bc" class="keyword">早川書房</a></li>
+                                                <li><span class="hatena-asin-detail-label">発売日:</span> 1997/10</li>
+                                                <li><span class="hatena-asin-detail-label">メディア:</span> 文庫</li>
+                                                       <li><a href="http://www.amazon.co.jp/exec/obidos/ASIN/4150202370/tokyoenvious-22/" target="_blank">Amazon.co.jpで詳細を見る</a></li>
+                                        </ul>
+
+
+                                </div>
+                                <div class="hatena-asin-detail-foot"></div>
+                        </div>
+
+			<div class="hatena-asin-detail">
+                                <a href="http://d.hatena.ne.jp/asin/4150202389/tokyoenvious-22"><img src="http://ecx.images-amazon.com/images/I/51HR3AG7R0L._SL160_.jpg" class="hatena-asin-detail-image" alt="水の都の王女〈下〉 (ハヤカワ文庫FT)" title="水の都の王女〈下〉 (ハヤカワ文庫FT)"></a>
+                                <div class="hatena-asin-detail-info">
+                                        <p class="hatena-asin-detail-title"><a href="http://d.hatena.ne.jp/asin/4150202389/tokyoenvious-22">水の都の王女〈下〉 (ハヤカワ文庫FT)</a></p>
+                                        <ul>
+                                                <li><span class="hatena-asin-detail-label">作者:</span> <a href="http://d.hatena.ne.jp/keyword/J%2e%a5%b0%a5%ec%a5%b4%a5%ea%a5%a4%a5%ad%a5%a4%a5%ba" class="keyword">J.グレゴリイキイズ</a>, <a href="http://d.hatena.ne.jp/keyword/J%2eGregory%20Keyes" class="keyword">J.Gregory Keyes</a>, <a href="http://d.hatena.ne.jp/keyword/%b4%e4%b8%b6%cc%c0%bb%d2" class="keyword">岩原明子</a></li>
+                                                <li><span class="hatena-asin-detail-label">出版社/メーカー:</span> <a href="http://d.hatena.ne.jp/keyword/%c1%e1%c0%ee%bd%f1%cb%bc" class="keyword">早川書房</a></li>
+                                                <li><span class="hatena-asin-detail-label">発売日:</span> 1997/10</li>
+                                                <li><span class="hatena-asin-detail-label">メディア:</span> 文庫</li>
+                                                       <li><a href="http://www.amazon.co.jp/exec/obidos/ASIN/4150202389/tokyoenvious-22/" target="_blank">Amazon.co.jpで詳細を見る</a></li>
+                                        </ul>
+
+
+                                </div>
+                                <div class="hatena-asin-detail-foot"></div>
+                        </div>
+
+			<h4> ステーシー</h4>
+			<div class="hatena-asin-detail">
+                                <a href="http://d.hatena.ne.jp/asin/4041847095/tokyoenvious-22"><img src="http://d.hatena.ne.jp/images/hatena_aws.gif" class="hatena-asin-detail-image" alt="ステーシー―少女ゾンビ再殺談 (角川ホラー文庫)" title="ステーシー―少女ゾンビ再殺談 (角川ホラー文庫)"></a>
+                                <div class="hatena-asin-detail-info">
+                                        <p class="hatena-asin-detail-title"><a href="http://d.hatena.ne.jp/asin/4041847095/tokyoenvious-22">ステーシー―少女ゾンビ再殺談 (角川ホラー文庫)</a></p>
+                                        <ul>
+                                                <li><span class="hatena-asin-detail-label">作者:</span> <a href="http://d.hatena.ne.jp/keyword/%c2%e7%c4%d0%a5%b1%a5%f3%a5%c2" class="keyword">大槻ケンヂ</a></li>
+                                                <li><span class="hatena-asin-detail-label">出版社/メーカー:</span> <a href="http://d.hatena.ne.jp/keyword/%b3%d1%c0%ee%bd%f1%c5%b9" class="keyword">角川書店</a></li>
+                                                <li><span class="hatena-asin-detail-label">発売日:</span> 2000/06</li>
+                                                <li><span class="hatena-asin-detail-label">メディア:</span> 文庫</li>
+                                                       <li><a href="http://www.amazon.co.jp/exec/obidos/ASIN/4041847095/tokyoenvious-22/" target="_blank">Amazon.co.jpで詳細を見る</a></li>
+                                        </ul>
+
+
+                                </div>
+                                <div class="hatena-asin-detail-foot"></div>
+                        </div>
+
+			<p>筋少のアルバムのお供に、って感じ。</p>
+			<p>あとがきが面白い。</p>
+			<blockquote>
+			<h4> あとがき</h4>
+			<p>読んでくださってありがとうございます。</p>
+			<p>とても、思い入れの深い作品です。</p>
+			<p>僕はステーシーたちと、彼女たちの物語を心から愛しています。</p>
+			<p>…</p>
+			<h4> 文庫版あとがき</h4>
+			<p>数年振りに『ステーシー』を読み返して思ったことを正直に述べるなら、</p>
+			<p>「ノイローゼのやつはスゲーこと書くなー」</p>
+			<p>ということです。</p>
+			<p>…</p>
+			</blockquote>
+			<h4> うそつきなきみ</h4>
+			<div class="hatena-asin-detail">
+                                <a href="http://d.hatena.ne.jp/asin/4903705250/tokyoenvious-22"><img src="http://ecx.images-amazon.com/images/I/51QlQ7ZTq8L._SL160_.jpg" class="hatena-asin-detail-image" alt="うそつきなきみ (MMコミックス)" title="うそつきなきみ (MMコミックス)"></a>
+                                <div class="hatena-asin-detail-info">
+                                        <p class="hatena-asin-detail-title"><a href="http://d.hatena.ne.jp/asin/4903705250/tokyoenvious-22">うそつきなきみ (MMコミックス)</a></p>
+                                        <ul>
+                                                <li><span class="hatena-asin-detail-label">作者:</span> <a href="http://d.hatena.ne.jp/keyword/%c2%e7%c7%c8%cd%d4%bb%d2" class="keyword">大波耀子</a></li>
+                                                <li><span class="hatena-asin-detail-label">出版社/メーカー:</span> <a href="http://d.hatena.ne.jp/keyword/%a5%e2%a5%a8%a1%bc%a5%eb%a5%d1%a5%d6%a5%ea%a5%c3%a5%b7%a5%f3%a5%b0" class="keyword">モエールパブリッシング</a></li>
+                                                <li><span class="hatena-asin-detail-label">発売日:</span> 2008/01/26</li>
+                                                <li><span class="hatena-asin-detail-label">メディア:</span> コミック</li>
+                                                       <li><a href="http://www.amazon.co.jp/exec/obidos/ASIN/4903705250/tokyoenvious-22/" target="_blank">Amazon.co.jpで詳細を見る</a></li>
+                                        </ul>
+
+
+                                </div>
+                                <div class="hatena-asin-detail-foot"></div>
+                        </div>
+
+			<h4> 少女マテリアル</h4>
+			<div class="hatena-asin-detail">
+                                <a href="http://d.hatena.ne.jp/asin/4862690564/tokyoenvious-22"><img src="http://ecx.images-amazon.com/images/I/510IvvdrbyL._SL160_.jpg" class="hatena-asin-detail-image" alt="少女マテリアル (WANI MAGAZINE COMICS SPECIAL)" title="少女マテリアル (WANI MAGAZINE COMICS SPECIAL)"></a>
+                                <div class="hatena-asin-detail-info">
+                                        <p class="hatena-asin-detail-title"><a href="http://d.hatena.ne.jp/asin/4862690564/tokyoenvious-22">少女マテリアル (WANI MAGAZINE COMICS SPECIAL)</a></p>
+                                        <ul>
+                                                <li><span class="hatena-asin-detail-label">作者:</span> <a href="http://d.hatena.ne.jp/keyword/%cc%c4%bb%d2%a5%cf%a5%ca%a5%cf%a5%eb" class="keyword">鳴子ハナハル</a></li>
+                                                <li><span class="hatena-asin-detail-label">出版社/メーカー:</span> <a href="http://d.hatena.ne.jp/keyword/%a5%ef%a5%cb%a5%de%a5%ac%a5%b8%a5%f3%bc%d2" class="keyword">ワニマガジン社</a></li>
+                                                <li><span class="hatena-asin-detail-label">発売日:</span> 2008/07/01</li>
+                                                <li><span class="hatena-asin-detail-label">メディア:</span> コミック</li>
+                                                       <li><a href="http://www.amazon.co.jp/exec/obidos/ASIN/4862690564/tokyoenvious-22/" target="_blank">Amazon.co.jpで詳細を見る</a></li>
+                                        </ul>
+
+
+                                </div>
+                                <div class="hatena-asin-detail-foot"></div>
+                        </div>
+
+			<h4> 霧の中の二剣士</h4>
+			<div class="hatena-asin-detail">
+                                <a href="http://d.hatena.ne.jp/asin/448862510X/tokyoenvious-22"><img src="http://ecx.images-amazon.com/images/I/51PXA9YES0L._SL160_.jpg" class="hatena-asin-detail-image" alt="霧の中の二剣士 (創元推理文庫)" title="霧の中の二剣士 (創元推理文庫)"></a>
+                                <div class="hatena-asin-detail-info">
+                                        <p class="hatena-asin-detail-title"><a href="http://d.hatena.ne.jp/asin/448862510X/tokyoenvious-22">霧の中の二剣士 (創元推理文庫)</a></p>
+                                        <ul>
+                                                <li><span class="hatena-asin-detail-label">作者:</span> <a href="http://d.hatena.ne.jp/keyword/%a5%d5%a5%ea%a5%c3%a5%c4%a1%a6%a5%e9%a5%a4%a5%d0%a1%bc" class="keyword">フリッツ・ライバー</a>, <a href="http://d.hatena.ne.jp/keyword/%cb%f6%cc%ef%bd%e3" class="keyword">末弥純</a>, <a href="http://d.hatena.ne.jp/keyword/%c0%f5%c1%d2%b5%d7%bb%d6" class="keyword">浅倉久志</a></li>
+                                                <li><span class="hatena-asin-detail-label">出版社/メーカー:</span> <a href="http://d.hatena.ne.jp/keyword/%c5%ec%b5%fe%c1%cf%b8%b5%bc%d2" class="keyword">東京創元社</a></li>
+                                                <li><span class="hatena-asin-detail-label">発売日:</span> 2005/02/11</li>
+                                                <li><span class="hatena-asin-detail-label">メディア:</span> 文庫</li>
+                                                       <li><a href="http://www.amazon.co.jp/exec/obidos/ASIN/448862510X/tokyoenvious-22/" target="_blank">Amazon.co.jpで詳細を見る</a></li>
+                                        </ul>
+
+
+                                </div>
+                                <div class="hatena-asin-detail-foot"></div>
+                        </div>
+
+			<h4> Basic Category Theory for Computer Scienetists</h4>
+			<div class="hatena-asin-detail">
+                                <a href="http://d.hatena.ne.jp/asin/0262660717/tokyoenvious-22"><img src="http://ecx.images-amazon.com/images/I/411642SVPGL._SL160_.jpg" class="hatena-asin-detail-image" alt="Basic Category Theory for Computer Scientists (Foundations of Computing)" title="Basic Category Theory for Computer Scientists (Foundations of Computing)"></a>
+                                <div class="hatena-asin-detail-info">
+                                        <p class="hatena-asin-detail-title"><a href="http://d.hatena.ne.jp/asin/0262660717/tokyoenvious-22">Basic Category Theory for Computer Scientists (Foundations of Computing)</a></p>
+                                        <ul>
+                                                <li><span class="hatena-asin-detail-label">作者:</span> <a href="http://d.hatena.ne.jp/keyword/Benjamin%20C%2e%20Pierce" class="keyword">Benjamin C. Pierce</a></li>
+                                                <li><span class="hatena-asin-detail-label">出版社/メーカー:</span> <a href="http://d.hatena.ne.jp/keyword/The%20MIT%20Press" class="keyword">The MIT Press</a></li>
+                                                <li><span class="hatena-asin-detail-label">発売日:</span> 1991/08/07</li>
+                                                <li><span class="hatena-asin-detail-label">メディア:</span> ペーパーバック</li>
+                                                       <li><a href="http://www.amazon.co.jp/exec/obidos/ASIN/0262660717/tokyoenvious-22/" target="_blank">Amazon.co.jpで詳細を見る</a></li>
+                                        </ul>
+
+
+                                </div>
+                                <div class="hatena-asin-detail-foot"></div>
+                        </div>
+
+			<p>すごく分かりやすかった。オススメ。</p>
+			<h4> 冬の巨人</h4>
+			<div class="hatena-asin-detail">
+                                <a href="http://d.hatena.ne.jp/asin/4199051570/tokyoenvious-22"><img src="http://ecx.images-amazon.com/images/I/51t7fBhqTxL._SL160_.jpg" class="hatena-asin-detail-image" alt="冬の巨人 (徳間デュアル文庫)" title="冬の巨人 (徳間デュアル文庫)"></a>
+                                <div class="hatena-asin-detail-info">
+                                        <p class="hatena-asin-detail-title"><a href="http://d.hatena.ne.jp/asin/4199051570/tokyoenvious-22">冬の巨人 (徳間デュアル文庫)</a></p>
+                                        <ul>
+                                                <li><span class="hatena-asin-detail-label">作者:</span> <a href="http://d.hatena.ne.jp/keyword/%b8%c5%b6%b6%bd%a8%c7%b7" class="keyword">古橋秀之</a></li>
+                                                <li><span class="hatena-asin-detail-label">出版社/メーカー:</span> <a href="http://d.hatena.ne.jp/keyword/%c6%c1%b4%d6%bd%f1%c5%b9" class="keyword">徳間書店</a></li>
+                                                <li><span class="hatena-asin-detail-label">発売日:</span> 2007/04/10</li>
+                                                <li><span class="hatena-asin-detail-label">メディア:</span> 単行本</li>
+                                                       <li><a href="http://www.amazon.co.jp/exec/obidos/ASIN/4199051570/tokyoenvious-22/" target="_blank">Amazon.co.jpで詳細を見る</a></li>
+                                        </ul>
+
+
+                                </div>
+                                <div class="hatena-asin-detail-foot"></div>
+                        </div>
+
+			<h4> S・A</h4>
+			<div class="hatena-asin-detail">
+                                <a href="http://d.hatena.ne.jp/asin/459218131X/tokyoenvious-22"><img src="http://ecx.images-amazon.com/images/I/51upKTfeWlL._SL160_.jpg" class="hatena-asin-detail-image" alt="S・A (1)" title="S・A (1)"></a>
+                                <div class="hatena-asin-detail-info">
+                                        <p class="hatena-asin-detail-title"><a href="http://d.hatena.ne.jp/asin/459218131X/tokyoenvious-22">S・A (1)</a></p>
+                                        <ul>
+                                                <li><span class="hatena-asin-detail-label">作者:</span> <a href="http://d.hatena.ne.jp/keyword/%c6%ee%a5%de%a5%ad" class="keyword">南マキ</a></li>
+                                                <li><span class="hatena-asin-detail-label">出版社/メーカー:</span> <a href="http://d.hatena.ne.jp/keyword/%c7%f2%c0%f4%bc%d2" class="keyword">白泉社</a></li>
+                                                <li><span class="hatena-asin-detail-label">発売日:</span> 2004/07/16</li>
+                                                <li><span class="hatena-asin-detail-label">メディア:</span> コミック</li>
+                                                       <li><a href="http://www.amazon.co.jp/exec/obidos/ASIN/459218131X/tokyoenvious-22/" target="_blank">Amazon.co.jpで詳細を見る</a></li>
+                                        </ul>
+
+
+                                </div>
+                                <div class="hatena-asin-detail-foot"></div>
+                        </div>
+
+			<div class="hatena-asin-detail">
+                                <a href="http://d.hatena.ne.jp/asin/4592181328/tokyoenvious-22"><img src="http://ecx.images-amazon.com/images/I/517GAM704GL._SL160_.jpg" class="hatena-asin-detail-image" alt="S・A(スペシャル・エー) 2 (花とゆめCOMICS)" title="S・A(スペシャル・エー) 2 (花とゆめCOMICS)"></a>
+                                <div class="hatena-asin-detail-info">
+                                        <p class="hatena-asin-detail-title"><a href="http://d.hatena.ne.jp/asin/4592181328/tokyoenvious-22">S・A(スペシャル・エー) 2 (花とゆめCOMICS)</a></p>
+                                        <ul>
+                                                <li><span class="hatena-asin-detail-label">作者:</span> <a href="http://d.hatena.ne.jp/keyword/%c6%ee%a5%de%a5%ad" class="keyword">南マキ</a></li>
+                                                <li><span class="hatena-asin-detail-label">出版社/メーカー:</span> <a href="http://d.hatena.ne.jp/keyword/%c7%f2%c0%f4%bc%d2" class="keyword">白泉社</a></li>
+                                                <li><span class="hatena-asin-detail-label">発売日:</span> 2004/12/16</li>
+                                                <li><span class="hatena-asin-detail-label">メディア:</span> コミック</li>
+                                                       <li><a href="http://www.amazon.co.jp/exec/obidos/ASIN/4592181328/tokyoenvious-22/" target="_blank">Amazon.co.jpで詳細を見る</a></li>
+                                        </ul>
+
+
+                                </div>
+                                <div class="hatena-asin-detail-foot"></div>
+                        </div>
+
+			<div class="hatena-asin-detail">
+                                <a href="http://d.hatena.ne.jp/asin/4592181336/tokyoenvious-22"><img src="http://ecx.images-amazon.com/images/I/51MhBqFqN%2BL._SL160_.jpg" class="hatena-asin-detail-image" alt="S・A(スペシャル・エー) 3 (花とゆめCOMICS)" title="S・A(スペシャル・エー) 3 (花とゆめCOMICS)"></a>
+                                <div class="hatena-asin-detail-info">
+                                        <p class="hatena-asin-detail-title"><a href="http://d.hatena.ne.jp/asin/4592181336/tokyoenvious-22">S・A(スペシャル・エー) 3 (花とゆめCOMICS)</a></p>
+                                        <ul>
+                                                <li><span class="hatena-asin-detail-label">作者:</span> <a href="http://d.hatena.ne.jp/keyword/%c6%ee%a5%de%a5%ad" class="keyword">南マキ</a></li>
+                                                <li><span class="hatena-asin-detail-label">出版社/メーカー:</span> <a href="http://d.hatena.ne.jp/keyword/%c7%f2%c0%f4%bc%d2" class="keyword">白泉社</a></li>
+                                                <li><span class="hatena-asin-detail-label">発売日:</span> 2005/03/18</li>
+                                                <li><span class="hatena-asin-detail-label">メディア:</span> コミック</li>
+                                                       <li><a href="http://www.amazon.co.jp/exec/obidos/ASIN/4592181336/tokyoenvious-22/" target="_blank">Amazon.co.jpで詳細を見る</a></li>
+                                        </ul>
+
+
+                                </div>
+                                <div class="hatena-asin-detail-foot"></div>
+                        </div>
+
+			<div class="hatena-asin-detail">
+                                <a href="http://d.hatena.ne.jp/asin/4592181344/tokyoenvious-22"><img src="http://ecx.images-amazon.com/images/I/5107BERDE5L._SL160_.jpg" class="hatena-asin-detail-image" alt="S・A(スペシャル・エー) 4 (花とゆめCOMICS)" title="S・A(スペシャル・エー) 4 (花とゆめCOMICS)"></a>
+                                <div class="hatena-asin-detail-info">
+                                        <p class="hatena-asin-detail-title"><a href="http://d.hatena.ne.jp/asin/4592181344/tokyoenvious-22">S・A(スペシャル・エー) 4 (花とゆめCOMICS)</a></p>
+                                        <ul>
+                                                <li><span class="hatena-asin-detail-label">作者:</span> <a href="http://d.hatena.ne.jp/keyword/%c6%ee%a5%de%a5%ad" class="keyword">南マキ</a></li>
+                                                <li><span class="hatena-asin-detail-label">出版社/メーカー:</span> <a href="http://d.hatena.ne.jp/keyword/%c7%f2%c0%f4%bc%d2" class="keyword">白泉社</a></li>
+                                                <li><span class="hatena-asin-detail-label">発売日:</span> 2005/08/19</li>
+                                                <li><span class="hatena-asin-detail-label">メディア:</span> コミック</li>
+                                                       <li><a href="http://www.amazon.co.jp/exec/obidos/ASIN/4592181344/tokyoenvious-22/" target="_blank">Amazon.co.jpで詳細を見る</a></li>
+                                        </ul>
+
+
+                                </div>
+                                <div class="hatena-asin-detail-foot"></div>
+                        </div>
+
+			<div class="hatena-asin-detail">
+                                <a href="http://d.hatena.ne.jp/asin/4592181352/tokyoenvious-22"><img src="http://ecx.images-amazon.com/images/I/51DDZAD8PML._SL160_.jpg" class="hatena-asin-detail-image" alt="S・A(スペシャル・エー) 5 (花とゆめCOMICS)" title="S・A(スペシャル・エー) 5 (花とゆめCOMICS)"></a>
+                                <div class="hatena-asin-detail-info">
+                                        <p class="hatena-asin-detail-title"><a href="http://d.hatena.ne.jp/asin/4592181352/tokyoenvious-22">S・A(スペシャル・エー) 5 (花とゆめCOMICS)</a></p>
+                                        <ul>
+                                                <li><span class="hatena-asin-detail-label">作者:</span> <a href="http://d.hatena.ne.jp/keyword/%c6%ee%a5%de%a5%ad" class="keyword">南マキ</a></li>
+                                                <li><span class="hatena-asin-detail-label">出版社/メーカー:</span> <a href="http://d.hatena.ne.jp/keyword/%c7%f2%c0%f4%bc%d2" class="keyword">白泉社</a></li>
+                                                <li><span class="hatena-asin-detail-label">発売日:</span> 2005/11/18</li>
+                                                <li><span class="hatena-asin-detail-label">メディア:</span> コミック</li>
+                                                       <li><a href="http://www.amazon.co.jp/exec/obidos/ASIN/4592181352/tokyoenvious-22/" target="_blank">Amazon.co.jpで詳細を見る</a></li>
+                                        </ul>
+
+
+                                </div>
+                                <div class="hatena-asin-detail-foot"></div>
+                        </div>
+
+			<div class="hatena-asin-detail">
+                                <a href="http://d.hatena.ne.jp/asin/4592181360/tokyoenvious-22"><img src="http://ecx.images-amazon.com/images/I/51VSN5CQ6HL._SL160_.jpg" class="hatena-asin-detail-image" alt="S・A(スペシャル・エー) 6 (花とゆめCOMICS)" title="S・A(スペシャル・エー) 6 (花とゆめCOMICS)"></a>
+                                <div class="hatena-asin-detail-info">
+                                        <p class="hatena-asin-detail-title"><a href="http://d.hatena.ne.jp/asin/4592181360/tokyoenvious-22">S・A(スペシャル・エー) 6 (花とゆめCOMICS)</a></p>
+                                        <ul>
+                                                <li><span class="hatena-asin-detail-label">作者:</span> <a href="http://d.hatena.ne.jp/keyword/%c6%ee%a5%de%a5%ad" class="keyword">南マキ</a></li>
+                                                <li><span class="hatena-asin-detail-label">出版社/メーカー:</span> <a href="http://d.hatena.ne.jp/keyword/%c7%f2%c0%f4%bc%d2" class="keyword">白泉社</a></li>
+                                                <li><span class="hatena-asin-detail-label">発売日:</span> 2006/03/17</li>
+                                                <li><span class="hatena-asin-detail-label">メディア:</span> コミック</li>
+                                                       <li><a href="http://www.amazon.co.jp/exec/obidos/ASIN/4592181360/tokyoenvious-22/" target="_blank">Amazon.co.jpで詳細を見る</a></li>
+                                        </ul>
+
+
+                                </div>
+                                <div class="hatena-asin-detail-foot"></div>
+                        </div>
+
+			<div class="hatena-asin-detail">
+                                <a href="http://d.hatena.ne.jp/asin/4592181379/tokyoenvious-22"><img src="http://ecx.images-amazon.com/images/I/51ST3BR6N8L._SL160_.jpg" class="hatena-asin-detail-image" alt="S・A(スペシャル・エー) 7 (花とゆめCOMICS)" title="S・A(スペシャル・エー) 7 (花とゆめCOMICS)"></a>
+                                <div class="hatena-asin-detail-info">
+                                        <p class="hatena-asin-detail-title"><a href="http://d.hatena.ne.jp/asin/4592181379/tokyoenvious-22">S・A(スペシャル・エー) 7 (花とゆめCOMICS)</a></p>
+                                        <ul>
+                                                <li><span class="hatena-asin-detail-label">作者:</span> <a href="http://d.hatena.ne.jp/keyword/%c6%ee%a5%de%a5%ad" class="keyword">南マキ</a></li>
+                                                <li><span class="hatena-asin-detail-label">出版社/メーカー:</span> <a href="http://d.hatena.ne.jp/keyword/%c7%f2%c0%f4%bc%d2" class="keyword">白泉社</a></li>
+                                                <li><span class="hatena-asin-detail-label">発売日:</span> 2006/08/18</li>
+                                                <li><span class="hatena-asin-detail-label">メディア:</span> コミック</li>
+                                                       <li><a href="http://www.amazon.co.jp/exec/obidos/ASIN/4592181379/tokyoenvious-22/" target="_blank">Amazon.co.jpで詳細を見る</a></li>
+                                        </ul>
+
+
+                                </div>
+                                <div class="hatena-asin-detail-foot"></div>
+                        </div>
+
+			<div class="hatena-asin-detail">
+                                <a href="http://d.hatena.ne.jp/asin/4592181387/tokyoenvious-22"><img src="http://ecx.images-amazon.com/images/I/51YXMB9F6EL._SL160_.jpg" class="hatena-asin-detail-image" alt="S・A(スペシャル・エー) 8 (花とゆめCOMICS)" title="S・A(スペシャル・エー) 8 (花とゆめCOMICS)"></a>
+                                <div class="hatena-asin-detail-info">
+                                        <p class="hatena-asin-detail-title"><a href="http://d.hatena.ne.jp/asin/4592181387/tokyoenvious-22">S・A(スペシャル・エー) 8 (花とゆめCOMICS)</a></p>
+                                        <ul>
+                                                <li><span class="hatena-asin-detail-label">作者:</span> <a href="http://d.hatena.ne.jp/keyword/%c6%ee%a5%de%a5%ad" class="keyword">南マキ</a></li>
+                                                <li><span class="hatena-asin-detail-label">出版社/メーカー:</span> <a href="http://d.hatena.ne.jp/keyword/%c7%f2%c0%f4%bc%d2" class="keyword">白泉社</a></li>
+                                                <li><span class="hatena-asin-detail-label">発売日:</span> 2006/11/17</li>
+                                                <li><span class="hatena-asin-detail-label">メディア:</span> コミック</li>
+                                                       <li><a href="http://www.amazon.co.jp/exec/obidos/ASIN/4592181387/tokyoenvious-22/" target="_blank">Amazon.co.jpで詳細を見る</a></li>
+                                        </ul>
+
+
+                                </div>
+                                <div class="hatena-asin-detail-foot"></div>
+                        </div>
+
+			<div class="hatena-asin-detail">
+                                <a href="http://d.hatena.ne.jp/asin/4592181395/tokyoenvious-22"><img src="http://ecx.images-amazon.com/images/I/51par5I2LUL._SL160_.jpg" class="hatena-asin-detail-image" alt="S・A(スペシャル・エー) 9 (花とゆめCOMICS)" title="S・A(スペシャル・エー) 9 (花とゆめCOMICS)"></a>
+                                <div class="hatena-asin-detail-info">
+                                        <p class="hatena-asin-detail-title"><a href="http://d.hatena.ne.jp/asin/4592181395/tokyoenvious-22">S・A(スペシャル・エー) 9 (花とゆめCOMICS)</a></p>
+                                        <ul>
+                                                <li><span class="hatena-asin-detail-label">作者:</span> <a href="http://d.hatena.ne.jp/keyword/%c6%ee%a5%de%a5%ad" class="keyword">南マキ</a></li>
+                                                <li><span class="hatena-asin-detail-label">出版社/メーカー:</span> <a href="http://d.hatena.ne.jp/keyword/%c7%f2%c0%f4%bc%d2" class="keyword">白泉社</a></li>
+                                                <li><span class="hatena-asin-detail-label">発売日:</span> 2007/02/19</li>
+                                                <li><span class="hatena-asin-detail-label">メディア:</span> コミック</li>
+                                                       <li><a href="http://www.amazon.co.jp/exec/obidos/ASIN/4592181395/tokyoenvious-22/" target="_blank">Amazon.co.jpで詳細を見る</a></li>
+                                        </ul>
+
+
+                                </div>
+                                <div class="hatena-asin-detail-foot"></div>
+                        </div>
+
+			<div class="hatena-asin-detail">
+                                <a href="http://d.hatena.ne.jp/asin/4592181409/tokyoenvious-22"><img src="http://ecx.images-amazon.com/images/I/51VUu7f12GL._SL160_.jpg" class="hatena-asin-detail-image" alt="S・A(スペシャル・エー) 10 (花とゆめCOMICS)" title="S・A(スペシャル・エー) 10 (花とゆめCOMICS)"></a>
+                                <div class="hatena-asin-detail-info">
+                                        <p class="hatena-asin-detail-title"><a href="http://d.hatena.ne.jp/asin/4592181409/tokyoenvious-22">S・A(スペシャル・エー) 10 (花とゆめCOMICS)</a></p>
+                                        <ul>
+                                                <li><span class="hatena-asin-detail-label">作者:</span> <a href="http://d.hatena.ne.jp/keyword/%c6%ee%a5%de%a5%ad" class="keyword">南マキ</a></li>
+                                                <li><span class="hatena-asin-detail-label">出版社/メーカー:</span> <a href="http://d.hatena.ne.jp/keyword/%c7%f2%c0%f4%bc%d2" class="keyword">白泉社</a></li>
+                                                <li><span class="hatena-asin-detail-label">発売日:</span> 2007/07/19</li>
+                                                <li><span class="hatena-asin-detail-label">メディア:</span> コミック</li>
+                                                       <li><a href="http://www.amazon.co.jp/exec/obidos/ASIN/4592181409/tokyoenvious-22/" target="_blank">Amazon.co.jpで詳細を見る</a></li>
+                                        </ul>
+
+
+                                </div>
+                                <div class="hatena-asin-detail-foot"></div>
+                        </div>
+
+			<div class="hatena-asin-detail">
+                                <a href="http://d.hatena.ne.jp/asin/4592181433/tokyoenvious-22"><img src="http://ecx.images-amazon.com/images/I/51GmgH4KVeL._SL160_.jpg" class="hatena-asin-detail-image" alt="S・A(スペシャル・エー) 13 (花とゆめCOMICS)" title="S・A(スペシャル・エー) 13 (花とゆめCOMICS)"></a>
+                                <div class="hatena-asin-detail-info">
+                                        <p class="hatena-asin-detail-title"><a href="http://d.hatena.ne.jp/asin/4592181433/tokyoenvious-22">S・A(スペシャル・エー) 13 (花とゆめCOMICS)</a></p>
+                                        <ul>
+                                                <li><span class="hatena-asin-detail-label">作者:</span> <a href="http://d.hatena.ne.jp/keyword/%c6%ee%a5%de%a5%ad" class="keyword">南マキ</a></li>
+                                                <li><span class="hatena-asin-detail-label">出版社/メーカー:</span> <a href="http://d.hatena.ne.jp/keyword/%c7%f2%c0%f4%bc%d2" class="keyword">白泉社</a></li>
+                                                <li><span class="hatena-asin-detail-label">発売日:</span> 2008/04/18</li>
+                                                <li><span class="hatena-asin-detail-label">メディア:</span> コミック</li>
+                                                       <li><a href="http://www.amazon.co.jp/exec/obidos/ASIN/4592181433/tokyoenvious-22/" target="_blank">Amazon.co.jpで詳細を見る</a></li>
+                                        </ul>
+
+
+                                </div>
+                                <div class="hatena-asin-detail-foot"></div>
+                        </div>
+
+			<div class="hatena-asin-detail">
+                                <a href="http://d.hatena.ne.jp/asin/4592181441/tokyoenvious-22"><img src="http://ecx.images-amazon.com/images/I/51ilV7vMeZL._SL160_.jpg" class="hatena-asin-detail-image" alt="S・A(スペシャル・エー) 14 (花とゆめCOMICS)" title="S・A(スペシャル・エー) 14 (花とゆめCOMICS)"></a>
+                                <div class="hatena-asin-detail-info">
+                                        <p class="hatena-asin-detail-title"><a href="http://d.hatena.ne.jp/asin/4592181441/tokyoenvious-22">S・A(スペシャル・エー) 14 (花とゆめCOMICS)</a></p>
+                                        <ul>
+                                                <li><span class="hatena-asin-detail-label">作者:</span> <a href="http://d.hatena.ne.jp/keyword/%c6%ee%a5%de%a5%ad" class="keyword">南マキ</a></li>
+                                                <li><span class="hatena-asin-detail-label">出版社/メーカー:</span> <a href="http://d.hatena.ne.jp/keyword/%c7%f2%c0%f4%bc%d2" class="keyword">白泉社</a></li>
+                                                <li><span class="hatena-asin-detail-label">発売日:</span> 2008/07/17</li>
+                                                <li><span class="hatena-asin-detail-label">メディア:</span> コミック</li>
+                                                       <li><a href="http://www.amazon.co.jp/exec/obidos/ASIN/4592181441/tokyoenvious-22/" target="_blank">Amazon.co.jpで詳細を見る</a></li>
+                                        </ul>
+
+
+                                </div>
+                                <div class="hatena-asin-detail-foot"></div>
+                        </div>
+
+			<p>これすげー面白い。面白い。面白いよ！</p>
+			<h4> 陰陽師</h4>
+			<div class="hatena-asin-detail">
+                                <a href="http://d.hatena.ne.jp/asin/4167528045/tokyoenvious-22"><img src="http://ecx.images-amazon.com/images/I/51H57YRPKJL._SL160_.jpg" class="hatena-asin-detail-image" alt="陰陽師―飛天ノ巻 (文春文庫)" title="陰陽師―飛天ノ巻 (文春文庫)"></a>
+                                <div class="hatena-asin-detail-info">
+                                        <p class="hatena-asin-detail-title"><a href="http://d.hatena.ne.jp/asin/4167528045/tokyoenvious-22">陰陽師―飛天ノ巻 (文春文庫)</a></p>
+                                        <ul>
+                                                <li><span class="hatena-asin-detail-label">作者:</span> <a href="http://d.hatena.ne.jp/keyword/%cc%b4%cb%ed%e0%d3" class="keyword">夢枕獏</a></li>
+                                                <li><span class="hatena-asin-detail-label">出版社/メーカー:</span> <a href="http://d.hatena.ne.jp/keyword/%ca%b8%e9%ba%bd%d5%bd%a9" class="keyword">文藝春秋</a></li>
+                                                <li><span class="hatena-asin-detail-label">発売日:</span> 1998/11</li>
+                                                <li><span class="hatena-asin-detail-label">メディア:</span> 文庫</li>
+                                                       <li><a href="http://www.amazon.co.jp/exec/obidos/ASIN/4167528045/tokyoenvious-22/" target="_blank">Amazon.co.jpで詳細を見る</a></li>
+                                        </ul>
+
+
+                                </div>
+                                <div class="hatena-asin-detail-foot"></div>
+                        </div>
+
+			<div class="hatena-asin-detail">
+                                <a href="http://d.hatena.ne.jp/asin/4167528053/tokyoenvious-22"><img src="http://ecx.images-amazon.com/images/I/51FA1E6C00L._SL160_.jpg" class="hatena-asin-detail-image" alt="陰陽師―付喪神ノ巻 (文春文庫)" title="陰陽師―付喪神ノ巻 (文春文庫)"></a>
+                                <div class="hatena-asin-detail-info">
+                                        <p class="hatena-asin-detail-title"><a href="http://d.hatena.ne.jp/asin/4167528053/tokyoenvious-22">陰陽師―付喪神ノ巻 (文春文庫)</a></p>
+                                        <ul>
+                                                <li><span class="hatena-asin-detail-label">作者:</span> <a href="http://d.hatena.ne.jp/keyword/%cc%b4%cb%ed%e0%d3" class="keyword">夢枕獏</a></li>
+                                                <li><span class="hatena-asin-detail-label">出版社/メーカー:</span> <a href="http://d.hatena.ne.jp/keyword/%ca%b8%e9%ba%bd%d5%bd%a9" class="keyword">文藝春秋</a></li>
+                                                <li><span class="hatena-asin-detail-label">発売日:</span> 2000/11</li>
+                                                <li><span class="hatena-asin-detail-label">メディア:</span> 文庫</li>
+                                                       <li><a href="http://www.amazon.co.jp/exec/obidos/ASIN/4167528053/tokyoenvious-22/" target="_blank">Amazon.co.jpで詳細を見る</a></li>
+                                        </ul>
+
+
+                                </div>
+                                <div class="hatena-asin-detail-foot"></div>
+                        </div>
+
+			<p>ファファード&グレイ・マウザーもそうだけど男二人主人公ってのがなんか好きでラノベ感覚で読んでます。</p>
+			<h4> メドゥサ、鏡をごらん</h4>
+			<div class="hatena-asin-detail">
+                                <a href="http://d.hatena.ne.jp/asin/4062735067/tokyoenvious-22"><img src="http://ecx.images-amazon.com/images/I/51YXPQHN2WL._SL160_.jpg" class="hatena-asin-detail-image" alt="メドゥサ、鏡をごらん (講談社文庫)" title="メドゥサ、鏡をごらん (講談社文庫)"></a>
+                                <div class="hatena-asin-detail-info">
+                                        <p class="hatena-asin-detail-title"><a href="http://d.hatena.ne.jp/asin/4062735067/tokyoenvious-22">メドゥサ、鏡をごらん (講談社文庫)</a></p>
+                                        <ul>
+                                                <li><span class="hatena-asin-detail-label">作者:</span> <a href="http://d.hatena.ne.jp/keyword/%b0%e6%be%e5%cc%b4%bf%cd" class="keyword">井上夢人</a></li>
+                                                <li><span class="hatena-asin-detail-label">出版社/メーカー:</span> <a href="http://d.hatena.ne.jp/keyword/%b9%d6%c3%cc%bc%d2" class="keyword">講談社</a></li>
+                                                <li><span class="hatena-asin-detail-label">発売日:</span> 2002/08</li>
+                                                <li><span class="hatena-asin-detail-label">メディア:</span> 文庫</li>
+                                                       <li><a href="http://www.amazon.co.jp/exec/obidos/ASIN/4062735067/tokyoenvious-22/" target="_blank">Amazon.co.jpで詳細を見る</a></li>
+                                        </ul>
+
+
+                                </div>
+                                <div class="hatena-asin-detail-foot"></div>
+                        </div>
+
+			<p>ミステリーだと思って読んでたらホラーで泣いた</p>
+			<h4> あやかしの鏡</h4>
+			<div class="hatena-asin-detail">
+                                <a href="http://d.hatena.ne.jp/asin/4062850222/tokyoenvious-22"><img src="http://ecx.images-amazon.com/images/I/51WgqIgJVoL._SL160_.jpg" class="hatena-asin-detail-image" alt="あやかしの鏡 (講談社青い鳥文庫)" title="あやかしの鏡 (講談社青い鳥文庫)"></a>
+                                <div class="hatena-asin-detail-info">
+                                        <p class="hatena-asin-detail-title"><a href="http://d.hatena.ne.jp/asin/4062850222/tokyoenvious-22">あやかしの鏡 (講談社青い鳥文庫)</a></p>
+                                        <ul>
+                                                <li><span class="hatena-asin-detail-label">作者:</span> <a href="http://d.hatena.ne.jp/keyword/%b9%e1%c3%ab%c8%fe%b5%a8" class="keyword">香谷美季</a>, <a href="http://d.hatena.ne.jp/keyword/%cd%a7%c9%f7%bb%d2" class="keyword">友風子</a></li>
+                                                <li><span class="hatena-asin-detail-label">出版社/メーカー:</span> <a href="http://d.hatena.ne.jp/keyword/%b9%d6%c3%cc%bc%d2" class="keyword">講談社</a></li>
+                                                <li><span class="hatena-asin-detail-label">発売日:</span> 2008/04/15</li>
+                                                <li><span class="hatena-asin-detail-label">メディア:</span> 新書</li>
+                                                       <li><a href="http://www.amazon.co.jp/exec/obidos/ASIN/4062850222/tokyoenvious-22/" target="_blank">Amazon.co.jpで詳細を見る</a></li>
+                                        </ul>
+
+
+                                </div>
+                                <div class="hatena-asin-detail-foot"></div>
+                        </div>
+
+			<p>表紙の女の子がかわいいなーと思って買ったら男の子だった。</p>
+			<h4> 文学少女</h4>
+			<div class="hatena-asin-detail">
+                                <a href="http://d.hatena.ne.jp/asin/4757728069/tokyoenvious-22"><img src="http://ecx.images-amazon.com/images/I/51J5B477QWL._SL160_.jpg" class="hatena-asin-detail-image" alt="“文学少女”と死にたがりの道化 (ファミ通文庫)" title="“文学少女”と死にたがりの道化 (ファミ通文庫)"></a>
+                                <div class="hatena-asin-detail-info">
+                                        <p class="hatena-asin-detail-title"><a href="http://d.hatena.ne.jp/asin/4757728069/tokyoenvious-22">“文学少女”と死にたがりの道化 (ファミ通文庫)</a></p>
+                                        <ul>
+                                                <li><span class="hatena-asin-detail-label">作者:</span> <a href="http://d.hatena.ne.jp/keyword/%cc%ee%c2%bc%c8%fe%b7%ee" class="keyword">野村美月</a>, <a href="http://d.hatena.ne.jp/keyword/%c3%dd%b2%ac%c8%fe%ca%e6" class="keyword">竹岡美穂</a></li>
+                                                <li><span class="hatena-asin-detail-label">出版社/メーカー:</span> <a href="http://d.hatena.ne.jp/keyword/%a5%a8%a5%f3%a5%bf%a1%bc%a5%d6%a5%ec%a5%a4%a5%f3" class="keyword">エンターブレイン</a></li>
+                                                <li><span class="hatena-asin-detail-label">発売日:</span> 2006/04/28</li>
+                                                <li><span class="hatena-asin-detail-label">メディア:</span> 文庫</li>
+                                                       <li><a href="http://www.amazon.co.jp/exec/obidos/ASIN/4757728069/tokyoenvious-22/" target="_blank">Amazon.co.jpで詳細を見る</a></li>
+                                        </ul>
+
+
+                                </div>
+                                <div class="hatena-asin-detail-foot"></div>
+                        </div>
+
+			<div class="hatena-asin-detail">
+                                <a href="http://d.hatena.ne.jp/asin/4757729154/tokyoenvious-22"><img src="http://ecx.images-amazon.com/images/I/51HK44C7N6L._SL160_.jpg" class="hatena-asin-detail-image" alt="”文学少女”と飢え渇く幽霊 (ファミ通文庫)" title="”文学少女”と飢え渇く幽霊 (ファミ通文庫)"></a>
+                                <div class="hatena-asin-detail-info">
+                                        <p class="hatena-asin-detail-title"><a href="http://d.hatena.ne.jp/asin/4757729154/tokyoenvious-22">”文学少女”と飢え渇く幽霊 (ファミ通文庫)</a></p>
+                                        <ul>
+                                                <li><span class="hatena-asin-detail-label">作者:</span> <a href="http://d.hatena.ne.jp/keyword/%cc%ee%c2%bc%c8%fe%b7%ee" class="keyword">野村美月</a>, <a href="http://d.hatena.ne.jp/keyword/%c3%dd%b2%ac%c8%fe%ca%e6" class="keyword">竹岡美穂</a></li>
+                                                <li><span class="hatena-asin-detail-label">出版社/メーカー:</span> <a href="http://d.hatena.ne.jp/keyword/%a5%a8%a5%f3%a5%bf%a1%bc%a5%d6%a5%ec%a5%a4%a5%f3" class="keyword">エンターブレイン</a></li>
+                                                <li><span class="hatena-asin-detail-label">発売日:</span> 2006/08/30</li>
+                                                <li><span class="hatena-asin-detail-label">メディア:</span> 文庫</li>
+                                                       <li><a href="http://www.amazon.co.jp/exec/obidos/ASIN/4757729154/tokyoenvious-22/" target="_blank">Amazon.co.jpで詳細を見る</a></li>
+                                        </ul>
+
+
+                                </div>
+                                <div class="hatena-asin-detail-foot"></div>
+                        </div>
+
+			<div class="hatena-asin-detail">
+                                <a href="http://d.hatena.ne.jp/asin/4757730845/tokyoenvious-22"><img src="http://ecx.images-amazon.com/images/I/515E2O8FLhL._SL160_.jpg" class="hatena-asin-detail-image" alt="“文学少女”と繋がれた愚者 (ファミ通文庫)" title="“文学少女”と繋がれた愚者 (ファミ通文庫)"></a>
+                                <div class="hatena-asin-detail-info">
+                                        <p class="hatena-asin-detail-title"><a href="http://d.hatena.ne.jp/asin/4757730845/tokyoenvious-22">“文学少女”と繋がれた愚者 (ファミ通文庫)</a></p>
+                                        <ul>
+                                                <li><span class="hatena-asin-detail-label">作者:</span> <a href="http://d.hatena.ne.jp/keyword/%cc%ee%c2%bc%c8%fe%b7%ee" class="keyword">野村美月</a>, <a href="http://d.hatena.ne.jp/keyword/%c3%dd%b2%ac%c8%fe%ca%e6" class="keyword">竹岡美穂</a></li>
+                                                <li><span class="hatena-asin-detail-label">出版社/メーカー:</span> <a href="http://d.hatena.ne.jp/keyword/%a5%a8%a5%f3%a5%bf%a1%bc%a5%d6%a5%ec%a5%a4%a5%f3" class="keyword">エンターブレイン</a></li>
+                                                <li><span class="hatena-asin-detail-label">発売日:</span> 2006/12/25</li>
+                                                <li><span class="hatena-asin-detail-label">メディア:</span> 文庫</li>
+                                                       <li><a href="http://www.amazon.co.jp/exec/obidos/ASIN/4757730845/tokyoenvious-22/" target="_blank">Amazon.co.jpで詳細を見る</a></li>
+                                        </ul>
+
+
+                                </div>
+                                <div class="hatena-asin-detail-foot"></div>
+                        </div>
+
+			<div class="hatena-asin-detail">
+                                <a href="http://d.hatena.ne.jp/asin/4757735065/tokyoenvious-22"><img src="http://ecx.images-amazon.com/images/I/516nx7zYMEL._SL160_.jpg" class="hatena-asin-detail-image" alt="“文学少女”と穢名の天使 (ファミ通文庫)" title="“文学少女”と穢名の天使 (ファミ通文庫)"></a>
+                                <div class="hatena-asin-detail-info">
+                                        <p class="hatena-asin-detail-title"><a href="http://d.hatena.ne.jp/asin/4757735065/tokyoenvious-22">“文学少女”と穢名の天使 (ファミ通文庫)</a></p>
+                                        <ul>
+                                                <li><span class="hatena-asin-detail-label">作者:</span> <a href="http://d.hatena.ne.jp/keyword/%cc%ee%c2%bc%c8%fe%b7%ee" class="keyword">野村美月</a>, <a href="http://d.hatena.ne.jp/keyword/%c3%dd%b2%ac%c8%fe%ca%e6" class="keyword">竹岡美穂</a></li>
+                                                <li><span class="hatena-asin-detail-label">出版社/メーカー:</span> <a href="http://d.hatena.ne.jp/keyword/%a5%a8%a5%f3%a5%bf%a1%bc%a5%d6%a5%ec%a5%a4%a5%f3" class="keyword">エンターブレイン</a></li>
+                                                <li><span class="hatena-asin-detail-label">発売日:</span> 2007/04/28</li>
+                                                <li><span class="hatena-asin-detail-label">メディア:</span> 文庫</li>
+                                                       <li><a href="http://www.amazon.co.jp/exec/obidos/ASIN/4757735065/tokyoenvious-22/" target="_blank">Amazon.co.jpで詳細を見る</a></li>
+                                        </ul>
+
+
+                                </div>
+                                <div class="hatena-asin-detail-foot"></div>
+                        </div>
+
+			<div class="hatena-asin-detail">
+                                <a href="http://d.hatena.ne.jp/asin/4757736851/tokyoenvious-22"><img src="http://ecx.images-amazon.com/images/I/514vIMi2-AL._SL160_.jpg" class="hatena-asin-detail-image" alt="“文学少女”と慟哭の巡礼者 (ファミ通文庫)" title="“文学少女”と慟哭の巡礼者 (ファミ通文庫)"></a>
+                                <div class="hatena-asin-detail-info">
+                                        <p class="hatena-asin-detail-title"><a href="http://d.hatena.ne.jp/asin/4757736851/tokyoenvious-22">“文学少女”と慟哭の巡礼者 (ファミ通文庫)</a></p>
+                                        <ul>
+                                                <li><span class="hatena-asin-detail-label">作者:</span> <a href="http://d.hatena.ne.jp/keyword/%cc%ee%c2%bc%c8%fe%b7%ee" class="keyword">野村美月</a>, <a href="http://d.hatena.ne.jp/keyword/%c3%dd%b2%ac%c8%fe%ca%e6" class="keyword">竹岡美穂</a></li>
+                                                <li><span class="hatena-asin-detail-label">出版社/メーカー:</span> <a href="http://d.hatena.ne.jp/keyword/%a5%a8%a5%f3%a5%bf%a1%bc%a5%d6%a5%ec%a5%a4%a5%f3" class="keyword">エンターブレイン</a></li>
+                                                <li><span class="hatena-asin-detail-label">発売日:</span> 2007/08/30</li>
+                                                <li><span class="hatena-asin-detail-label">メディア:</span> 文庫</li>
+                                                       <li><a href="http://www.amazon.co.jp/exec/obidos/ASIN/4757736851/tokyoenvious-22/" target="_blank">Amazon.co.jpで詳細を見る</a></li>
+                                        </ul>
+
+
+                                </div>
+                                <div class="hatena-asin-detail-foot"></div>
+                        </div>
+
+			<div class="hatena-asin-detail">
+                                <a href="http://d.hatena.ne.jp/asin/4757739184/tokyoenvious-22"><img src="http://ecx.images-amazon.com/images/I/511UiC7eE2L._SL160_.jpg" class="hatena-asin-detail-image" alt="“文学少女”と月花を孕く水妖 (ファミ通文庫)" title="“文学少女”と月花を孕く水妖 (ファミ通文庫)"></a>
+                                <div class="hatena-asin-detail-info">
+                                        <p class="hatena-asin-detail-title"><a href="http://d.hatena.ne.jp/asin/4757739184/tokyoenvious-22">“文学少女”と月花を孕く水妖 (ファミ通文庫)</a></p>
+                                        <ul>
+                                                <li><span class="hatena-asin-detail-label">作者:</span> <a href="http://d.hatena.ne.jp/keyword/%cc%ee%c2%bc%c8%fe%b7%ee" class="keyword">野村美月</a>, <a href="http://d.hatena.ne.jp/keyword/%c3%dd%b2%ac%c8%fe%ca%e6" class="keyword">竹岡美穂</a></li>
+                                                <li><span class="hatena-asin-detail-label">出版社/メーカー:</span> <a href="http://d.hatena.ne.jp/keyword/%a5%a8%a5%f3%a5%bf%a1%bc%a5%d6%a5%ec%a5%a4%a5%f3" class="keyword">エンターブレイン</a></li>
+                                                <li><span class="hatena-asin-detail-label">発売日:</span> 2007/12/25</li>
+                                                <li><span class="hatena-asin-detail-label">メディア:</span> 文庫</li>
+                                                       <li><a href="http://www.amazon.co.jp/exec/obidos/ASIN/4757739184/tokyoenvious-22/" target="_blank">Amazon.co.jpで詳細を見る</a></li>
+                                        </ul>
+
+
+                                </div>
+                                <div class="hatena-asin-detail-foot"></div>
+                        </div>
+
+			<p><a href="http://d.hatena.ne.jp/secondlife/">id:secondlife</a> にもらった</p>
+			<h4> 虎よ、虎よ！</h4>
+			<div class="hatena-asin-detail">
+                                <a href="http://d.hatena.ne.jp/asin/4150116342/tokyoenvious-22"><img src="http://ecx.images-amazon.com/images/I/41rvKVMYwzL._SL160_.jpg" class="hatena-asin-detail-image" alt="虎よ、虎よ! (ハヤカワ文庫 SF ヘ 1-2)" title="虎よ、虎よ! (ハヤカワ文庫 SF ヘ 1-2)"></a>
+                                <div class="hatena-asin-detail-info">
+                                        <p class="hatena-asin-detail-title"><a href="http://d.hatena.ne.jp/asin/4150116342/tokyoenvious-22">虎よ、虎よ! (ハヤカワ文庫 SF ヘ 1-2)</a></p>
+                                        <ul>
+                                                <li><span class="hatena-asin-detail-label">作者:</span> <a href="http://d.hatena.ne.jp/keyword/%a5%a2%a5%eb%a5%d5%a5%ec%a5%c3%a5%c9%a1%a6%a5%d9%a5%b9%a5%bf%a1%bc" class="keyword">アルフレッド・ベスター</a>, <a href="http://d.hatena.ne.jp/keyword/%bb%fb%c5%c4%b9%ee%cc%e9" class="keyword">寺田克也</a>, <a href="http://d.hatena.ne.jp/keyword/%c3%e6%c5%c4%b9%cc%bc%a3" class="keyword">中田耕治</a></li>
+                                                <li><span class="hatena-asin-detail-label">出版社/メーカー:</span> <a href="http://d.hatena.ne.jp/keyword/%c1%e1%c0%ee%bd%f1%cb%bc" class="keyword">早川書房</a></li>
+                                                <li><span class="hatena-asin-detail-label">発売日:</span> 2008/02/22</li>
+                                                <li><span class="hatena-asin-detail-label">メディア:</span> 文庫</li>
+                                                       <li><a href="http://www.amazon.co.jp/exec/obidos/ASIN/4150116342/tokyoenvious-22/" target="_blank">Amazon.co.jpで詳細を見る</a></li>
+                                        </ul>
+
+
+                                </div>
+                                <div class="hatena-asin-detail-foot"></div>
+                        </div>
+
+			<p>アニメ化されたのを観てみたかったなー。</p>
+			<h4> ガダラの豚</h4>
+			<div class="hatena-asin-detail">
+                                <a href="http://d.hatena.ne.jp/asin/4087484807/tokyoenvious-22"><img src="http://ecx.images-amazon.com/images/I/51HDYXRVKQL._SL160_.jpg" class="hatena-asin-detail-image" alt="ガダラの豚〈1〉 (集英社文庫)" title="ガダラの豚〈1〉 (集英社文庫)"></a>
+                                <div class="hatena-asin-detail-info">
+                                        <p class="hatena-asin-detail-title"><a href="http://d.hatena.ne.jp/asin/4087484807/tokyoenvious-22">ガダラの豚〈1〉 (集英社文庫)</a></p>
+                                        <ul>
+                                                <li><span class="hatena-asin-detail-label">作者:</span> <a href="http://d.hatena.ne.jp/keyword/%c3%e6%c5%e7%a4%e9%a4%e2" class="keyword">中島らも</a></li>
+                                                <li><span class="hatena-asin-detail-label">出版社/メーカー:</span> <a href="http://d.hatena.ne.jp/keyword/%bd%b8%b1%d1%bc%d2" class="keyword">集英社</a></li>
+                                                <li><span class="hatena-asin-detail-label">発売日:</span> 1996/05</li>
+                                                <li><span class="hatena-asin-detail-label">メディア:</span> 文庫</li>
+                                                       <li><a href="http://www.amazon.co.jp/exec/obidos/ASIN/4087484807/tokyoenvious-22/" target="_blank">Amazon.co.jpで詳細を見る</a></li>
+                                        </ul>
+
+
+                                </div>
+                                <div class="hatena-asin-detail-foot"></div>
+                        </div>
+
+			<div class="hatena-asin-detail">
+                                <a href="http://d.hatena.ne.jp/asin/4087484815/tokyoenvious-22"><img src="http://ecx.images-amazon.com/images/I/51TZKDHJXPL._SL160_.jpg" class="hatena-asin-detail-image" alt="ガダラの豚〈2〉 (集英社文庫)" title="ガダラの豚〈2〉 (集英社文庫)"></a>
+                                <div class="hatena-asin-detail-info">
+                                        <p class="hatena-asin-detail-title"><a href="http://d.hatena.ne.jp/asin/4087484815/tokyoenvious-22">ガダラの豚〈2〉 (集英社文庫)</a></p>
+                                        <ul>
+                                                <li><span class="hatena-asin-detail-label">作者:</span> <a href="http://d.hatena.ne.jp/keyword/%c3%e6%c5%e7%a4%e9%a4%e2" class="keyword">中島らも</a></li>
+                                                <li><span class="hatena-asin-detail-label">出版社/メーカー:</span> <a href="http://d.hatena.ne.jp/keyword/%bd%b8%b1%d1%bc%d2" class="keyword">集英社</a></li>
+                                                <li><span class="hatena-asin-detail-label">発売日:</span> 1996/05</li>
+                                                <li><span class="hatena-asin-detail-label">メディア:</span> 文庫</li>
+                                                       <li><a href="http://www.amazon.co.jp/exec/obidos/ASIN/4087484815/tokyoenvious-22/" target="_blank">Amazon.co.jpで詳細を見る</a></li>
+                                        </ul>
+
+
+                                </div>
+                                <div class="hatena-asin-detail-foot"></div>
+                        </div>
+
+			<div class="hatena-asin-detail">
+                                <a href="http://d.hatena.ne.jp/asin/4087484823/tokyoenvious-22"><img src="http://ecx.images-amazon.com/images/I/61SZDNA1MML._SL160_.jpg" class="hatena-asin-detail-image" alt="ガダラの豚〈3〉 (集英社文庫)" title="ガダラの豚〈3〉 (集英社文庫)"></a>
+                                <div class="hatena-asin-detail-info">
+                                        <p class="hatena-asin-detail-title"><a href="http://d.hatena.ne.jp/asin/4087484823/tokyoenvious-22">ガダラの豚〈3〉 (集英社文庫)</a></p>
+                                        <ul>
+                                                <li><span class="hatena-asin-detail-label">作者:</span> <a href="http://d.hatena.ne.jp/keyword/%c3%e6%c5%e7%a4%e9%a4%e2" class="keyword">中島らも</a></li>
+                                                <li><span class="hatena-asin-detail-label">出版社/メーカー:</span> <a href="http://d.hatena.ne.jp/keyword/%bd%b8%b1%d1%bc%d2" class="keyword">集英社</a></li>
+                                                <li><span class="hatena-asin-detail-label">発売日:</span> 1996/05</li>
+                                                <li><span class="hatena-asin-detail-label">メディア:</span> 文庫</li>
+                                                       <li><a href="http://www.amazon.co.jp/exec/obidos/ASIN/4087484823/tokyoenvious-22/" target="_blank">Amazon.co.jpで詳細を見る</a></li>
+                                        </ul>
+
+
+                                </div>
+                                <div class="hatena-asin-detail-foot"></div>
+                        </div>
+
+			<p>面白かったー。3巻がすげー展開になってて笑った。</p>
+			<h4> ひみこい</h4>
+			<div class="hatena-asin-detail">
+                                <a href="http://d.hatena.ne.jp/asin/4063655024/tokyoenvious-22"><img src="http://ecx.images-amazon.com/images/I/51QH8%2BaZAtL._SL160_.jpg" class="hatena-asin-detail-image" alt="ひみこい 1 (デザートコミックス)" title="ひみこい 1 (デザートコミックス)"></a>
+                                <div class="hatena-asin-detail-info">
+                                        <p class="hatena-asin-detail-title"><a href="http://d.hatena.ne.jp/asin/4063655024/tokyoenvious-22">ひみこい 1 (デザートコミックス)</a></p>
+                                        <ul>
+                                                <li><span class="hatena-asin-detail-label">作者:</span> <a href="http://d.hatena.ne.jp/keyword/%a4%ed%a4%d3%a4%b3" class="keyword">ろびこ</a></li>
+                                                <li><span class="hatena-asin-detail-label">出版社/メーカー:</span> <a href="http://d.hatena.ne.jp/keyword/%b9%d6%c3%cc%bc%d2" class="keyword">講談社</a></li>
+                                                <li><span class="hatena-asin-detail-label">発売日:</span> 2008/05/13</li>
+                                                <li><span class="hatena-asin-detail-label">メディア:</span> コミック</li>
+                                                       <li><a href="http://www.amazon.co.jp/exec/obidos/ASIN/4063655024/tokyoenvious-22/" target="_blank">Amazon.co.jpで詳細を見る</a></li>
+                                        </ul>
+
+
+                                </div>
+                                <div class="hatena-asin-detail-foot"></div>
+                        </div>
+
+			<div class="hatena-asin-detail">
+                                <a href="http://d.hatena.ne.jp/asin/4063655210/tokyoenvious-22"><img src="http://ecx.images-amazon.com/images/I/51C2y2y46tL._SL160_.jpg" class="hatena-asin-detail-image" alt="ひみこい 2 (デザートコミックス)" title="ひみこい 2 (デザートコミックス)"></a>
+                                <div class="hatena-asin-detail-info">
+                                        <p class="hatena-asin-detail-title"><a href="http://d.hatena.ne.jp/asin/4063655210/tokyoenvious-22">ひみこい 2 (デザートコミックス)</a></p>
+                                        <ul>
+                                                <li><span class="hatena-asin-detail-label">作者:</span> <a href="http://d.hatena.ne.jp/keyword/%a4%ed%a4%d3%a4%b3" class="keyword">ろびこ</a></li>
+                                                <li><span class="hatena-asin-detail-label">出版社/メーカー:</span> <a href="http://d.hatena.ne.jp/keyword/%b9%d6%c3%cc%bc%d2" class="keyword">講談社</a></li>
+                                                <li><span class="hatena-asin-detail-label">発売日:</span> 2008/09/12</li>
+                                                <li><span class="hatena-asin-detail-label">メディア:</span> コミック</li>
+                                                       <li><a href="http://www.amazon.co.jp/exec/obidos/ASIN/4063655210/tokyoenvious-22/" target="_blank">Amazon.co.jpで詳細を見る</a></li>
+                                        </ul>
+
+
+                                </div>
+                                <div class="hatena-asin-detail-foot"></div>
+                        </div>
+
+			<p>女の子がかわいい</p>
+			<h4> 六枚のとんかつ</h4>
+			<div class="hatena-asin-detail">
+                                <a href="http://d.hatena.ne.jp/asin/4062731274/tokyoenvious-22"><img src="http://ecx.images-amazon.com/images/I/21E3VVCF0SL._SL160_.jpg" class="hatena-asin-detail-image" alt="六枚のとんかつ (講談社文庫)" title="六枚のとんかつ (講談社文庫)"></a>
+                                <div class="hatena-asin-detail-info">
+                                        <p class="hatena-asin-detail-title"><a href="http://d.hatena.ne.jp/asin/4062731274/tokyoenvious-22">六枚のとんかつ (講談社文庫)</a></p>
+                                        <ul>
+                                                <li><span class="hatena-asin-detail-label">作者:</span> <a href="http://d.hatena.ne.jp/keyword/%c1%c9%c9%f4%b7%f2%b0%ec" class="keyword">蘇部健一</a></li>
+                                                <li><span class="hatena-asin-detail-label">出版社/メーカー:</span> <a href="http://d.hatena.ne.jp/keyword/%b9%d6%c3%cc%bc%d2" class="keyword">講談社</a></li>
+                                                <li><span class="hatena-asin-detail-label">発売日:</span> 2002/01</li>
+                                                <li><span class="hatena-asin-detail-label">メディア:</span> 文庫</li>
+                                                       <li><a href="http://www.amazon.co.jp/exec/obidos/ASIN/4062731274/tokyoenvious-22/" target="_blank">Amazon.co.jpで詳細を見る</a></li>
+                                        </ul>
+
+
+                                </div>
+                                <div class="hatena-asin-detail-foot"></div>
+                        </div>
+
+			<p>俺はなんでこんな本買ったんだ！と思わせてくれた</p>
+			<h4> キスよりも早く</h4>
+			<div class="hatena-asin-detail">
+                                <a href="http://d.hatena.ne.jp/asin/4592184734/tokyoenvious-22"><img src="http://ecx.images-amazon.com/images/I/51rWMJVK8hL._SL160_.jpg" class="hatena-asin-detail-image" alt="キスよりも早く 3 (花とゆめCOMICS)" title="キスよりも早く 3 (花とゆめCOMICS)"></a>
+                                <div class="hatena-asin-detail-info">
+                                        <p class="hatena-asin-detail-title"><a href="http://d.hatena.ne.jp/asin/4592184734/tokyoenvious-22">キスよりも早く 3 (花とゆめCOMICS)</a></p>
+                                        <ul>
+                                                <li><span class="hatena-asin-detail-label">作者:</span> <a href="http://d.hatena.ne.jp/keyword/%c5%c4%c3%e6%a5%e1%a5%ab" class="keyword">田中メカ</a></li>
+                                                <li><span class="hatena-asin-detail-label">出版社/メーカー:</span> <a href="http://d.hatena.ne.jp/keyword/%c7%f2%c0%f4%bc%d2" class="keyword">白泉社</a></li>
+                                                <li><span class="hatena-asin-detail-label">発売日:</span> 2008/05/02</li>
+                                                <li><span class="hatena-asin-detail-label">メディア:</span> コミック</li>
+                                                       <li><a href="http://www.amazon.co.jp/exec/obidos/ASIN/4592184734/tokyoenvious-22/" target="_blank">Amazon.co.jpで詳細を見る</a></li>
+                                        </ul>
+
+
+                                </div>
+                                <div class="hatena-asin-detail-foot"></div>
+                        </div>
+
+			<p>女の子がかわいい</p>		</div>
+
+		<div class="section">
+			<h3 class="title"><a href="/motemen/20080926/1222433504" name="1222433504">
+常識ある社会人になる</a></h3>			<p class="sectionheader"> <span class="timestamp">21:51</span> |  <a href="http://b.hatena.ne.jp/entry/http://d.hatena.ne.jp/motemen/20080926/1222433504" class="bookmark-icon"><img src="http://d.hatena.ne.jp/images/b_entry_wh.gif" border="0" title="常識ある社会人になる - ミラクル☆モテメンの脱オタ日記 を含むブックマーク" alt="常識ある社会人になる - ミラクル☆モテメンの脱オタ日記 を含むブックマーク" width="16" height="12" class="icon"></a> <a href="http://b.hatena.ne.jp/entry/http://d.hatena.ne.jp/motemen/20080926/1222433504" class="bookmark-count"><img src="http://b.hatena.ne.jp/entry/image/http://d.hatena.ne.jp/motemen/20080926/1222433504" title="はてなブックマーク - 常識ある社会人になる - ミラクル☆モテメンの脱オタ日記 " alt="はてなブックマーク - 常識ある社会人になる - ミラクル☆モテメンの脱オタ日記 "></a> <img class="hatena-bcomment-view-icon" src="http://r.hatena.ne.jp/images/popup.gif" onclick="javascript:BookmarkCommentViewer.iconImageClickHandler(this, 'http://d.hatena.ne.jp/motemen/20080926/1222433504', event);" title="常識ある社会人になる - ミラクル☆モテメンの脱オタ日記 のブックマークコメント" alt="常識ある社会人になる - ミラクル☆モテメンの脱オタ日記 のブックマークコメント" width="13" height="13"></p>
+			<p>アタシ</p>
+			<p>モテメン</p>
+			<p>常識ある</p>
+			<p>社会人に</p>
+			<p>なろうと思って</p>
+			<p>買った</p>
+			<div class="hatena-asin-detail">
+                                <a href="http://d.hatena.ne.jp/asin/4043694059/tokyoenvious-22"><img src="http://ecx.images-amazon.com/images/I/51Y9YTCRKQL._SL160_.jpg" class="hatena-asin-detail-image" alt="知らないとゼッタイ恥をかく 社会人のマナー186 (角川文庫)" title="知らないとゼッタイ恥をかく 社会人のマナー186 (角川文庫)"></a>
+                                <div class="hatena-asin-detail-info">
+                                        <p class="hatena-asin-detail-title"><a href="http://d.hatena.ne.jp/asin/4043694059/tokyoenvious-22">知らないとゼッタイ恥をかく 社会人のマナー186 (角川文庫)</a></p>
+                                        <ul>
+                                                <li><span class="hatena-asin-detail-label">作者:</span> <a href="http://d.hatena.ne.jp/keyword/%a4%ca%a4%eb%a4%db%a4%c9%b6%e6%b3%da%c9%f4" class="keyword">なるほど倶楽部</a></li>
+                                                <li><span class="hatena-asin-detail-label">出版社/メーカー:</span> <a href="http://d.hatena.ne.jp/keyword/%b3%d1%c0%ee%bd%f1%c5%b9" class="keyword">角川書店</a></li>
+                                                <li><span class="hatena-asin-detail-label">発売日:</span> 2004/11</li>
+                                                <li><span class="hatena-asin-detail-label">メディア:</span> 文庫</li>
+                                                       <li><a href="http://www.amazon.co.jp/exec/obidos/ASIN/4043694059/tokyoenvious-22/" target="_blank">Amazon.co.jpで詳細を見る</a></li>
+                                        </ul>
+
+
+                                </div>
+                                <div class="hatena-asin-detail-foot"></div>
+                        </div>
+
+			<div class="hatena-asin-detail">
+                                <a href="http://d.hatena.ne.jp/asin/4062569639/tokyoenvious-22"><img src="http://ecx.images-amazon.com/images/I/51NNK1523YL._SL160_.jpg" class="hatena-asin-detail-image" alt="図解 マナー以前の社会人常識 (講談社プラスアルファ文庫)" title="図解 マナー以前の社会人常識 (講談社プラスアルファ文庫)"></a>
+                                <div class="hatena-asin-detail-info">
+                                        <p class="hatena-asin-detail-title"><a href="http://d.hatena.ne.jp/asin/4062569639/tokyoenvious-22">図解 マナー以前の社会人常識 (講談社プラスアルファ文庫)</a></p>
+                                        <ul>
+                                                <li><span class="hatena-asin-detail-label">作者:</span> <a href="http://d.hatena.ne.jp/keyword/%b4%e4%b2%bc%c0%eb%bb%d2" class="keyword">岩下宣子</a></li>
+                                                <li><span class="hatena-asin-detail-label">出版社/メーカー:</span> <a href="http://d.hatena.ne.jp/keyword/%b9%d6%c3%cc%bc%d2" class="keyword">講談社</a></li>
+                                                <li><span class="hatena-asin-detail-label">発売日:</span> 2005/09</li>
+                                                <li><span class="hatena-asin-detail-label">メディア:</span> 文庫</li>
+                                                       <li><a href="http://www.amazon.co.jp/exec/obidos/ASIN/4062569639/tokyoenvious-22/" target="_blank">Amazon.co.jpで詳細を見る</a></li>
+                                        </ul>
+
+
+                                </div>
+                                <div class="hatena-asin-detail-foot"></div>
+                        </div>
+
+			<p>これ</p>
+			<p>机に</p>
+			<p>置いてたら</p>
+			<p>センパイ社員</p>
+			<p>かわるがわる</p>
+			<p>寄ってきて</p>
+			<p>みんな</p>
+			<p>『なにこれ</p>
+			<p>こんなの買ったの</p>
+			<p>ププ』</p>
+			<p>って</p>
+			<p>マヂ</p>
+			<p>ありえない</p>
+			<p>まぁ</p>
+			<p>アンチポップと</p>
+			<p>輪読するし</p>
+			<p>みたいな</p>
+		</div>
+
+<!-- google_ad_section_end -->
+</div>
+
+
+
+  <div class="comment">
+    <div class="caption">
+      <a name="c" href="/motemen/comment?date=20080926#c">コメントを書く</a>
+      
+    </div>
+
+    
+
+
+    
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+
+
+</div>
+<div class="calendar" id="pager-bottom">
+	<a rel="prev" href="/motemen/?of=5" class="prev">&lt;前の5日分</a>&nbsp;
+</div>
+	<div class="hatena-module hatena-module-profile">
+  <div class="hatena-moduletitle">プロフィール</div>
+  <div class="hatena-modulebody">
+    <div class="hatena-profile">
+      <p class="hatena-profile-image"><a href="/motemen/about"><img src="http://st-hatena.com/users/mo/motemen/user_p.gif" alt="motemen" /></a></p>
+      <p class="hatena-profile-id"><a href="/motemen/about">motemen</a> <a href="/motemen/about"><img src="/images/icon-plus.gif" alt="はてなダイアリープラス利用中" class="icon-plus" /></a></p>
+      <p class="hatena-profile-body">はてなスタッフ。真人間です。</p>
+    </div>
+  </div>
+</div>
+
+	<div class="hatena-module hatena-module-searchform">
+<div class="hatena-moduletitle">日記の検索</div>
+<div class="hatena-modulebody">
+<form method="GET" action="/motemen/searchdiary" class="hatena-searchform"><input type="text" name="word" class="hatena-searchform searchform-word" value=""><input type="submit" name=".submit" value="検索" class="hatena-searchform searchform-button"><br><label class="searchform-label-detail"><input type="radio" name="type" value="detail" checked="checked" class="searchform-radio">詳細</label> <label class="searchform-label-list"><input type="radio" name="type" value="list" class="searchform-radio">一覧</label></form>
+
+</div>
+</div>
+
+	<div class="hatena-module hatena-module-calendar2">
+<div class="hatena-moduletitle">カレンダー</div>
+<div class="hatena-modulebody">
+<table class="calendar" summary="calendar">
+<tr>
+<td class="calendar-prev-month" colspan="2"><a href="/motemen/200909" title="200909" rel="nofollow">&lt;&lt;</a></td>
+<td class="calendar-current-month" colspan="3"><a href="/motemen/archive/200910" rel="nofollow">2009/10</a></td>
+<td class="calendar-next-month" colspan="2"><a href="/motemen/200911" title="200911" rel="nofollow">&gt;&gt;</a></td>
+</tr>
+<tr>
+<td class="calendar-sunday">日</td>
+<td class="calendar-weekday">月</td>
+<td class="calendar-weekday">火</td>
+<td class="calendar-weekday">水</td>
+<td class="calendar-weekday">木</td>
+<td class="calendar-weekday">金</td>
+<td class="calendar-saturday">土</td>
+</tr>
+	<tr>
+		<td class="calendar-day"></td>
+		<td class="calendar-day"></td>
+		<td class="calendar-day"></td>
+		<td class="calendar-day"></td>
+		<td class="calendar-day">1</td>
+		<td class="calendar-day">2</td>
+		<td class="calendar-day">3</td>
+	</tr>
+	<tr>
+		<td class="calendar-day">4</td>
+		<td class="calendar-day">5</td>
+		<td class="calendar-day">6</td>
+		<td class="calendar-day">7</td>
+		<td class="calendar-day">8</td>
+		<td class="calendar-day">9</td>
+		<td class="calendar-day">10</td>
+	</tr>
+	<tr>
+		<td class="calendar-day">11</td>
+		<td class="calendar-day">12</td>
+		<td class="calendar-day">13</td>
+		<td class="calendar-day">14</td>
+		<td class="calendar-day">15</td>
+		<td class="calendar-day">16</td>
+		<td class="calendar-day">17</td>
+	</tr>
+	<tr>
+		<td class="calendar-day day-today">18</td>
+		<td class="calendar-day">19</td>
+		<td class="calendar-day">20</td>
+		<td class="calendar-day">21</td>
+		<td class="calendar-day">22</td>
+		<td class="calendar-day">23</td>
+		<td class="calendar-day">24</td>
+	</tr>
+	<tr>
+		<td class="calendar-day">25</td>
+		<td class="calendar-day">26</td>
+		<td class="calendar-day">27</td>
+		<td class="calendar-day">28</td>
+		<td class="calendar-day">29</td>
+		<td class="calendar-day">30</td>
+		<td class="calendar-day">31</td>
+	</tr>
+</table>
+	</div>
+</div>
+
+	<div class="hatena-module hatena-module-section">
+<div class="hatena-moduletitle"><a href="/motemen/archive">最新タイトル</a></div>
+<div class="hatena-modulebody">
+<ul class="hatena-section">
+<li><a href="http://d.hatena.ne.jp/motemen/20090401/1238593149">はてなに入社しました</a></li>
+<li><a href="http://d.hatena.ne.jp/motemen/20090331/1238502422">カラースターが出ましたね</a></li>
+<li><a href="http://d.hatena.ne.jp/motemen/20090224/1235486053">アルゴリズムイントロダクション輪講も2巻に入ります</a></li>
+<li><a href="http://d.hatena.ne.jp/motemen/20081119/1227105385">CLANNAD が人生だったので DVD を買った</a></li>
+<li><a href="http://d.hatena.ne.jp/motemen/20081119/1227101002">iPhone フリック入力のテスト</a></li>
+<li><a href="http://d.hatena.ne.jp/motemen/20080926/1222434809">最近読んだ本</a></li>
+<li><a href="http://d.hatena.ne.jp/motemen/20080926/1222433504">常識ある社会人になる</a></li>
+<li><a href="http://d.hatena.ne.jp/motemen/20080922/1222088859">アルゴリズムイントロダクション輪講 #3 が終わりました</a></li>
+<li><a href="http://d.hatena.ne.jp/motemen/20080908/1220878915">アルゴリズムイントロダクション輪講 #2 が終わりました</a></li>
+<li><a href="http://d.hatena.ne.jp/motemen/20080828/1219893385">アルゴリズムイントロダクション輪講 #1 が終わりました</a></li>
+</ul>
+</div>
+</div>
+
+	<div class="hatena-module hatena-module-sectioncategory">
+<div class="hatena-moduletitle">カテゴリー</div>
+<div class="hatena-modulebody">
+<form action="/motemen/searchdiary" method="get" class="hatena-sectioncategory">
+<select name="word" class="hatena-sectioncategory">
+<option value="" class="hatena-sectioncategory">-</option>
+
+<option value="*[UVa]" class="hatena-sectioncategory">UVa</option>
+<option value="*[C++]" class="hatena-sectioncategory">C++</option>
+<option value="*[Scheme]" class="hatena-sectioncategory">Scheme</option>
+<option value="*[SICP]" class="hatena-sectioncategory">SICP</option>
+<option value="*[WiLiki]" class="hatena-sectioncategory">WiLiki</option>
+<option value="*[Gauche]" class="hatena-sectioncategory">Gauche</option>
+<option value="*[Book]" class="hatena-sectioncategory">Book</option>
+<option value="*[Computer]" class="hatena-sectioncategory">Computer</option>
+<option value="*[Vim]" class="hatena-sectioncategory">Vim</option>
+<option value="*[Linux]" class="hatena-sectioncategory">Linux</option>
+<option value="*[lighttpd]" class="hatena-sectioncategory">lighttpd</option>
+<option value="*[hatena]" class="hatena-sectioncategory">hatena</option>
+<option value="*[MySQL]" class="hatena-sectioncategory">MySQL</option>
+<option value="*[Haskell]" class="hatena-sectioncategory">Haskell</option>
+<option value="*[Apache]" class="hatena-sectioncategory">Apache</option>
+<option value="*[Makefile]" class="hatena-sectioncategory">Makefile</option>
+<option value="*[Perl]" class="hatena-sectioncategory">Perl</option>
+<option value="*[Plagger]" class="hatena-sectioncategory">Plagger</option>
+<option value="*[Rails]" class="hatena-sectioncategory">Rails</option>
+<option value="*[JavaScript]" class="hatena-sectioncategory">JavaScript</option>
+<option value="*[zsh]" class="hatena-sectioncategory">zsh</option>
+<option value="*[Firefox]" class="hatena-sectioncategory">Firefox</option>
+<option value="*[MochiKit]" class="hatena-sectioncategory">MochiKit</option>
+<option value="*[TODO]" class="hatena-sectioncategory">TODO</option>
+<option value="*[etc]" class="hatena-sectioncategory">etc</option>
+<option value="*[Ruby]" class="hatena-sectioncategory">Ruby</option>
+<option value="*[Windows]" class="hatena-sectioncategory">Windows</option>
+<option value="*[TeX]" class="hatena-sectioncategory">TeX</option>
+<option value="*[DVD]" class="hatena-sectioncategory">DVD</option>
+<option value="*[trac]" class="hatena-sectioncategory">trac</option>
+<option value="*[Safari]" class="hatena-sectioncategory">Safari</option>
+<option value="*[Life]" class="hatena-sectioncategory">Life</option>
+<option value="*[D]" class="hatena-sectioncategory">D</option>
+<option value="*[これはひどい]" class="hatena-sectioncategory">これはひどい</option>
+<option value="*[svk]" class="hatena-sectioncategory">svk</option>
+<option value="*[Memo]" class="hatena-sectioncategory">Memo</option>
+<option value="*[Game]" class="hatena-sectioncategory">Game</option>
+<option value="*[360]" class="hatena-sectioncategory">360</option>
+<option value="*[Star]" class="hatena-sectioncategory">Star</option>
+<option value="*[Greasemonkey]" class="hatena-sectioncategory">Greasemonkey</option>
+<option value="*[CodeRepos]" class="hatena-sectioncategory">CodeRepos</option>
+</select><input type="submit" name=".submit" value="移動" class="hatena-sectioncategory">
+</form>
+</div>
+</div>
+
+	<div class="hatena-module">
+		<div class="hatena-moduletitle">リンク集</div>
+			<div class="hatena-modulebody">
+				<ul class="hatena-urllist">
+					<li><a href="http://tokyoenvious.xrea.jp/">東京嫉妬</a></li>
+				</ul>
+			</div>
+		</div>
+	<div class="hatena-module hatena-module-ring">
+
+<div class="hatena-modulebody">
+<ul class="hatena-photo">
+
+
+
+  <script type="text/javascript"
+    src="http://ring.hatena.ne.jp/showlogo?rid=sicp&sid=238576&mode=image">
+  </script>
+  <noscript>
+  <a href="http://sicp.ring.hatena.ne.jp"><img src="http://ring.hatena.ne.jp/images/logo/s/sicp/sicp_s.jpg" border=0></a>
+  <a href="http://sicp.ring.hatena.ne.jp/go?type=random&sid=238576">random</a>
+  <a href="http://sicp.ring.hatena.ne.jp/">Hatena Ring sicp</a>
+  </noscript>
+
+
+
+</div>
+</div>
+
+
+<div style="display:none"><script type="text/javascript"><!--
+    hatena_counter_name = "motemen";
+    hatena_counter_id = "1";
+    hatena_counter_ref = document.referrer+"";
+    hatena_counter_screen = screen.width + "x" + screen.height+","+screen.colorDepth;
+//--></script>
+<script type="text/javascript" src="http://counter.hatena.ne.jp//js/counter.js"></script>
+<noscript><img src="http://counter.hatena.ne.jp/motemen/1" border="0" alt="counter"></noscript>
+</div>
+</div>
+
+
+
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var firstTracker = _gat._getTracker("UA-441387-31");
+firstTracker._initData();
+firstTracker._trackPageview();
+var secondTracker = _gat._getTracker("UA-7855606-1");
+secondTracker._setDomainName(".hatena.ne.jp");
+secondTracker._initData();
+secondTracker._trackPageview();
+} catch(err) {}
+</script>
+
+</body>
+</html>

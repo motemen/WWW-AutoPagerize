@@ -1,0 +1,866 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=euc-jp">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<title>ミラクル☆モテメンの脱オタ日記</title>
+<link rel="start" href="./" title="ミラクル☆モテメンの脱オタ日記">
+<link rel="help" href="/help" title="ヘルプ">
+<link rel="prev" href="/motemen/?of=10" title="前の5日分">
+<link rel="next" href="/motemen/?of=0" title="次の5日分">
+
+<link rel="stylesheet" href="/css/base.css?20090911" type="text/css" media="all">
+<link rel="stylesheet" href="/css/headerstyle_wh.css" type="text/css" media="all">
+<link rel="stylesheet" href="/theme/ugomemo-sky/ugomemo-sky.css" type="text/css" media="all">
+
+
+
+<link rel="alternate" type="application/rss+xml" title="RSS" href="http://d.hatena.ne.jp/motemen/rss">
+<link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="http://d.hatena.ne.jp/motemen/rss2">
+
+<link rel="meta" type="application/rdf+xml" title="FOAF" href="http://d.hatena.ne.jp/motemen/foaf" />
+<link rel="search" type="application/opensearchdescription+xml" href="http://d.hatena.ne.jp/motemen/opensearch/diary.xml" title="ミラクル☆モテメンの脱オタ日記内日記検索" />
+<link rel="search" type="application/opensearchdescription+xml" href="http://d.hatena.ne.jp/motemen/opensearch/archive.xml" title="ミラクル☆モテメンの脱オタ日記内一覧検索" />
+
+
+<link rel="shortcut icon" href="http://d.hatena.ne.jp/images/diary/m/motemen/favicon.ico">
+
+
+
+<style type="text/css">
+<!-- 
+/*
+div.hatena-module {
+    float: left;
+    margin: 1em;
+}
+
+div.day p {
+	clear: both;
+}
+
+div.ad {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+div.day .asamashi p, div.ad p {
+	clear: none;
+}
+
+.asamashi {
+  margin : 2em 1em 2em 1em;
+  clear: both;
+}
+
+.asamashi .image {
+  margin: 0 2em 1em 0;
+  padding: 0;
+  float: left;
+  clear: left;
+}
+
+.asamashi h4 {
+  border: none;
+  padding-top: 1em;
+}
+
+.amazlet-box {
+  margin : 2em 1em 2em 1em;
+}
+
+.amazlet-image {
+  clear : both;
+  float : left;
+  width : 200px;
+  margin-right: 2%;
+}
+
+.amazlet-info {
+  float : left;
+  width : 50%;
+}
+
+body {
+	font-family: Verdana, sans-serif;
+}
+
+div.hatena-body {
+	width: 90%;
+}
+div.main {
+	width: 75%;
+}
+div.sidebar {
+	width: 20%;
+}
+
+span.highlight {
+	color: black;
+	background-color: yellow;
+}
+
+img.photo {
+	float: right;
+	margin: 10px;
+	border: 0;
+}
+
+a.keyword {
+	text-decoration: none;
+	border-bottom: 1px solid #d0d0d0;
+}
+
+h3, h3 *, h4, h4 * {
+	font-family: Verdana;
+}
+
+h3 {
+    font-size: 120%;
+}
+
+div.section pre {
+	overflow: auto;
+	font-size: 100%;
+}
+
+pre span.special-key {
+	color: #888;
+}
+
+em {
+	font-style: normal;
+	font-weight: bold;
+}
+
+.hatena-asin-detail-info {
+    float: left
+}
+*/  
+
+div.section pre.syntax-highlight {
+    background-color: #333;
+    color: white;
+}
+
+.synSpecial    { color: navajowhite; }
+.synType       { color: darkkhaki;   font-weight: bold; }
+.synComment    { color: skyblue;     }
+.synPreProc    { color: indianred;   }
+.synIdentifier { color: palegreen;   }
+.synConstant   { color: #FFA0A0;     }
+.synStatement  { color: khaki;       font-weight: bold; }
+
+.hatena-star-star-image {
+  background-image: url('http://img.f.hatena.ne.jp/images/fotolife/m/motemen/20090331/20090331142637_120.jpg');
+}
+.hatena-star-green-star-image {
+  background-image: url('http://img.f.hatena.ne.jp/images/fotolife/m/motemen/20090331/20090331142638_120.jpg');
+}
+.hatena-star-red-star-image {
+  background-image: url('http://img.f.hatena.ne.jp/images/fotolife/m/motemen/20090331/20090331142639_120.jpg');
+}
+.hatena-star-blue-star-image {
+  background-image: url('http://img.f.hatena.ne.jp/images/fotolife/m/motemen/20090331/20090331142640_120.jpg');
+}
+-->
+</style>
+
+
+
+<!--
+<rdf:RDF
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:foaf="http://xmlns.com/foaf/0.1/">
+<rdf:Description rdf:about="http://d.hatena.ne.jp/motemen/">
+   <foaf:maker rdf:parseType="Resource">
+     <foaf:holdsAccount>
+       <foaf:OnlineAccount foaf:accountName="motemen">
+         <foaf:accountServiceHomepage rdf:resource="http://www.hatena.ne.jp/" />
+       </foaf:OnlineAccount>
+     </foaf:holdsAccount>
+   </foaf:maker>
+</rdf:Description>
+</rdf:RDF>
+-->
+
+<link rel="alternate" media="handheld" type="text/html" href="http://d.hatena.ne.jp/motemen/mobile" />
+<!--
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xmlns:trackback="http://madskills.com/public/xml/rss/module/trackback/">
+<rdf:Description
+  rdf:about="http://d.hatena.ne.jp/motemen/20080922/1222088859"
+  trackback:ping="http://d.hatena.ne.jp/motemen/20080922/1222088859"
+  dc:title="アルゴリズムイントロダクション輪講 #3 が終わりました"
+  dc:identifier="http://d.hatena.ne.jp/motemen/20080922/1222088859" />
+</rdf:RDF>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xmlns:trackback="http://madskills.com/public/xml/rss/module/trackback/">
+<rdf:Description
+  rdf:about="http://d.hatena.ne.jp/motemen/20080908/1220878915"
+  trackback:ping="http://d.hatena.ne.jp/motemen/20080908/1220878915"
+  dc:title="アルゴリズムイントロダクション輪講 #2 が終わりました"
+  dc:identifier="http://d.hatena.ne.jp/motemen/20080908/1220878915" />
+</rdf:RDF>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xmlns:trackback="http://madskills.com/public/xml/rss/module/trackback/">
+<rdf:Description
+  rdf:about="http://d.hatena.ne.jp/motemen/20080828/1219893385"
+  trackback:ping="http://d.hatena.ne.jp/motemen/20080828/1219893385"
+  dc:title="アルゴリズムイントロダクション輪講 #1 が終わりました"
+  dc:identifier="http://d.hatena.ne.jp/motemen/20080828/1219893385" />
+</rdf:RDF>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xmlns:trackback="http://madskills.com/public/xml/rss/module/trackback/">
+<rdf:Description
+  rdf:about="http://d.hatena.ne.jp/motemen/20080813/1218634304"
+  trackback:ping="http://d.hatena.ne.jp/motemen/20080813/1218634304"
+  dc:title="アルゴリズムイントロダクション輪講@京都のお知らせ"
+  dc:identifier="http://d.hatena.ne.jp/motemen/20080813/1218634304" />
+</rdf:RDF>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xmlns:trackback="http://madskills.com/public/xml/rss/module/trackback/">
+<rdf:Description
+  rdf:about="http://d.hatena.ne.jp/motemen/20080514/1210751236"
+  trackback:ping="http://d.hatena.ne.jp/motemen/20080514/1210751236"
+  dc:title="昔話"
+  dc:identifier="http://d.hatena.ne.jp/motemen/20080514/1210751236" />
+</rdf:RDF>
+-->
+
+<script type="text/javascript" src="/js/MochiKit/1125/Base.js"></script>
+<script type="text/javascript" src="/js/MochiKit/1125/Iter.js"></script>
+<script type="text/javascript" src="/js/MochiKit/1125/DOM.js"></script>
+<script type="text/javascript" src="/js/MochiKit/1125/Style.js"></script>
+<script type="text/javascript" src="/js/MochiKit/1125/Signal.js"></script>
+<script type="text/javascript" src="/js/MochiKit/1125/Async.js"></script>
+<script type="text/javascript" src="/js/MochiKit/1125/Logging.js"></script>
+<script type="text/javascript" src="/js/BookmarkCommentViewer.js" charset="utf-8"></script>
+
+
+<link rel="microsummary" href="/microsummary/entry_title.xml">
+
+
+<script type="text/javascript" src="http://s.hatena.ne.jp/js/HatenaStar.js"></script>
+<script type="text/javascript">
+Hatena.Star.SiteConfig = {
+  entryNodes: {
+    'div.section': {
+      uri: 'h3 a',
+      title: 'h3',
+      container: 'h3'
+    }
+  }
+};
+Hatena.Author  = new Hatena.User('motemen');
+
+</script>
+
+
+
+
+<script type="text/javascript" src="/js/quick_pager.js?v=1.04"></script>
+<script type="text/javascript" src="/js/diary_utils.js"></script>
+<script type="text/javascript" src="/js/max_width_fotolife.js"></script>
+<!--
+<
+-->
+
+
+</head>
+<body>
+
+<div id="simple-header">
+
+  <a href="http://www.hatena.ne.jp/"><img src="/theme/ugomemo-sky/logo-hatena.gif" alt="Hatena::" title="Hatena::" id="logo-hatena"></a><a href="/"><img src="/theme/ugomemo-sky/logo-diary.gif" title="Diary" id="logo-diary"></a>
+
+  <form method="get" action="/search" class="search-form">
+    <input type="text" class="search-word" name="word" value=""><input name="name" value="motemen" type="hidden"><input type="submit" name="diary" value="日記" class="search-button"><input type="submit" name="submit" value="検索" class="search-button">
+  </form>
+  <ul class="menu">
+    <li><a href="/motemen/">ブログトップ</a></li>
+    <li><a href="/motemen/archive">記事一覧</a></li>
+
+
+    <li><a href="https://www.hatena.ne.jp/login?backurl=http%3A%2F%2Fd.hatena.ne.jp%2Fmotemen%2F%3Fof%3D5">ログイン</a></li>
+    <li><a href="https://www.hatena.ne.jp/register?location=http://d.hatena.ne.jp/">無料ブログ開設</a></li>
+
+  </ul>
+</div>
+
+
+
+<h1><a href="http://d.hatena.ne.jp/motemen/">ミラクル☆モテメンの脱オタ日記</a> <a href="http://d.hatena.ne.jp/motemen/rss"><img src="http://d.hatena.ne.jp/images/rss_wh.gif" alt="RSSフィード" title="RSSフィード" border="0" width="24" height="12" class="icon"></a></h1>
+<div class="sponsor">
+  <a href="http://ugomemo.hatena.ne.jp/"><img src="/theme/ugomemo-sky/sponsor.gif" alt="うごメモはてな" title="うごメモはてな" /></a>
+</div>
+
+<div class="hatena-body">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="calendar" id="pager-top">
+	<a rel="prev" href="/motemen/?of=10" class="prev">&lt;前の5日分</a>&nbsp;<span class="delimiter">|</span>&nbsp;<a rel="next" href="/motemen/?of=0" class="next">次の5日分&gt;</a>&nbsp;<span id="edit-in-place-add"></span>
+</div>
+<div id="days">
+
+<div class="day">
+<h2><a href="http://d.hatena.ne.jp/motemen/20080922"><span class="date">2008-09-22</span></a></h2>
+
+<div class="body">
+
+<!-- google_ad_section_start -->
+
+		<div class="section">
+			<h3 class="title"><a href="/motemen/20080922/1222088859" name="1222088859">アルゴリズムイントロダクション輪講 #3 が終わりました</a></h3>			<p class="sectionheader"> <span class="timestamp">22:07</span> |  <a href="http://b.hatena.ne.jp/entry/http://d.hatena.ne.jp/motemen/20080922/1222088859" class="bookmark-icon"><img src="http://d.hatena.ne.jp/images/b_entry_wh.gif" border="0" title="アルゴリズムイントロダクション輪講 #3 が終わりました - ミラクル☆モテメンの脱オタ日記 を含むブックマーク" alt="アルゴリズムイントロダクション輪講 #3 が終わりました - ミラクル☆モテメンの脱オタ日記 を含むブックマーク" width="16" height="12" class="icon"></a> <a href="http://b.hatena.ne.jp/entry/http://d.hatena.ne.jp/motemen/20080922/1222088859" class="bookmark-count"><img src="http://b.hatena.ne.jp/entry/image/http://d.hatena.ne.jp/motemen/20080922/1222088859" title="はてなブックマーク - アルゴリズムイントロダクション輪講 #3 が終わりました - ミラクル☆モテメンの脱オタ日記 " alt="はてなブックマーク - アルゴリズムイントロダクション輪講 #3 が終わりました - ミラクル☆モテメンの脱オタ日記 "></a> <img class="hatena-bcomment-view-icon" src="http://r.hatena.ne.jp/images/popup.gif" onclick="javascript:BookmarkCommentViewer.iconImageClickHandler(this, 'http://d.hatena.ne.jp/motemen/20080922/1222088859', event);" title="アルゴリズムイントロダクション輪講 #3 が終わりました - ミラクル☆モテメンの脱オタ日記 のブックマークコメント" alt="アルゴリズムイントロダクション輪講 #3 が終わりました - ミラクル☆モテメンの脱オタ日記 のブックマークコメント" width="13" height="13"></p>
+			<p>今回は第1回<a class="keyword" href="http://d.hatena.ne.jp/keyword/%a5%a4%a5%f3%a5%bf%a1%bc%a5%f3">インターン</a>の <a href="http://d.hatena.ne.jp/tarao/">id:tarao</a> (<a class="keyword" href="http://d.hatena.ne.jp/keyword/%a5%c0%a5%a4%a5%a2%a5%ea%a1%bc">ダイアリー</a>書いてない (´；ω；｀)) さんの担当、5章の確率論的解析と乱択<a class="keyword" href="http://d.hatena.ne.jp/keyword/%a5%a2%a5%eb%a5%b4%a5%ea%a5%ba%a5%e0">アルゴリズム</a>でした。前章までは各<a class="keyword" href="http://d.hatena.ne.jp/keyword/%a5%a2%a5%eb%a5%b4%a5%ea%a5%ba%a5%e0">アルゴリズム</a>の最悪の時間計算量を考えていましたが、現実には最悪の場合の入力ばかりがやってくるのではなく、典型的・平均的な場合の時間計算量を求めたいこともあります。確率論的解析がこういう時に必要になるようです。また、その時指標確率<a class="keyword" href="http://d.hatena.ne.jp/keyword/%ca%d1%bf%f4">変数</a>というのを用いると計算が楽になる (ことが多い) ということです。</p>
+			<p>今回は<a class="keyword" href="http://d.hatena.ne.jp/keyword/%ce%d8%b9%d6">輪講</a>中に、いくつか練習問題にも触れました。</p>
+			<h4> 5.1-3</h4>
+			<p>偏ったコインを用いて 0,1 をそれぞれ 1/2 の確率で出力する<a class="keyword" href="http://d.hatena.ne.jp/keyword/%a5%a2%a5%eb%a5%b4%a5%ea%a5%ba%a5%e0">アルゴリズム</a>を作るには？ → 2回振って (表、裏) か (裏、表) と出たらそれぞれ 0, 1 を返し、そうでなければやり直し、を繰り返す。</p>
+			<h4> 5.3-2</h4>
+			<p>恒等置換以外の任意の置換をランダムに生成する<a class="keyword" href="http://d.hatena.ne.jp/keyword/%a5%a2%a5%eb%a5%b4%a5%ea%a5%ba%a5%e0">アルゴリズム</a>？ → 1つでも位置が変わらない要素があるような置換も生成されないからダメ。</p>
+			<h4> 5.3-3</h4>
+			<p>要素 A[i] の交換を A[i..n] とじゃなくて A[1..n] とにしたら？ → (たぶん) 先頭のほうの要素ほど交換されやすくなる為一様にならないのではないか？</p>
+			<p>次回から具体的な<a class="keyword" href="http://d.hatena.ne.jp/keyword/%a5%a2%a5%eb%a5%b4%a5%ea%a5%ba%a5%e0">アルゴリズム</a>に入り、6章は<a class="keyword" href="http://d.hatena.ne.jp/keyword/%a5%d2%a1%bc%a5%d7%a5%bd%a1%bc%a5%c8">ヒープソート</a>です。次は数式が少なくなりそうです。</p>
+		</div>
+
+<!-- google_ad_section_end -->
+<div class="ad">
+
+<script type="text/javascript"><!--
+google_ad_client = "pub-4031405268309770";
+
+google_ad_height = '90';
+google_ad_width = '728';
+google_ad_slot = '1793229745';
+//--></script>
+<script type="text/javascript"
+  src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>
+
+</div>
+
+<div class="ad">
+<div class="hatena-asin-recommend">
+<div class="hatena-asin-recommend-item-1">
+<div class="hatena-asin-recommend-image"><a href="http://d.hatena.ne.jp/asin/4895220273/tokyoenvious-22"><img src="http://ecx.images-amazon.com/images/I/412NKWKFWVL._SL60_.jpg" ALT="4895220273"></a></div>
+<div class="hatena-asin-recommend-info">
+<div class="hatena-asin-recommend-title"><a href="http://d.hatena.ne.jp/asin/4895220273/tokyoenvious-22"><img src="/images/hamazou_icons/icon-book.gif" border="0" align="left" alt="Book"> 柳樽余稿 やない筥四篇 輪講 (江戸川柳・解釈と...</a></div>
+<div class="hatena-asin-recommend-description"><a href="http://d.hatena.ne.jp/keyword/%c0%ee%cc%f8%bb%a8%c7%d0%b8%a6%b5%e6%b2%f1">川柳雑俳研究会</a> <a href="http://d.hatena.ne.jp/keyword/%be%ae%b7%aa%c0%b6%b8%e3">小栗清吾</a> <a href="http://d.hatena.ne.jp/keyword/%c0%b6%c7%ee%c8%fe">清博美</a> </div>
+</div></div>
+<div class="hatena-asin-recommend-item-2">
+<div class="hatena-asin-recommend-image"><a href="http://d.hatena.ne.jp/asin/4124033869/tokyoenvious-22"><img src="http://ecx.images-amazon.com/images/I/519RXNRSD4L._SL60_.jpg" ALT="4124033869"></a></div>
+<div class="hatena-asin-recommend-info">
+<div class="hatena-asin-recommend-title"><a href="http://d.hatena.ne.jp/asin/4124033869/tokyoenvious-22"><img src="/images/hamazou_icons/icon-book.gif" border="0" align="left" alt="Book"> 折口信夫全集輪講 (折口信夫全集)</a></div>
+<div class="hatena-asin-recommend-description"><a href="http://d.hatena.ne.jp/keyword/%c3%e6%b1%fb%b8%f8%cf%c0%bf%b7%bc%d2">中央公論新社</a> <a href="http://d.hatena.ne.jp/keyword/%c0%de%b8%fd%bf%ae%c9%d7%c1%b4%bd%b8%b4%a9%b9%d4%b2%f1">折口信夫全集刊行会</a> </div>
+</div></div>
+<div class="hatena-asin-recommend-foot"></div></div></div>
+
+</div>
+
+
+
+  <div class="comment">
+    <div class="caption">
+      <a name="c" href="/motemen/comment?date=20080922#c">コメントを書く</a>
+      
+    </div>
+
+    
+
+
+    
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+<div class="day">
+<h2><a href="http://d.hatena.ne.jp/motemen/20080908"><span class="date">2008-09-08</span></a></h2>
+
+<div class="body">
+
+<!-- google_ad_section_start -->
+
+		<div class="section">
+			<h3 class="title"><a href="/motemen/20080908/1220878915" name="1220878915">アルゴリズムイントロダクション輪講 #2 が終わりました</a></h3>			<p class="sectionheader"> <span class="timestamp">22:01</span> |  <a href="http://b.hatena.ne.jp/entry/http://d.hatena.ne.jp/motemen/20080908/1220878915" class="bookmark-icon"><img src="http://d.hatena.ne.jp/images/b_entry_wh.gif" border="0" title="アルゴリズムイントロダクション輪講 #2 が終わりました - ミラクル☆モテメンの脱オタ日記 を含むブックマーク" alt="アルゴリズムイントロダクション輪講 #2 が終わりました - ミラクル☆モテメンの脱オタ日記 を含むブックマーク" width="16" height="12" class="icon"></a> <a href="http://b.hatena.ne.jp/entry/http://d.hatena.ne.jp/motemen/20080908/1220878915" class="bookmark-count"><img src="http://b.hatena.ne.jp/entry/image/http://d.hatena.ne.jp/motemen/20080908/1220878915" title="はてなブックマーク - アルゴリズムイントロダクション輪講 #2 が終わりました - ミラクル☆モテメンの脱オタ日記 " alt="はてなブックマーク - アルゴリズムイントロダクション輪講 #2 が終わりました - ミラクル☆モテメンの脱オタ日記 "></a> <img class="hatena-bcomment-view-icon" src="http://r.hatena.ne.jp/images/popup.gif" onclick="javascript:BookmarkCommentViewer.iconImageClickHandler(this, 'http://d.hatena.ne.jp/motemen/20080908/1220878915', event);" title="アルゴリズムイントロダクション輪講 #2 が終わりました - ミラクル☆モテメンの脱オタ日記 のブックマークコメント" alt="アルゴリズムイントロダクション輪講 #2 が終わりました - ミラクル☆モテメンの脱オタ日記 のブックマークコメント" width="13" height="13"></p>
+			<p>今回は <a href="http://d.hatena.ne.jp/naoya/">id:naoya</a> さんの担当、4章の漸化式でした。<a class="keyword" href="http://d.hatena.ne.jp/keyword/%ba%c6%b5%a2">再帰</a>的な<a class="keyword" href="http://d.hatena.ne.jp/keyword/%a5%a2%a5%eb%a5%b4%a5%ea%a5%ba%a5%e0">アルゴリズム</a>の計算時間のオーダーを正確に計ろうとすると、いかにして漸化式を解くか、という話題になります。4章はその漸化式を解くための手法についての章でした。今回は数式ばかりだったので、なかなかヘビーだったようです。とはいえ、途中不明な点が出てきても割と<a class="keyword" href="http://d.hatena.ne.jp/keyword/%a5%a4%a5%f3%a5%bf%a1%bc%a5%f3">インターン</a>の学生が積極的に答えてくれるのでとても頼りになりました。第1回<a class="keyword" href="http://d.hatena.ne.jp/keyword/%a5%a4%a5%f3%a5%bf%a1%bc%a5%f3">インターン</a>のメンバーも数名参加していて、今回の<a class="keyword" href="http://d.hatena.ne.jp/keyword/%ce%d8%b9%d6">輪講</a>は図らずも私の<a class="keyword" href="http://d.hatena.ne.jp/keyword/%b5%e1%bf%b4%ce%cf">求心力</a>の高さを示していたようです。次回の乱択<a class="keyword" href="http://d.hatena.ne.jp/keyword/%a5%a2%a5%eb%a5%b4%a5%ea%a5%ba%a5%e0">アルゴリズム</a>も楽しみですね。</p>
+		</div>
+
+<!-- google_ad_section_end -->
+</div>
+
+
+
+  <div class="comment">
+    <div class="caption">
+      <a name="c" href="/motemen/comment?date=20080908#c">コメントを書く</a>
+      
+    </div>
+
+    
+
+
+    
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+<div class="day">
+<h2><a href="http://d.hatena.ne.jp/motemen/20080828"><span class="date">2008-08-28</span></a></h2>
+
+<div class="body">
+
+<!-- google_ad_section_start -->
+
+		<div class="section">
+			<h3 class="title"><a href="/motemen/20080828/1219893385" name="1219893385">アルゴリズムイントロダクション輪講 #1 が終わりました</a></h3>			<p class="sectionheader"> <span class="timestamp">12:16</span> |  <a href="http://b.hatena.ne.jp/entry/http://d.hatena.ne.jp/motemen/20080828/1219893385" class="bookmark-icon"><img src="http://d.hatena.ne.jp/images/b_entry_wh.gif" border="0" title="アルゴリズムイントロダクション輪講 #1 が終わりました - ミラクル☆モテメンの脱オタ日記 を含むブックマーク" alt="アルゴリズムイントロダクション輪講 #1 が終わりました - ミラクル☆モテメンの脱オタ日記 を含むブックマーク" width="16" height="12" class="icon"></a> <a href="http://b.hatena.ne.jp/entry/http://d.hatena.ne.jp/motemen/20080828/1219893385" class="bookmark-count"><img src="http://b.hatena.ne.jp/entry/image/http://d.hatena.ne.jp/motemen/20080828/1219893385" title="はてなブックマーク - アルゴリズムイントロダクション輪講 #1 が終わりました - ミラクル☆モテメンの脱オタ日記 " alt="はてなブックマーク - アルゴリズムイントロダクション輪講 #1 が終わりました - ミラクル☆モテメンの脱オタ日記 "></a> <img class="hatena-bcomment-view-icon" src="http://r.hatena.ne.jp/images/popup.gif" onclick="javascript:BookmarkCommentViewer.iconImageClickHandler(this, 'http://d.hatena.ne.jp/motemen/20080828/1219893385', event);" title="アルゴリズムイントロダクション輪講 #1 が終わりました - ミラクル☆モテメンの脱オタ日記 のブックマークコメント" alt="アルゴリズムイントロダクション輪講 #1 が終わりました - ミラクル☆モテメンの脱オタ日記 のブックマークコメント" width="13" height="13"></p>
+			<p>月曜日に<a class="keyword" href="http://d.hatena.ne.jp/keyword/%a5%a2%a5%eb%a5%b4%a5%ea%a5%ba%a5%e0%a5%a4%a5%f3%a5%c8%a5%ed%a5%c0%a5%af%a5%b7%a5%e7%a5%f3">アルゴリズムイントロダクション</a><a class="keyword" href="http://d.hatena.ne.jp/keyword/%ce%d8%b9%d6">輪講</a>の第1回を開催しました。<a href="http://tokyoenvious.xrea.jp/ria-kyoto/ria-01.pdf">http://tokyoenvious.xrea.jp/ria-kyoto/ria-01.pdf</a> が<a class="keyword" href="http://d.hatena.ne.jp/keyword/%ce%d8%b9%d6">輪講</a>スライドです。<a class="keyword" href="http://d.hatena.ne.jp/keyword/%ce%d8%b9%d6">輪講</a>中でホワイトボードを使って説明したところもあり (Θ記法のところとか)、資料としては不親切なところもあるかもしれません。</p>
+			<p>第1巻の最初は基礎部分で、なるべく早めに<a class="keyword" href="http://d.hatena.ne.jp/keyword/%a5%a2%a5%eb%a5%b4%a5%ea%a5%ba%a5%e0">アルゴリズム</a>そのものに触れたいというのもあり初回だけ一度に 3章分やったのですが、なかなか大変でした。FOR ループの正しさを検証するためのループ不変条件や、<a class="keyword" href="http://d.hatena.ne.jp/keyword/%a5%a2%a5%eb%a5%b4%a5%ea%a5%ba%a5%e0">アルゴリズム</a>の漸近的効率を記すための漸近記号のところの理解 (特に o や ω) がなかなか難しいようです。</p>
+			<p>個人的には、漸近記号については p.48 の</p>
+			<ul>
+				<li> O 〜 ≦</li>
+				<li> Ω 〜 ≧</li>
+				<li> Θ 〜 =</li>
+				<li> o 〜 &lt;</li>
+				<li> ω 〜 &gt;</li>
+			</ul>
+			<p>という対応がしっくりきましたが、なかなか上手く説明できませんでした。終わった後も <a href="http://d.hatena.ne.jp/antipop/">id:antipop</a> といろいろ話していましたが、o を使うのは「<a class="keyword" href="http://d.hatena.ne.jp/keyword/%a5%a2%a5%eb%a5%b4%a5%ea%a5%ba%a5%e0">アルゴリズム</a>の実行時間の増え方はこの関数以上に悪くはならないけど、この関数ほどにも悪くはならないよ」という時かなーと思いました (O は同じくらい悪い場合も含む)。なかなか直感的な説明は難しいです。</p>
+			<p>次回は4章の漸化式です。最初から結構難しいところが続きそうなのですが、ここを乗り越えれば一番楽しいところであろう<a class="keyword" href="http://d.hatena.ne.jp/keyword/%a5%a2%a5%eb%a5%b4%a5%ea%a5%ba%a5%e0">アルゴリズム</a>なので、ふんばりどころです。</p>
+			<p>メンバーも適宜追加募集をかけたいと思っています。その時はまた告知しますので、よろしくお願いします。</p>
+		</div>
+
+<!-- google_ad_section_end -->
+</div>
+
+
+
+  <div class="comment">
+    <div class="caption">
+      <a name="c" href="/motemen/comment?date=20080828#c">コメントを書く</a>
+      
+    </div>
+
+    
+
+
+    
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+<div class="day">
+<h2><a href="http://d.hatena.ne.jp/motemen/20080813"><span class="date">2008-08-13</span></a></h2>
+
+<div class="body">
+
+<!-- google_ad_section_start -->
+
+		<div class="section">
+			<h3 class="title"><a href="/motemen/20080813/1218634304" name="1218634304">アルゴリズムイントロダクション輪講@京都のお知らせ</a></h3>			<p class="sectionheader"> <span class="timestamp">22:31</span> |  <a href="http://b.hatena.ne.jp/entry/http://d.hatena.ne.jp/motemen/20080813/1218634304" class="bookmark-icon"><img src="http://d.hatena.ne.jp/images/b_entry_wh.gif" border="0" title="アルゴリズムイントロダクション輪講@京都のお知らせ - ミラクル☆モテメンの脱オタ日記 を含むブックマーク" alt="アルゴリズムイントロダクション輪講@京都のお知らせ - ミラクル☆モテメンの脱オタ日記 を含むブックマーク" width="16" height="12" class="icon"></a> <a href="http://b.hatena.ne.jp/entry/http://d.hatena.ne.jp/motemen/20080813/1218634304" class="bookmark-count"><img src="http://b.hatena.ne.jp/entry/image/http://d.hatena.ne.jp/motemen/20080813/1218634304" title="はてなブックマーク - アルゴリズムイントロダクション輪講@京都のお知らせ - ミラクル☆モテメンの脱オタ日記 " alt="はてなブックマーク - アルゴリズムイントロダクション輪講@京都のお知らせ - ミラクル☆モテメンの脱オタ日記 "></a> <img class="hatena-bcomment-view-icon" src="http://r.hatena.ne.jp/images/popup.gif" onclick="javascript:BookmarkCommentViewer.iconImageClickHandler(this, 'http://d.hatena.ne.jp/motemen/20080813/1218634304', event);" title="アルゴリズムイントロダクション輪講@京都のお知らせ - ミラクル☆モテメンの脱オタ日記 のブックマークコメント" alt="アルゴリズムイントロダクション輪講@京都のお知らせ - ミラクル☆モテメンの脱オタ日記 のブックマークコメント" width="13" height="13"></p>
+			<h4> 2008-08-18 12:19 追記</h4>
+			<p>多数のご応募ありがとうございます。ここでいったん募集を打ち切らせて頂きます。なお、人数の関係で、応募された方からも今回参加できない方が出ることになりますが、あしからずご了承下さい。</p>
+			<hr>
+			<p>社内エンジニアの間に、計算機科学をマジメにやろうという機運が高まっています。それを受けはてな社内で計算機科学に関する教科書の<a class="keyword" href="http://d.hatena.ne.jp/keyword/%ce%d8%b9%d6">輪講</a>をやろうという話になりました。という訳でまずは<a class="keyword" href="http://d.hatena.ne.jp/keyword/%a5%a2%a5%eb%a5%b4%a5%ea%a5%ba%a5%e0">アルゴリズム</a>の教科書「<a href="http://d.hatena.ne.jp/asin/4764903342/tokyoenvious-22">数学的基礎とデータ構造 (アルゴリズムイントロダクション)</a>」を<a class="keyword" href="http://d.hatena.ne.jp/keyword/%ce%d8%b9%d6">輪講</a>してみることにします。はてなスタッフだけでなく社外からの参加も募集しているので、京都オフィスに近い方はぜひご参加下さい。</p>
+			<div class="hatena-asin-detail">
+                                <a href="http://d.hatena.ne.jp/asin/4764903342/tokyoenvious-22"><img src="http://ecx.images-amazon.com/images/I/415I05munAL._SL160_.jpg" class="hatena-asin-detail-image" alt="数学的基礎とデータ構造 (アルゴリズムイントロダクション)" title="数学的基礎とデータ構造 (アルゴリズムイントロダクション)"></a>
+                                <div class="hatena-asin-detail-info">
+                                        <p class="hatena-asin-detail-title"><a href="http://d.hatena.ne.jp/asin/4764903342/tokyoenvious-22">数学的基礎とデータ構造 (アルゴリズムイントロダクション)</a></p>
+                                        <ul>
+                                                <li><span class="hatena-asin-detail-label">作者:</span> <a href="http://d.hatena.ne.jp/keyword/T%2e%a5%b3%a5%eb%a5%e1%a5%f3" class="keyword">T.コルメン</a>, <a href="http://d.hatena.ne.jp/keyword/R%2e%a5%ea%a5%d9%a5%b9%a5%c8" class="keyword">R.リベスト</a>, <a href="http://d.hatena.ne.jp/keyword/C%2e%a5%b7%a5%e5%a5%bf%a5%a4%a5%f3" class="keyword">C.シュタイン</a>, <a href="http://d.hatena.ne.jp/keyword/C%2e%a5%e9%a5%a4%a5%b6%a1%bc%a5%bd%a5%f3" class="keyword">C.ライザーソン</a>, <a href="http://d.hatena.ne.jp/keyword/Thomas%20H%2e%20Cormen" class="keyword">Thomas H. Cormen</a>, <a href="http://d.hatena.ne.jp/keyword/Clifford%20Stein" class="keyword">Clifford Stein</a>, <a href="http://d.hatena.ne.jp/keyword/Ronald%20L%2e%20Rivest" class="keyword">Ronald L. Rivest</a>, <a href="http://d.hatena.ne.jp/keyword/Charles%20E%2e%20Leiserson" class="keyword">Charles E. Leiserson</a>, <a href="http://d.hatena.ne.jp/keyword/%c0%f5%cc%ee%c5%af%c9%d7" class="keyword">浅野哲夫</a>, <a href="http://d.hatena.ne.jp/keyword/%b4%e4%cc%ee%cf%c2%c0%b8" class="keyword">岩野和生</a>, <a href="http://d.hatena.ne.jp/keyword/%c7%df%c8%f8%c7%ee%bb%ca" class="keyword">梅尾博司</a>, <a href="http://d.hatena.ne.jp/keyword/%bb%b3%b2%bc%b2%ed%bb%cb" class="keyword">山下雅史</a>, <a href="http://d.hatena.ne.jp/keyword/%cf%c2%c5%c4%b9%ac%b0%ec" class="keyword">和田幸一</a></li>
+                                                <li><span class="hatena-asin-detail-label">出版社/メーカー:</span> <a href="http://d.hatena.ne.jp/keyword/%b6%e1%c2%e5%b2%ca%b3%d8%bc%d2" class="keyword">近代科学社</a></li>
+                                                <li><span class="hatena-asin-detail-label">発売日:</span> 2007/03</li>
+                                                <li><span class="hatena-asin-detail-label">メディア:</span> 単行本</li>
+                                                       <li><a href="http://www.amazon.co.jp/exec/obidos/ASIN/4764903342/tokyoenvious-22/" target="_blank">Amazon.co.jpで詳細を見る</a></li>
+                                        </ul>
+
+
+                                </div>
+                                <div class="hatena-asin-detail-foot"></div>
+                        </div>
+
+			<p><a class="keyword" href="http://d.hatena.ne.jp/keyword/%a5%a2%a5%eb%a5%b4%a5%ea%a5%ba%a5%e0%a5%a4%a5%f3%a5%c8%a5%ed%a5%c0%a5%af%a5%b7%a5%e7%a5%f3">アルゴリズムイントロダクション</a>は 3分冊なのですが、とりあえず 1,2巻をやりたいと思います。</p>
+			<dl>
+				<dt>場所</dt>
+				<dd><a href="http://www.hatena.ne.jp/company/">はてな京都オフィス</a></dd>
+				<dt>日時</dt>
+				<dd>2008年8月25日 (月) 19:00 から 1時間ほど</dd>
+				<dt>人数</dt>
+				<dd>社員・アルバイト含め 15人程度</dd>
+			</dl>
+
+			<p><a class="keyword" href="http://d.hatena.ne.jp/keyword/%ce%d8%b9%d6">輪講</a>の流れとしては、担当者が 1章もしくは 2章分の内容を担当者が 1時間程度プレゼンテーションし、次の<del>週</del><ins>回</ins>に別の担当者がその内容をまとめたレジュメ (A4 2枚程度) を配って軽く復習する…という予定です。もちろん様子をみて適宜変更するつもりです。<ins>開催の間隔は隔週月曜日を予定しています。</ins></p>
+			<p>参加申請はこちらからどうぞ: <a href="http://groups.google.co.jp/group/ria-kyoto">http://groups.google.co.jp/group/ria-kyoto</a> なお定員に達した場合はお断りする場合がございます。</p>
+		</div>
+
+<!-- google_ad_section_end -->
+</div>
+
+
+
+  <div class="comment">
+    <div class="caption">
+      <a name="c" href="/motemen/comment?date=20080813#c">コメントを書く</a>
+      
+    </div>
+
+    
+
+
+    
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+<div class="day">
+<h2><a href="http://d.hatena.ne.jp/motemen/20080514"><span class="date">2008-05-14</span></a></h2>
+
+<div class="body">
+
+<!-- google_ad_section_start -->
+
+		<div class="section">
+			<h3 class="title"><a href="/motemen/20080514/1210751236" name="1210751236">昔話</a></h3>			<p class="sectionheader"> <span class="timestamp">16:47</span> |  <a href="http://b.hatena.ne.jp/entry/http://d.hatena.ne.jp/motemen/20080514/1210751236" class="bookmark-icon"><img src="http://d.hatena.ne.jp/images/b_entry_wh.gif" border="0" title="昔話 - ミラクル☆モテメンの脱オタ日記 を含むブックマーク" alt="昔話 - ミラクル☆モテメンの脱オタ日記 を含むブックマーク" width="16" height="12" class="icon"></a> <a href="http://b.hatena.ne.jp/entry/http://d.hatena.ne.jp/motemen/20080514/1210751236" class="bookmark-count"><img src="http://b.hatena.ne.jp/entry/image/http://d.hatena.ne.jp/motemen/20080514/1210751236" title="はてなブックマーク - 昔話 - ミラクル☆モテメンの脱オタ日記 " alt="はてなブックマーク - 昔話 - ミラクル☆モテメンの脱オタ日記 "></a> <img class="hatena-bcomment-view-icon" src="http://r.hatena.ne.jp/images/popup.gif" onclick="javascript:BookmarkCommentViewer.iconImageClickHandler(this, 'http://d.hatena.ne.jp/motemen/20080514/1210751236', event);" title="昔話 - ミラクル☆モテメンの脱オタ日記 のブックマークコメント" alt="昔話 - ミラクル☆モテメンの脱オタ日記 のブックマークコメント" width="13" height="13"></p>
+			<p>一昨日の話をしようか。</p>
+<div class="ascii-art">
+　　　　　　　　 ,. -‐&#39;&#39;&#39;&#39;&#39;&quot;&quot;¨¨¨ヽ<br>
+　　　　 　 　 (.＿＿_,,,... -ｧァﾌ|　　　　　　　　　　あ…ありのまま 今　起こった事を話すぜ！<br>
+　 　 　 　 　 |i i|　 　 }!　}} /／|<br>
+　　　　 　 　 |l､{　 　j}　/,,ｨ//｜　　　　　　　『おれは入社エントリを書いたと<br>
+　　　　　　　 i|:!ヾ､_ﾉ／ u {:}//ﾍ　　　　　　　　思ったらいつのまにかホッテントリ落ちしていた』<br>
+　　　　　　　 |ﾘ u&#39; }　 ,ﾉ　_,!V,ﾊ |<br>
+　　 　 　 ／´fト､_{ﾙ{,ィ&#39;ｅﾗ　, ﾀ人　　　　　　　　な…　何を言ってるのか　わからねーと思うが<br>
+　　　　 /&#39; 　 ヾ|宀| {´,)⌒`/ |&lt;ヽﾄiゝ　　　　　　　　おれも何をされたのかわからなかった<br>
+　　　　,ﾞ　 ／ )ヽ iLﾚ 　u&#39; |　| ヾｌﾄﾊ〉<br>
+　　 　 |／_／　 ﾊ !ニ⊇　&#39;／:} 　V:::::ヽ　　　　　　　　頭がどうにかなりそうだった…<br>
+　　　 /／ 二二二7&#39;T&#39;&#39; ／u&#39;　__ /:::::::/｀ヽ<br>
+　　　/&#39;´r　-―一ｧ‐ﾞＴ´　&#39;&quot;´ ／::::／-‐ 　＼　　　　新人いじめだとか炎上だとか<br>
+　　 / // 　 广¨´ 　/&#39;　　 ／:::::／´￣｀ヽ ⌒ヽ　　　　そんなチャチなもんじゃあ　断じてねえ<br>
+　　ﾉ &#39; /　 ノ:::::`ー-､___／:::::／/ 　 　 　 ヽ　　}<br>
+_／｀丶　/::::::::::::::::::::::::::￣`ー-{:::...　　　 　　　ｲ　 もっと恐ろしいものの片鱗を味わったぜ… <br>
+</div>
+
+			<br>
+
+			<br>
+
+			<p><a href="http://b.hatena.ne.jp/entry/http://d.hatena.ne.jp/motemen/20080512/1210575719" class="bookmark-count"><img alt="" src="http://b.hatena.ne.jp/entry/image/http://d.hatena.ne.jp/motemen/20080512/1210575719"></a></p>
+			<p><a href="http://b.hatena.ne.jp/entry/http://d.hatena.ne.jp/secondlife/20080512/1210579934" class="bookmark-count"><img alt="" src="http://b.hatena.ne.jp/entry/image/http://d.hatena.ne.jp/secondlife/20080512/1210579934"></a></p>
+		</div>
+
+<!-- google_ad_section_end -->
+</div>
+
+
+
+  <div class="comment">
+    <div class="caption">
+      <a name="c" href="/motemen/comment?date=20080514#c">コメントを書く</a>
+      
+    </div>
+
+    
+
+
+    
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+
+
+</div>
+<div class="calendar" id="pager-bottom">
+	<a rel="prev" href="/motemen/?of=10" class="prev">&lt;前の5日分</a>&nbsp;<span class="delimiter">|</span>&nbsp;<a rel="next" href="/motemen/?of=0" class="next">次の5日分&gt;</a>&nbsp;
+</div>
+	<div class="hatena-module hatena-module-profile">
+  <div class="hatena-moduletitle">プロフィール</div>
+  <div class="hatena-modulebody">
+    <div class="hatena-profile">
+      <p class="hatena-profile-image"><a href="/motemen/about"><img src="http://st-hatena.com/users/mo/motemen/user_p.gif" alt="motemen" /></a></p>
+      <p class="hatena-profile-id"><a href="/motemen/about">motemen</a> <a href="/motemen/about"><img src="/images/icon-plus.gif" alt="はてなダイアリープラス利用中" class="icon-plus" /></a></p>
+      <p class="hatena-profile-body">はてなスタッフ。真人間です。</p>
+    </div>
+  </div>
+</div>
+
+	<div class="hatena-module hatena-module-searchform">
+<div class="hatena-moduletitle">日記の検索</div>
+<div class="hatena-modulebody">
+<form method="GET" action="/motemen/searchdiary" class="hatena-searchform"><input type="text" name="word" class="hatena-searchform searchform-word" value=""><input type="submit" name=".submit" value="検索" class="hatena-searchform searchform-button"><br><label class="searchform-label-detail"><input type="radio" name="type" value="detail" checked="checked" class="searchform-radio">詳細</label> <label class="searchform-label-list"><input type="radio" name="type" value="list" class="searchform-radio">一覧</label></form>
+
+</div>
+</div>
+
+	<div class="hatena-module hatena-module-calendar2">
+<div class="hatena-moduletitle">カレンダー</div>
+<div class="hatena-modulebody">
+<table class="calendar" summary="calendar">
+<tr>
+<td class="calendar-prev-month" colspan="2"><a href="/motemen/200909" title="200909" rel="nofollow">&lt;&lt;</a></td>
+<td class="calendar-current-month" colspan="3"><a href="/motemen/archive/200910" rel="nofollow">2009/10</a></td>
+<td class="calendar-next-month" colspan="2"><a href="/motemen/200911" title="200911" rel="nofollow">&gt;&gt;</a></td>
+</tr>
+<tr>
+<td class="calendar-sunday">日</td>
+<td class="calendar-weekday">月</td>
+<td class="calendar-weekday">火</td>
+<td class="calendar-weekday">水</td>
+<td class="calendar-weekday">木</td>
+<td class="calendar-weekday">金</td>
+<td class="calendar-saturday">土</td>
+</tr>
+	<tr>
+		<td class="calendar-day"></td>
+		<td class="calendar-day"></td>
+		<td class="calendar-day"></td>
+		<td class="calendar-day"></td>
+		<td class="calendar-day">1</td>
+		<td class="calendar-day">2</td>
+		<td class="calendar-day">3</td>
+	</tr>
+	<tr>
+		<td class="calendar-day">4</td>
+		<td class="calendar-day">5</td>
+		<td class="calendar-day">6</td>
+		<td class="calendar-day">7</td>
+		<td class="calendar-day">8</td>
+		<td class="calendar-day">9</td>
+		<td class="calendar-day">10</td>
+	</tr>
+	<tr>
+		<td class="calendar-day">11</td>
+		<td class="calendar-day">12</td>
+		<td class="calendar-day">13</td>
+		<td class="calendar-day">14</td>
+		<td class="calendar-day">15</td>
+		<td class="calendar-day">16</td>
+		<td class="calendar-day">17</td>
+	</tr>
+	<tr>
+		<td class="calendar-day day-today">18</td>
+		<td class="calendar-day">19</td>
+		<td class="calendar-day">20</td>
+		<td class="calendar-day">21</td>
+		<td class="calendar-day">22</td>
+		<td class="calendar-day">23</td>
+		<td class="calendar-day">24</td>
+	</tr>
+	<tr>
+		<td class="calendar-day">25</td>
+		<td class="calendar-day">26</td>
+		<td class="calendar-day">27</td>
+		<td class="calendar-day">28</td>
+		<td class="calendar-day">29</td>
+		<td class="calendar-day">30</td>
+		<td class="calendar-day">31</td>
+	</tr>
+</table>
+	</div>
+</div>
+
+	<div class="hatena-module hatena-module-section">
+<div class="hatena-moduletitle"><a href="/motemen/archive">最新タイトル</a></div>
+<div class="hatena-modulebody">
+<ul class="hatena-section">
+<li><a href="http://d.hatena.ne.jp/motemen/20090401/1238593149">はてなに入社しました</a></li>
+<li><a href="http://d.hatena.ne.jp/motemen/20090331/1238502422">カラースターが出ましたね</a></li>
+<li><a href="http://d.hatena.ne.jp/motemen/20090224/1235486053">アルゴリズムイントロダクション輪講も2巻に入ります</a></li>
+<li><a href="http://d.hatena.ne.jp/motemen/20081119/1227105385">CLANNAD が人生だったので DVD を買った</a></li>
+<li><a href="http://d.hatena.ne.jp/motemen/20081119/1227101002">iPhone フリック入力のテスト</a></li>
+<li><a href="http://d.hatena.ne.jp/motemen/20080926/1222434809">最近読んだ本</a></li>
+<li><a href="http://d.hatena.ne.jp/motemen/20080926/1222433504">常識ある社会人になる</a></li>
+<li><a href="http://d.hatena.ne.jp/motemen/20080922/1222088859">アルゴリズムイントロダクション輪講 #3 が終わりました</a></li>
+<li><a href="http://d.hatena.ne.jp/motemen/20080908/1220878915">アルゴリズムイントロダクション輪講 #2 が終わりました</a></li>
+<li><a href="http://d.hatena.ne.jp/motemen/20080828/1219893385">アルゴリズムイントロダクション輪講 #1 が終わりました</a></li>
+</ul>
+</div>
+</div>
+
+	<div class="hatena-module hatena-module-sectioncategory">
+<div class="hatena-moduletitle">カテゴリー</div>
+<div class="hatena-modulebody">
+<form action="/motemen/searchdiary" method="get" class="hatena-sectioncategory">
+<select name="word" class="hatena-sectioncategory">
+<option value="" class="hatena-sectioncategory">-</option>
+
+<option value="*[UVa]" class="hatena-sectioncategory">UVa</option>
+<option value="*[C++]" class="hatena-sectioncategory">C++</option>
+<option value="*[Scheme]" class="hatena-sectioncategory">Scheme</option>
+<option value="*[SICP]" class="hatena-sectioncategory">SICP</option>
+<option value="*[WiLiki]" class="hatena-sectioncategory">WiLiki</option>
+<option value="*[Gauche]" class="hatena-sectioncategory">Gauche</option>
+<option value="*[Book]" class="hatena-sectioncategory">Book</option>
+<option value="*[Computer]" class="hatena-sectioncategory">Computer</option>
+<option value="*[Vim]" class="hatena-sectioncategory">Vim</option>
+<option value="*[Linux]" class="hatena-sectioncategory">Linux</option>
+<option value="*[lighttpd]" class="hatena-sectioncategory">lighttpd</option>
+<option value="*[hatena]" class="hatena-sectioncategory">hatena</option>
+<option value="*[MySQL]" class="hatena-sectioncategory">MySQL</option>
+<option value="*[Haskell]" class="hatena-sectioncategory">Haskell</option>
+<option value="*[Apache]" class="hatena-sectioncategory">Apache</option>
+<option value="*[Makefile]" class="hatena-sectioncategory">Makefile</option>
+<option value="*[Perl]" class="hatena-sectioncategory">Perl</option>
+<option value="*[Plagger]" class="hatena-sectioncategory">Plagger</option>
+<option value="*[Rails]" class="hatena-sectioncategory">Rails</option>
+<option value="*[JavaScript]" class="hatena-sectioncategory">JavaScript</option>
+<option value="*[zsh]" class="hatena-sectioncategory">zsh</option>
+<option value="*[Firefox]" class="hatena-sectioncategory">Firefox</option>
+<option value="*[MochiKit]" class="hatena-sectioncategory">MochiKit</option>
+<option value="*[TODO]" class="hatena-sectioncategory">TODO</option>
+<option value="*[etc]" class="hatena-sectioncategory">etc</option>
+<option value="*[Ruby]" class="hatena-sectioncategory">Ruby</option>
+<option value="*[Windows]" class="hatena-sectioncategory">Windows</option>
+<option value="*[TeX]" class="hatena-sectioncategory">TeX</option>
+<option value="*[DVD]" class="hatena-sectioncategory">DVD</option>
+<option value="*[trac]" class="hatena-sectioncategory">trac</option>
+<option value="*[Safari]" class="hatena-sectioncategory">Safari</option>
+<option value="*[Life]" class="hatena-sectioncategory">Life</option>
+<option value="*[D]" class="hatena-sectioncategory">D</option>
+<option value="*[これはひどい]" class="hatena-sectioncategory">これはひどい</option>
+<option value="*[svk]" class="hatena-sectioncategory">svk</option>
+<option value="*[Memo]" class="hatena-sectioncategory">Memo</option>
+<option value="*[Game]" class="hatena-sectioncategory">Game</option>
+<option value="*[360]" class="hatena-sectioncategory">360</option>
+<option value="*[Star]" class="hatena-sectioncategory">Star</option>
+<option value="*[Greasemonkey]" class="hatena-sectioncategory">Greasemonkey</option>
+<option value="*[CodeRepos]" class="hatena-sectioncategory">CodeRepos</option>
+</select><input type="submit" name=".submit" value="移動" class="hatena-sectioncategory">
+</form>
+</div>
+</div>
+
+	<div class="hatena-module">
+		<div class="hatena-moduletitle">リンク集</div>
+			<div class="hatena-modulebody">
+				<ul class="hatena-urllist">
+					<li><a href="http://tokyoenvious.xrea.jp/">東京嫉妬</a></li>
+				</ul>
+			</div>
+		</div>
+	<div class="hatena-module hatena-module-ring">
+
+<div class="hatena-modulebody">
+<ul class="hatena-photo">
+
+
+
+  <script type="text/javascript"
+    src="http://ring.hatena.ne.jp/showlogo?rid=sicp&sid=238576&mode=image">
+  </script>
+  <noscript>
+  <a href="http://sicp.ring.hatena.ne.jp"><img src="http://ring.hatena.ne.jp/images/logo/s/sicp/sicp_s.jpg" border=0></a>
+  <a href="http://sicp.ring.hatena.ne.jp/go?type=random&sid=238576">random</a>
+  <a href="http://sicp.ring.hatena.ne.jp/">Hatena Ring sicp</a>
+  </noscript>
+
+
+
+</div>
+</div>
+
+
+<div style="display:none"><script type="text/javascript"><!--
+    hatena_counter_name = "motemen";
+    hatena_counter_id = "1";
+    hatena_counter_ref = document.referrer+"";
+    hatena_counter_screen = screen.width + "x" + screen.height+","+screen.colorDepth;
+//--></script>
+<script type="text/javascript" src="http://counter.hatena.ne.jp//js/counter.js"></script>
+<noscript><img src="http://counter.hatena.ne.jp/motemen/1" border="0" alt="counter"></noscript>
+</div>
+</div>
+
+
+
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var firstTracker = _gat._getTracker("UA-441387-31");
+firstTracker._initData();
+firstTracker._trackPageview();
+var secondTracker = _gat._getTracker("UA-7855606-1");
+secondTracker._setDomainName(".hatena.ne.jp");
+secondTracker._initData();
+secondTracker._trackPageview();
+} catch(err) {}
+</script>
+
+</body>
+</html>
