@@ -18,12 +18,13 @@ my $ap = WWW::AutoPagerize->new(
     ua  => Fake::UA->new,
 );
 
-is $ap->next_uri($site_info), 'http://d.hatena.ne.jp/motemen/?of=5';
+is $ap->next_uri, 'http://d.hatena.ne.jp/motemen/?of=5';
 unlike $ap->content, qr/あ…ありのまま 今　起こった事を話すぜ！/;
 
 $ap->load_next;
 like   $ap->content, qr/あ…ありのまま 今　起こった事を話すぜ！/;
-is_deeply [ map $_->{response}->base, @{ $ap->pages } ], [
+
+is_deeply [ map $_->base, @{ $ap->responses } ], [
     'http://d.hatena.ne.jp/motemen/',
     'http://d.hatena.ne.jp/motemen/?of=5',
 ];

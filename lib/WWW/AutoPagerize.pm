@@ -5,6 +5,7 @@ use base 'Class::Accessor::Fast';
 use HTML::TreeBuilder::XPath;
 use JSON::Any;
 use URI;
+use Carp;
 
 our $VERSION = '0.01';
 our $DEBUG;
@@ -12,18 +13,16 @@ our $DEBUG;
 our $SiteInfo;
 
 __PACKAGE__->mk_accessors(
-    qw(pages ua tree)
+    qw(ua tree next_uri responses)
 );
 
 sub _SITE_INFO {
     my $self = shift;
 
     $SiteInfo ||= do {
-        my $json = JSON::Any->new->from_json(
-            $self->_get_content(
-                'http://wedata.net/databases/AutoPagerize/items.json'
-            )
-        );
+        my $res = $self->ua->get('http://wedata.net/databases/AutoPagerize/items.json');
+        die $res->message if $res->is_error;
+        my $json = JSON::Any->new->from_json($res->content);
         [ map $_->{data}, @$json ];
     };
 }
@@ -40,7 +39,7 @@ sub initialize {
     my $self = shift;
     my %args = @_;
 
-    $self->pages([{}]);
+    $self->responses([]);
 
     unless ($self->ua) {
         require LWP::UserAgent;
@@ -48,16 +47,24 @@ sub initialize {
         $self->ua($ua);
     }
 
-    $args{response} ||= $self->ua->get($args{uri});
+    $args{response} ||= $self->ua->get($args{uri})
+        or croak 'response or uri required';
 
-    $self->response($args{response});
-    $self->tree($self->_parse_response($self->response));
+    $self->push_response($args{response});
+    $self->tree($self->parse_response);
+    $self->update_next_uri unless $self->next_uri;
+}
+
+sub push_response {
+    my $self = shift;
+    my $response = shift;
+
+    push @{ $self->responses }, $response;
 }
 
 sub response {
     my $self = shift;
-    $self->pages->[-1]->{response} = shift if @_;
-    $self->pages->[-1]->{response};
+    $self->responses->[-1];
 }
 
 sub uri {
@@ -80,57 +87,56 @@ sub load_next {
         or warn 'Could not find pageElement' and return;
 
     my $next_uri = $self->next_uri
-        or warn 'Could not find nextLink' and return;
+        or warn 'Reached at end' and return;
     warn "next_uri: $next_uri" if $DEBUG;
 
-    my $next_res  = $self->ua->get($next_uri);
-    my $next_tree = $self->_parse_response($next_res);
+    my $next_res = $self->ua->get($next_uri);
+    $self->push_response($next_res);
+
+    my $next_tree = $self->parse_response;
     my @next_page_elements = @{ $next_tree->findnodes($site_info->{pageElement}) }
         or warn 'Could not find next page\'s pageElement' and return;
-
-    push @{ $self->pages }, { response => $next_res, tree => $next_tree };
+    
+    $self->update_next_uri(tree => $next_tree);
 
     # TODO 共通の親を探す
     $page_elements[0]->parent->push_content(@next_page_elements);
 }
 
-sub next_uri {
-    my $self = shift;
+sub update_next_uri {
+    my ($self, %args) = @_;
+    my $site_info = $args{site_info} || $self->site_info;
+    my $tree      = $args{tree}      || $self->tree;
 
-    my $site_info = $self->site_info
-        or warn 'Could not load site_info' and return;
-
-    my $node = $self->tree->findnodes($site_info->{nextLink})->[0] or return;
-    my $next_uri = $node->attr('href');
-    URI->new_abs($next_uri, $self->uri);
+    my $node = $tree->findnodes($site_info->{nextLink})->[0] or return;
+    my $uri  = $node->attr('href') or return;
+       $uri  = URI->new_abs($uri, $self->uri);
+    $self->next_uri($uri);
 }
 
 sub site_info {
     my $self = shift;
+    $self->{site_info} ||= $self->find_site_info;
+}
+
+sub find_site_info {
+    my $self = shift;
     foreach (@{ $self->_SITE_INFO }) {
-        return $_ if $self->uri =~ /$_->{url}/;
+        return $_ if $self->uri =~ /$_->{url}/ && $self->update_next_uri(site_info => $_);
     }
 }
 
-sub _parse_response {
-    my ($self, $res) = @_;
-    $self->_parse_content($res->decoded_content || $res->content);
+sub parse_response {
+    my $self = shift;
+    _parse_content($self->response->decoded_content || $self->response->content);
 }
 
 sub _parse_content {
-    my ($self, $content) = @_;
+    my ($content) = @_;
     my $tree = HTML::TreeBuilder::XPath->new;
     $tree->parse($content);
     $tree->eof;
     $tree;
-}
-
-sub _get_content {
-    my ($self, $uri) = @_;
-    warn "GET $uri" if $DEBUG;
-    my $res = $self->ua->get($uri);
-    die $res->message if $res->is_error;
-    $res->decoded_content;
 }
 
 1;
