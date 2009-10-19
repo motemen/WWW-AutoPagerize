@@ -1,7 +1,7 @@
 use strict;
 use warnings;
+use utf8;
 use Test::More tests => 4;
-use URI;
 
 use WWW::AutoPagerize;
 
@@ -23,7 +23,7 @@ unlike $ap->content, qr/あ…ありのまま 今　起こった事を話すぜ�
 
 $ap->load_next;
 like   $ap->content, qr/あ…ありのまま 今　起こった事を話すぜ！/;
-is_deeply $ap->uris, [
+is_deeply [ map $_->{response}->base, @{ $ap->pages } ], [
     'http://d.hatena.ne.jp/motemen/',
     'http://d.hatena.ne.jp/motemen/?of=5',
 ];
@@ -49,6 +49,7 @@ sub request {
         HTTP::Response->new(200, 'OK', [], $content);
     } else {
         warn "$file not found, use HTTP";
+        die;
         shift->SUPER::request(@_);
     }
 }

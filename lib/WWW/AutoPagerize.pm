@@ -12,15 +12,27 @@ our $DEBUG;
 our $SiteInfo;
 
 __PACKAGE__->mk_accessors(
-    qw(tree uri ua uris)
+    qw(pages ua tree)
 );
+
+sub _SITE_INFO {
+    my $self = shift;
+
+    $SiteInfo ||= do {
+        my $json = JSON::Any->new->from_json(
+            $self->_get_content(
+                'http://wedata.net/databases/AutoPagerize/items.json'
+            )
+        );
+        [ map $_->{data}, @$json ];
+    };
+}
 
 sub new {
     my $class = shift;
 
-    my $self = $class->SUPER::new({ @_ });
+    my $self = $class->SUPER::new;
     $self->initialize(@_);
-
     $self;
 }
 
@@ -28,21 +40,34 @@ sub initialize {
     my $self = shift;
     my %args = @_;
 
+    $self->pages([{}]);
+
     unless ($self->ua) {
         require LWP::UserAgent;
         my $ua = LWP::UserAgent->new(agent => __PACKAGE__ . '/' . $VERSION);
         $self->ua($ua);
     }
 
-    unless ($self->tree) {
-        $self->tree(
-            $self->_parse_content(
-                $args{content} || $self->_get_content($self->uri)
-            )
-        );
-    }
+    $args{response} ||= $self->ua->get($args{uri});
 
-    $self->uris([ $self->uri ]);
+    $self->response($args{response});
+    $self->tree($self->_parse_response($self->response));
+}
+
+sub response {
+    my $self = shift;
+    $self->pages->[-1]->{response} = shift if @_;
+    $self->pages->[-1]->{response};
+}
+
+sub uri {
+    my $self = shift;
+    $self->response->request ? $self->response->request->uri : $self->response->base;
+}
+
+sub content {
+    my $self = shift;
+    $self->tree->as_text;
 }
 
 sub load_next {
@@ -58,11 +83,12 @@ sub load_next {
         or warn 'Could not find nextLink' and return;
     warn "next_uri: $next_uri" if $DEBUG;
 
-    my $next_tree = $self->_parse_uri($next_uri);
+    my $next_res  = $self->ua->get($next_uri);
+    my $next_tree = $self->_parse_response($next_res);
     my @next_page_elements = @{ $next_tree->findnodes($site_info->{pageElement}) }
         or warn 'Could not find next page\'s pageElement' and return;
 
-    push @{ $self->uris }, $next_uri;
+    push @{ $self->pages }, { response => $next_res, tree => $next_tree };
 
     # TODO 共通の親を探す
     $page_elements[0]->parent->push_content(@next_page_elements);
@@ -79,19 +105,6 @@ sub next_uri {
     URI->new_abs($next_uri, $self->uri);
 }
 
-sub _SITE_INFO {
-    my $self = shift;
-
-    $SiteInfo ||= do {
-        my $json = JSON::Any->new->from_json(
-            $self->_get_content(
-                'http://wedata.net/databases/AutoPagerize/items.json'
-            )
-        );
-        [ map $_->{data}, @$json ];
-    };
-}
-
 sub site_info {
     my $self = shift;
     foreach (@{ $self->_SITE_INFO }) {
@@ -99,11 +112,9 @@ sub site_info {
     }
 }
 
-sub content { shift->tree->as_text }
-
-sub _parse_uri {
-    my ($self, $uri) = @_;
-    $self->_parse_content($self->_get_content($uri));
+sub _parse_response {
+    my ($self, $res) = @_;
+    $self->_parse_content($res->decoded_content || $res->content);
 }
 
 sub _parse_content {
